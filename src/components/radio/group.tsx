@@ -29,7 +29,8 @@ export const Group: FC<RadioGroupProps> = p => {
         },
         uncheck: () => {},
         disabled: props.disabled,
-      }}>
+      }}
+    >
       {props.children}
     </RadioGroupContext.Provider>
   );
