@@ -2,7 +2,7 @@
   "name": "wechat-taro-ui",
   "version": "1.0.0",
   "private": true,
-  "description": "基于taro的图表库",
+  "description": "基于taro的微信小程序组件库",
   "templateInfo": {
     "name": "default",
     "typescript": true,
