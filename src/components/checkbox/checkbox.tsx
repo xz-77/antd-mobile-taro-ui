@@ -42,7 +42,6 @@ export const Checkbox: FC<CheckboxProps> = p => {
   const { value } = props;
   if (groupContext && value !== undefined) {
     checked = groupContext.value.includes(value);
-    // eslint-disable-next-line @typescript-eslint/no-shadow
     setChecked = (checked: boolean) => {
       if (checked) {
         groupContext.check(value);
@@ -86,11 +85,10 @@ export const Checkbox: FC<CheckboxProps> = p => {
       onClick={() => {
         if (disabled) return;
         setChecked(!checked);
-      }}>
+      }}
+    >
       {renderIcon()}
-      {props.children && (
-        <View className={`${classPrefix}-content`}>{props.children}</View>
-      )}
-    </View>,
+      {props.children && <View className={`${classPrefix}-content`}>{props.children}</View>}
+    </View>
   );
 };

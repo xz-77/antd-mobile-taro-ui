@@ -32,7 +32,8 @@ export const Group: FC<CheckboxGroupProps> = p => {
         uncheck: v => {
           setValue(value.filter(item => item !== v));
         },
-      }}>
+      }}
+    >
       {props.children}
     </CheckboxGroupContext.Provider>
   );

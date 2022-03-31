@@ -6,13 +6,17 @@
 
 个人观点：站在巨人的肩膀上，才能造出高质量的轮子
 
-正在适配的组件
-checkbox
-list
-mask
-popup
-radio
-space
+**正在适配的组件**:
+
+* list
+* mask
+* popup
+
+**已100%适配完成的组件：**
+
+* checkbox
+* radio
+* space
 
 ## 图表 ec-canvas
 
@@ -21,5 +25,6 @@ space
 目录：/src/charts/ec-canvas 文件夹整体拷贝 然后按照混合开发模式 就可以使用echarts的图表了
 
 参考网站：
-[echarts-for-weixin](https://github.com/ecomfe/echarts-for-weixin)
-[echarts](https://echarts.apache.org/zh/index.html)
+
+* [echarts-for-weixin](https://github.com/ecomfe/echarts-for-weixin)
+* [echarts](https://echarts.apache.org/zh/index.html)
