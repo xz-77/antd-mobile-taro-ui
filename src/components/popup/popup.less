@@ -1,0 +1,45 @@
+@class-prefix-popup: ~'adm-popup';
+
+.@{class-prefix-popup} {
+  --z-index: var(--popup-z-index, 1000);
+  transition: all 0.3s;
+  position: fixed;
+  z-index: var(--z-index);
+}
+
+.@{class-prefix-popup}-body {
+  position: fixed;
+  background-color: #ffffff;
+  z-index: calc(var(--z-index) + 10);
+  transition: all 0.3s;
+  &-position-bottom {
+    transition: all 0.3s;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  &-position-top {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  &-position-left {
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &-position-right {
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+}
+
+// @keyframes move {
+//   from {
+//     transform: rotate(0, 100vh);
+//   }
+//   to {
+//     transform: rotate(0, 0);
+//   }
+// }

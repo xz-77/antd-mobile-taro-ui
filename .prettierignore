@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+.DS_Store
+.history
+yarn.lock
+yarn-error.log
+dist/
+src/components/ec-canvas

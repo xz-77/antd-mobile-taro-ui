@@ -1,0 +1,11 @@
+# common
+dist/
+
+# .eslintrc.js
+.eslintrc.js
+commitlint.config.js
+
+#files
+config/
+global.d.ts
+app.ts

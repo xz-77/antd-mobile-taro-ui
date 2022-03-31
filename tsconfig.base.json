@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "es6", // 设置程序的模块系统 CommonJS规范
+    "target": "es2017", // 设置js特性版本
+    "strict": true, // 严格模式
+    "allowJs": true, // 是否支持javascript文件
+    "removeComments": true, // 转化为javascript时是否删除注释
+    "preserveConstEnums": true, // 保留常量枚举
+    "noImplicitAny": true, //参数传递隐式类型例如any 报错提示
+    "strictNullChecks": true, // 严格的空检查
+    "noUnusedLocals": true, // 报错未使用的局部变量
+    "noUnusedParameters": true, // 报错未使用的参数
+    "sourceMap": true, // 启用sourceMap
+    "jsx": "react",
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "esModuleInterop": true, //开启解决转译问题
+    "moduleResolution": "node", // 指定模块解析策略 用于node中的CommonJS实现
+    "resolveJsonModule": true // 允许解析JSON模块
+  },
+  "include": ["./src", "global.d.ts"],
+  "compileOnSave": false
+}
