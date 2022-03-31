@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from '@tarojs/components';
-import * as echarts from '../../components/ec-canvas/echarts';
+import * as echarts from '../../charts/ec-canvas/echarts';
 
 import './index.less';
 
