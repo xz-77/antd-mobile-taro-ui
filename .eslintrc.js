@@ -1,7 +1,6 @@
 module.exports = {
   extends: [require.resolve('verify-fabric/dist/eslint')],
   rules: {
-    // your rules
     'import/extensions': 0,
     'react/jsx-filename-extension': 0,
     'import/no-cycle': 0,
@@ -18,6 +17,6 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 0,
     'no-prototype-builtins': 'off',
     'prefer-destructuring': 'warn',
-    'no-restricted-syntax': 'warn',
+    'no-restricted-syntax': 'off',
   },
 };

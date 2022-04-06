@@ -1,8 +1,13 @@
 {
   "name": "wechat-taro-ui",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "description": "基于taro的微信小程序组件库",
+  "main": "./dist/index",
   "templateInfo": {
     "name": "default",
     "typescript": true,
@@ -12,6 +17,9 @@
     "**/*.css",
     "**/*.less",
     "**/*.scss"
+  ],
+  "files": [
+    "dist"
   ],
   "scripts": {
     "build:weapp": "taro build --type weapp",
@@ -83,7 +91,7 @@
     "lint-staged": "^12.3.7",
     "standard-version": "^9.3.2",
     "typescript": "^4.1.0",
-    "verify-fabric": "^1.1.3"
+    "verify-fabric": "^1.1.4"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [

@@ -1,4 +1,4 @@
-export const REGEXP = {
+const REGEXP = {
   phone: /^(?:(?:\+|00)86)?1[3-9]\d{9}$/, // 手机号 13、14、15、16、17、18、19开头即可
   'name-ch': /^(?:[\u4e00-\u9fa5·]{2,16})$/, // 英文名称
   'name-en': /(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)/, // 中文名称
@@ -15,38 +15,44 @@ export const REGEXP = {
     /^(?:[\u3400-\u4DB5\u4E00-\u9FEA\uFA0E\uFA0F\uFA11\uFA13\uFA14\uFA1F\uFA21\uFA23\uFA24\uFA27-\uFA29]|[\uD840-\uD868\uD86A-\uD86C\uD86F-\uD872\uD874-\uD879][\uDC00-\uDFFF]|\uD869[\uDC00-\uDED6\uDF00-\uDFFF]|\uD86D[\uDC00-\uDF34\uDF40-\uDFFF]|\uD86E[\uDC00-\uDC1D\uDC20-\uDFFF]|\uD873[\uDC00-\uDEA1\uDEB0-\uDFFF]|\uD87A[\uDC00-\uDFE0])+$/, // 汉字
   passport:
     /(^[EeKkGgDdSsPpHh]\d{8}$)|(^(([Ee][a-fA-F])|([DdSsPp][Ee])|([Kk][Jj])|([Mm][Aa])|(1[45]))\d{7}$)/, // 护照
-  number: /^-?\d+(,\d{3})*(\.\d{1,2})?$/, // 数字/货币金额 支持小数、负数、正数
+  number: /^-?\d+(,\d{3})*(\.\d{1,3})?$/, // 数字/货币金额 支持小数、负数、正数
   'positive-integer': /^\+?[1-9]\d*$/, // 正整数
 };
 
-export const extendName = <T extends { [K in keyof T]: RegExp }>(
-  value: T
-): typeof REGEXP & T => {
-  return Object.assign(REGEXP, value);
+type G = (value: string) => boolean;
+
+type Merge<F extends { [K in string]: G }, S extends { [K in string]: RegExp }> = {
+  [P in keyof F | keyof S]: P extends keyof S ? G : P extends keyof F ? F[P] : never;
 };
 
-export type MatchRegExpName = keyof typeof REGEXP;
-
-type Merge<F, S> = {
-  [P in keyof F | keyof S]: P extends keyof S
-    ? S[P]
-    : P extends keyof F
-    ? F[P]
-    : never;
+const attachPropertiesToObject = <
+  C extends { [K in string]: G },
+  P extends { [K in string]: RegExp }
+>(
+  component: C,
+  properties: P
+): Merge<C, P> => {
+  const ret = component as any;
+  for (const key in properties) {
+    if (Object.prototype.hasOwnProperty.call(properties, key)) {
+      ret[key] = (value: string) => properties?.[key]?.test(value);
+    }
+  }
+  return ret;
 };
 
-export const matchRegExp = <T extends { [K in keyof T]: RegExp }>(
-  name: keyof Merge<T, typeof REGEXP>,
-  value: any
-): boolean => {
-  return REGEXP?.[name].test(value);
-};
+// 抛出正则表达式
+const isMatch = attachPropertiesToObject({}, REGEXP);
 
-const a = {
-  password:
-    /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]/,
-};
+export { isMatch };
 
-extendName(a);
+// demo
 
-matchRegExp<typeof a>('password', 123);
+// const xx = {
+//   pass: /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]/, // 密码
+// };
+// const isMatch2 = attachPropertiesToObject(isMatch, xx);
+
+// const b = isMatch2.pass('18681277872');
+
+// console.log('sxxx->', b, c);
