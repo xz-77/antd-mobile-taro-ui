@@ -22,6 +22,10 @@
     "dist"
   ],
   "scripts": {
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "release": "standard-version",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -39,11 +43,7 @@
     "dev:rn": "npm run build:rn -- --watch",
     "dev:qq": "npm run build:qq -- --watch",
     "dev:jd": "npm run build:jd -- --watch",
-    "dev:quickapp": "npm run build:quickapp -- --watch",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx",
-    "lint-staged": "lint-staged",
-    "prepare": "husky install",
-    "release": "standard-version"
+    "dev:quickapp": "npm run build:quickapp -- --watch"
   },
   "browserslist": [
     "last 3 versions",
