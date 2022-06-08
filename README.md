@@ -2,7 +2,7 @@
 
 ## components
 
-核心：基于Taro框架尽最大可能与Ant Design Mobile 5.0的api保持100%一致，总体代码70%以上会直接复制Ant Design Mobile大佬们写的源码，剩余的不到30%主要还是为了适配微信小程序(多多学习Ant Design Mobile开发者大佬们写的代码)
+核心：基于Taro框架尽最大可能与Ant Design Mobile 5.13.1的api保持100%一致，总体代码80%以上会直接复制Ant Design Mobile大佬们写的源码，剩余的不到20%主要还是为了适配微信小程序(多多学习Ant Design Mobile开发者大佬们写的代码)
 
 个人观点：站在巨人的肩膀上，才能造出高质量的轮子
 
