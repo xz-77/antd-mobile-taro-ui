@@ -1,10 +1,10 @@
 import React, { FC, useContext } from 'react';
 import classNames from 'classnames';
 import { View } from '@tarojs/components';
-import { NativeProps, withNativeProps } from '../utils/native-props';
+import { NativeProps, withNativeProps } from '@/utils/native-props';
 import { CheckboxGroupContext } from './group-context';
-import { usePropsValue } from '../utils/use-props-value';
-import { mergeProps } from '../utils/with-default-props';
+import { usePropsValue } from '@/utils/use-props-value';
+import { mergeProps } from '@/utils/with-default-props';
 import { CheckIcon } from './check-icon';
 
 const classPrefix = `adm-checkbox`;
@@ -38,7 +38,7 @@ export const Checkbox: FC<CheckboxProps> = p => {
     defaultValue: props.defaultChecked,
     onChange: props.onChange,
   });
-  let disabled = props.disabled;
+  let {disabled} = props;
   const { value } = props;
   if (groupContext && value !== undefined) {
     checked = groupContext.value.includes(value);

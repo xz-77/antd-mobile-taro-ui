@@ -18,5 +18,6 @@ module.exports = {
     'no-prototype-builtins': 'off',
     'prefer-destructuring': 'warn',
     'no-restricted-syntax': 'off',
+    'no-continue': 0,
   },
 };

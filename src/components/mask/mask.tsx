@@ -2,9 +2,9 @@ import React, { useMemo } from 'react';
 import type { ReactElement } from 'react';
 import { View } from '@tarojs/components';
 import type { ITouchEvent } from '@tarojs/components';
-import { NativeProps, withNativeProps } from '../utils/native-props';
+import { NativeProps, withNativeProps } from '@/utils/native-props';
 
-import { mergeProps } from '../utils/with-default-props';
+import { mergeProps } from '@/utils/with-default-props';
 
 const classPrefix = `adm-mask`;
 

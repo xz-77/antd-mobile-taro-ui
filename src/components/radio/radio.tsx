@@ -2,10 +2,10 @@ import React, { FC, useContext } from 'react';
 import classNames from 'classnames';
 import { View } from '@tarojs/components';
 import { RadioGroupContext } from './group-context';
-import { usePropsValue } from '../utils/use-props-value';
-import { mergeProps } from '../utils/with-default-props';
+import { usePropsValue } from '@/utils/use-props-value';
+import { mergeProps } from '@/utils/with-default-props';
 import { CheckIcon } from './check-icon';
-import { NativeProps, withNativeProps } from '../utils/native-props';
+import { NativeProps, withNativeProps } from '@/utils/native-props';
 
 const classPrefix = `adm-radio`;
 
@@ -36,7 +36,7 @@ export const Radio: FC<RadioProps> = p => {
     onChange: props.onChange,
   });
 
-  let disabled = props.disabled;
+  let {disabled} = props;
 
   const { value } = props;
   if (groupContext && value !== undefined) {
@@ -55,11 +55,7 @@ export const Radio: FC<RadioProps> = p => {
 
   const renderIcon = () => {
     if (props.icon) {
-      return (
-        <View className={`${classPrefix}-custom-icon`}>
-          {props.icon(checked)}
-        </View>
-      );
+      return <View className={`${classPrefix}-custom-icon`}>{props.icon(checked)}</View>;
     }
 
     return (
@@ -81,11 +77,10 @@ export const Radio: FC<RadioProps> = p => {
       onClick={() => {
         if (disabled) return;
         setChecked(!checked);
-      }}>
+      }}
+    >
       {renderIcon()}
-      {props.children && (
-        <View className={`${classPrefix}-content`}>{props.children}</View>
-      )}
-    </View>,
+      {props.children && <View className={`${classPrefix}-content`}>{props.children}</View>}
+    </View>
   );
 };
