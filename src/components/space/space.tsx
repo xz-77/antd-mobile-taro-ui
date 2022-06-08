@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import classNames from 'classnames';
 import { ITouchEvent, View } from '@tarojs/components';
-import { NativeProps, withNativeProps } from '@/utils/native-props';
-import { mergeProps } from '@/utils/with-default-props';
+import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { mergeProps } from '../../utils/with-default-props';
 
 const classPrefix = `adm-space`;
 
@@ -13,6 +13,7 @@ export type SpaceProps = {
   wrap?: boolean;
   block?: boolean;
   onClick?: (event: ITouchEvent) => void;
+  children?: React.ReactNode;
 } & NativeProps<'--gap' | '--gap-vertical' | '--gap-horizontal'>;
 
 const defaultProps = {
@@ -22,7 +23,6 @@ const defaultProps = {
 export const Space: FC<SpaceProps> = p => {
   const props = mergeProps(defaultProps, p);
   const { direction, onClick } = props;
-
   return withNativeProps(
     props,
     <View
