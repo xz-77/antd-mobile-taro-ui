@@ -2,5 +2,18 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "prettier.configPath": ".prettierrc.js",
-  "cSpell.words": ["tarojs", "weapp", "wechat", "echarts"]
+  "cSpell.words": [
+    "tarojs",
+    "weapp",
+    "wechat",
+    "echarts",
+    "antd",
+    "alipay",
+    "quickapp",
+    "browserslist",
+    "ahooks",
+    "stylelint",
+    "miniprogram",
+    "commitlint"
+  ]
 }

@@ -1,4 +1,4 @@
-# wechat-taro-ui
+# antd-mobile-taro-ui
 
 ## components
 
