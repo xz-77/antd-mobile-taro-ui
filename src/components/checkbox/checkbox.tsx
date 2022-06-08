@@ -38,7 +38,7 @@ export const Checkbox: FC<CheckboxProps> = p => {
     defaultValue: props.defaultChecked,
     onChange: props.onChange,
   });
-  let {disabled} = props;
+  let { disabled } = props;
   const { value } = props;
   if (groupContext && value !== undefined) {
     checked = groupContext.value.includes(value);
@@ -65,7 +65,9 @@ export const Checkbox: FC<CheckboxProps> = p => {
     return (
       <View className={`${classPrefix}-icon`}>
         {props.indeterminate ? (
-          <View className={`${classPrefix}-indeterminate-checked`} />
+          <View className={`${classPrefix}-indeterminate-checked`}>
+            <View className={`${classPrefix}-indeterminate-checked-icon`} />
+          </View>
         ) : (
           checked && <CheckIcon className={`${classPrefix}-icon-checked`} />
         )}

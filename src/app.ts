@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './styles/theme.less';
+import './styles/theme-default.less';
 import './app.less';
 
 class App extends Component {

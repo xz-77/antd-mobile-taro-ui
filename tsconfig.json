@@ -4,7 +4,9 @@
     "baseUrl": "./", // 设置基本相对路径
     "outDir": "./dist",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "antd-mobile": ["./src/index.ts"],
+      "demos": ["./src/demos"]
     }
   }
 }

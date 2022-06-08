@@ -51,6 +51,19 @@
   }
 
   &.@{class-prefix-checkbox}-indeterminate {
+    .@{class-prefix-checkbox}-indeterminate-checked {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      &-icon {
+        width: calc(var(--icon-size) / 2);
+        height: calc(var(--icon-size) / 2);
+        background-color: var(--adm-color-primary);
+        border-radius: 100%;
+      }
+    }
     .@{class-prefix-checkbox}-icon {
       color: var(--adm-color-primary);
       background-color: var(--adm-color-background);

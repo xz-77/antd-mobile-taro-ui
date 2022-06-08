@@ -19,5 +19,7 @@ module.exports = {
     'prefer-destructuring': 'warn',
     'no-restricted-syntax': 'off',
     'no-continue': 0,
+    'react/destructuring-assignment': 0,
+    'compat/compat': 0,
   },
 };
