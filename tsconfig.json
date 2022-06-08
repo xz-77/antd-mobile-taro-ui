@@ -2,6 +2,9 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": "./", // 设置基本相对路径
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }

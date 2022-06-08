@@ -1,3 +1,5 @@
+const path = require('path');
+
 const config = {
   projectName: 'charts-taro',
   date: '2022-3-22',
@@ -54,6 +56,9 @@ const config = {
         },
       },
     },
+  },
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src'),
   },
 };
 
