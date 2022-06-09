@@ -21,5 +21,6 @@ module.exports = {
     'no-continue': 0,
     'react/destructuring-assignment': 0,
     'compat/compat': 0,
+    'react/prop-types': 0,
   },
 };

@@ -17,6 +17,7 @@
 * checkbox
 * radio
 * space
+* dot-loading
 
 ## 图表 ec-canvas
 
