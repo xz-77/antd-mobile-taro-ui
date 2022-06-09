@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-  projectName: 'charts-taro',
+  projectName: 'antd-mobile-taro-ui',
   date: '2022-3-22',
   designWidth: 375,
   deviceRatio: {

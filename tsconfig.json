@@ -9,6 +9,6 @@
       "demos": ["./src/demos"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "global.d.ts"],
   "exclude": [".history", ".husky", "node_modules", ".vscode", "dist"]
 }

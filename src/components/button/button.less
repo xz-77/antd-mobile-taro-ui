@@ -1,0 +1,137 @@
+@class-prefix-button: ~'adm-button';
+
+.@{class-prefix-button} {
+  --color: var(--adm-color-white);
+  --text-color: var(--adm-button-text-color, var(--adm-color-text));
+  --background-color: var(--adm-button-background-color, var(--adm-color-background));
+  --border-radius: var(--adm-button-border-radius, 4px);
+  --border-width: var(--adm-button-border-width, 1px);
+  --border-style: var(--adm-button-border-style, solid);
+  --border-color: var(--adm-button-border-color, var(--adm-color-border));
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0;
+  padding: 7px 12px;
+  color: var(--text-color);
+  font-size: var(--adm-font-size-9);
+  line-height: 1.4;
+  text-align: center;
+  background-color: var(--background-color);
+  border: var(--border-width) var(--border-style) var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: opacity ease 0.15s;
+  user-select: none;
+  &:focus {
+    outline: none;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border: var(--border-width) var(--border-style) #000;
+    border-radius: var(--border-radius);
+    transform: translate(calc(var(--border-width) * -1), calc(var(--border-width) * -1));
+    opacity: 0;
+    content: ' ';
+  }
+  &:active::before {
+    opacity: 0.08;
+  }
+
+  &-default {
+    &.@{class-prefix-button}-fill-outline {
+      --background-color: transparent;
+      --border-color: var(--adm-color-text);
+    }
+    &.@{class-prefix-button}-fill-none {
+      --background-color: transparent;
+      --border-width: 0;
+    }
+  }
+  &:not(&-default) {
+    --text-color: var(--adm-color-white);
+    --background-color: var(--color);
+    --border-color: var(--color);
+    &.@{class-prefix-button}-fill-outline {
+      --text-color: var(--color);
+      --background-color: transparent;
+    }
+    &.@{class-prefix-button}-fill-none {
+      --text-color: var(--color);
+      --background-color: transparent;
+      --border-width: 0;
+    }
+  }
+
+  &-primary {
+    --color: var(--adm-color-primary);
+  }
+  &-success {
+    --color: var(--adm-color-success);
+  }
+  &-danger {
+    --color: var(--adm-color-danger);
+  }
+  &-warning {
+    --color: var(--adm-color-warning);
+  }
+
+  &-block {
+    display: block;
+    width: 100%;
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+
+    &:active::before {
+      display: none;
+    }
+  }
+
+  &&-mini {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: var(--adm-font-size-main);
+    &.@{class-prefix-button}-shape-rounded {
+      padding-right: 9px;
+      padding-left: 9px;
+    }
+  }
+  &&-small {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: var(--adm-font-size-7);
+  }
+  &&-large {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: var(--adm-font-size-10);
+  }
+  &&-shape-rounded {
+    --border-radius: 1000px;
+  }
+  &&-shape-rectangular {
+    --border-radius: 0;
+  }
+  &-loading {
+    vertical-align: bottom;
+  }
+  &-loading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.4em;
+    > .adm-loading {
+      opacity: 0.6;
+    }
+  }
+}

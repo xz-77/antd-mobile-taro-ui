@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useMemo } from 'react';
 import classNames from 'classnames';
 import { View, Text } from '@tarojs/components';
 import { mergeProps } from '../../utils/with-default-props';
@@ -23,18 +23,29 @@ const defaultProps = {
 
 export const DotLoading = memo<DotLoadingProps>(p => {
   const props = mergeProps(defaultProps, p);
+  const backgroundColor = useMemo(() => colorRecord[props.color] ?? props.color, [props]);
   return withNativeProps(
     props,
-    <View
-      style={{
-        color: colorRecord[props.color] ?? props.color,
-      }}
-      className={classNames('adm-loading', classPrefix)}
-    >
+    <View className={classNames('adm-loading', classPrefix)}>
       <View className='wrapper'>
-        <Text className='dot a'>.</Text>
-        <Text className='dot b'>.</Text>
-        <Text className='dot c'>.</Text>
+        <Text
+          className='dot a'
+          style={{
+            backgroundColor,
+          }}
+        />
+        <Text
+          className='dot b'
+          style={{
+            backgroundColor,
+          }}
+        />
+        <Text
+          className='dot c'
+          style={{
+            backgroundColor,
+          }}
+        />
       </View>
 
       {/* <svg height='1em' viewBox='0 0 100 40' style={{ verticalAlign: '-0.125em' }}>

@@ -6,7 +6,7 @@ import '@/styles/theme-default.less';
 // export { default as AutoCenter } from './components/auto-center'
 // export { default as Avatar } from './components/avatar'
 // export { default as Badge } from './components/badge'
-// export { default as Button } from './components/button'
+export { default as Button } from './components/button';
 // export { default as Calendar } from './components/calendar'
 // export { default as CapsuleTabs } from './components/capsule-tabs'
 // export { default as Card } from './components/card'
@@ -23,7 +23,7 @@ export { default as Checkbox } from './components/checkbox';
 // export { default as DatePickerView } from './components/date-picker-view'
 // export { default as Dialog } from './components/dialog'
 // export { default as Divider } from './components/divider'
-// export { default as DotLoading } from './components/dot-loading'
+export { default as DotLoading } from './components/dot-loading';
 // export { default as Dropdown } from './components/dropdown'
 // export { default as Ellipsis } from './components/ellipsis'
 // export { default as Empty } from './components/empty'

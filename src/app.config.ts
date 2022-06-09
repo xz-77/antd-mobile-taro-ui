@@ -4,6 +4,7 @@ export default defineAppConfig({
     'pages/checkbox/index',
     'pages/radio/index',
     'pages/dot-loading/index',
+    'pages/button/index',
   ],
   window: {
     backgroundTextStyle: 'light',
