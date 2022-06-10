@@ -41,7 +41,7 @@ export { default as DotLoading } from './components/dot-loading';
 // export { default as JumboTabs } from './components/jumbo-tabs'
 export { default as List } from './components/list';
 // export { default as Loading } from './components/loading'
-// export { default as Mask } from './components/mask'
+export { default as Mask } from './components/mask';
 // export { default as Modal } from './components/modal'
 // export { default as NavBar } from './components/nav-bar'
 // export { default as NoticeBar } from './components/notice-bar'

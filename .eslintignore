@@ -10,5 +10,5 @@ config/
 global.d.ts
 app.ts
 
-*.test.tsx
+tests/
 demos/

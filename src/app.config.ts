@@ -6,6 +6,7 @@ export default defineAppConfig({
     'pages/dot-loading/index',
     'pages/button/index',
     'pages/list/index',
+    'pages/mask/index',
   ],
   window: {
     backgroundTextStyle: 'light',
