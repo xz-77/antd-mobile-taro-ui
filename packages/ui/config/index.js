@@ -11,7 +11,7 @@ const config = {
     375: 2 / 1,
   },
   sourceRoot: 'src',
-  outputRoot: '../../dist',
+  outputRoot: 'dist',
   plugins: [],
   defineConstants: {},
   copy: {

@@ -13,7 +13,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
-    "release": "standard-version"
+    "release": "standard-version",
+    "start:ui": "lerna run dev:weapp"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
