@@ -1,8 +1,6 @@
 import React from 'react';
 import { List } from 'antd-mobile';
-import { Image } from '@tarojs/components';
 import { RightOutline } from '../right-outline';
-import { users } from './users';
 // import {
 //   UnorderedListOutline,
 //   PayCircleOutline,
@@ -19,10 +17,7 @@ export default () => {
       </List>
 
       <List header='可点击列表'>
-        <List.Item
-          prefix={<Image src={users[2].avatar} style={{ width: 17, height: 17 }} />}
-          onClick={() => {}}
-        >
+        <List.Item prefix={<RightOutline />} onClick={() => {}}>
           账单
         </List.Item>
         <List.Item prefix={<RightOutline />} onClick={() => {}}>

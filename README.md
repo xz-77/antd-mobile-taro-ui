@@ -17,9 +17,9 @@
 | `Space`      | 间距       | `done`  | -                                                                                       |
 | `DotLoading` | 点状加载中 | `done`  | 由于小程序不支持svg，这里使用css3动画完成，动画与antd表现一致，区别是不支持自动适配字号 |
 | `Button`     | 按钮       | `done`  | 不支持type、onMouseDown、onMouseUp属性                                                  |
-| `List`       | 列表       | `done`  | demo4和demo5不支持展示                                                                  |
+| `List`       | 列表       | `done`  | antd-mobile的demo4和demo5不支持展示                                                     |
 | `Mask`       | 遮罩层     | `done`  | 有修改精简实现方式，demo展示是一样的                                                    |
-| `Popup`      | 弹出层     | `done`  | react-spring动画不能复用，使用简单的transition实现动画                                  |
+| `Popup`      | 弹出层     | `done`  | react-spring动画不能复用，使用transition实现动画                                        |
 
 
 ## 图表 ec-canvas

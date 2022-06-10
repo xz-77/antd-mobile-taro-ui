@@ -8,6 +8,7 @@ export default defineAppConfig({
     'pages/list/index',
     'pages/mask/index',
     'pages/popup/index',
+    'pages/space/index',
   ],
   window: {
     backgroundTextStyle: 'light',
