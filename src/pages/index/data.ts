@@ -21,7 +21,7 @@ export const data = [
   },
   {
     title: 'DotLoading点状加载中',
-    desc: '由于小程序不支持svg，这里使用css3动画完成，不支持自动适配字号',
+    desc: '由于小程序不支持svg，这里使用css3动画，不支持自动适配字号',
     url: '/pages/dot-loading/index',
   },
   {
