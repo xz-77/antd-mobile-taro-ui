@@ -1,0 +1,43 @@
+.adm-dot-loading {
+  display: inline-block;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    .dot {
+      display: block;
+      width: 3px;
+      height: 3px;
+      border-radius: 100%;
+      animation: beat 1.5s ease;
+      animation-iteration-count: infinite;
+
+      &.a {
+        animation-delay: 0s;
+      }
+      &.b {
+        margin: 0 6px;
+        animation-delay: 0.15s;
+      }
+      &.c {
+        animation-delay: 0.3s;
+      }
+    }
+  }
+  @keyframes beat {
+    0% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-3px);
+    }
+    40% {
+      transform: translateY(3px);
+    }
+    60% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

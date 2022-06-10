@@ -1,14 +1,13 @@
 {
-  "extends": "./tsconfig.base.json",
+  // "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": "./", // 设置基本相对路径
-    "outDir": "./dist",
-    "paths": {
-      "@/*": ["./src/*"],
-      "antd-mobile": ["./src/index.ts"],
-      "demos": ["./src/demos"]
-    }
+    // "baseUrl": "./", // 设置基本相对路径
+    // "outDir": "./dist",
+    // "paths": {
+    //   "@/*": ["./src/*"],
+    //   "antd-mobile": ["./src/index.ts"],
+    //   "demos": ["./src/demos"]
+    // }
   },
-  "include": ["src", "global.d.ts"],
   "exclude": [".history", ".husky", "node_modules", ".vscode", "dist"]
 }
