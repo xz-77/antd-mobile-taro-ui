@@ -11,3 +11,4 @@ global.d.ts
 app.ts
 
 *.test.tsx
+demos/

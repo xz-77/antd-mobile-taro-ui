@@ -5,6 +5,7 @@ export default defineAppConfig({
     'pages/radio/index',
     'pages/dot-loading/index',
     'pages/button/index',
+    'pages/list/index',
   ],
   window: {
     backgroundTextStyle: 'light',

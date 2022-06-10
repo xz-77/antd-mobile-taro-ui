@@ -1,8 +1,9 @@
 import React, { FC, ReactNode } from 'react';
 import classNames from 'classnames';
-import { ITouchEvent, View } from '@tarojs/components';
-import { NativeProps, withNativeProps } from '@/utils/native-props';
-import { ArrowIcon } from './arrow-icon';
+import { View } from '@tarojs/components';
+import { RightOutline } from './right-outline';
+import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { isNodeWithContent } from '../../utils/is-node-with-content';
 
 const classPrefix = `adm-list-item`;
 
@@ -15,7 +16,7 @@ export type ListItemProps = {
   clickable?: boolean;
   arrow?: boolean | ReactNode;
   disabled?: boolean;
-  onClick?: (e: ITouchEvent) => void;
+  onClick?: (e: React.MouseEvent) => void;
 } & NativeProps<'--prefix-width' | '--align-items' | '--active-background-color'>;
 
 export const ListItem: FC<ListItemProps> = props => {
@@ -24,18 +25,24 @@ export const ListItem: FC<ListItemProps> = props => {
 
   const content = (
     <View className={`${classPrefix}-content`}>
-      {props.prefix && <View className={`${classPrefix}-content-prefix`}>{props.prefix}</View>}
+      {isNodeWithContent(props.prefix) && (
+        <View className={`${classPrefix}-content-prefix`}>{props.prefix}</View>
+      )}
       <View className={`${classPrefix}-content-main`}>
-        {props.title && <View className={`${classPrefix}-title`}>{props.title}</View>}
+        {isNodeWithContent(props.title) && (
+          <View className={`${classPrefix}-title`}>{props.title}</View>
+        )}
         {props.children}
-        {props.description && (
+        {isNodeWithContent(props.description) && (
           <View className={`${classPrefix}-description`}>{props.description}</View>
         )}
       </View>
-      {props.extra && <View className={`${classPrefix}-content-extra`}>{props.extra}</View>}
-      {arrow && (
+      {isNodeWithContent(props.extra) && (
+        <View className={`${classPrefix}-content-extra`}>{props.extra}</View>
+      )}
+      {isNodeWithContent(arrow) && (
         <View className={`${classPrefix}-content-arrow`}>
-          {arrow === true ? <ArrowIcon /> : arrow}
+          {arrow === true ? <RightOutline /> : arrow}
         </View>
       )}
     </View>
@@ -43,27 +50,17 @@ export const ListItem: FC<ListItemProps> = props => {
 
   return withNativeProps(
     props,
-    // React.createElement(
-    //   'View',
-    //   {
-    //     className: classNames(
-    //       `${classPrefix}`,
-    //       clickable ? ['adm-plain-anchor'] : [],
-    //       props.disabled && `${classPrefix}-disabled`,
-    //     ),
-    //     onClick: props.disabled ? undefined : props.onClick,
-    //   },
-    //   content,
-    // ),
-    <View
-      className={classNames(
-        `${classPrefix}`,
-        clickable ? ['adm-plain-anchor'] : [],
-        props.disabled && `${classPrefix}-disabled`
-      )}
-      onClick={props.disabled ? undefined : props.onClick}
-    >
-      {content}
-    </View>
+    React.createElement(
+      View,
+      {
+        className: classNames(
+          `${classPrefix}`,
+          clickable ? ['adm-plain-anchor'] : [],
+          props.disabled && `${classPrefix}-disabled`
+        ),
+        onClick: props.disabled ? undefined : props.onClick,
+      },
+      content
+    )
   );
 };

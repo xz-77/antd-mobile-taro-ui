@@ -2,9 +2,9 @@
 
 ## components
 
-核心：基于Taro框架尽最大可能与Ant Design Mobile 5.13.1的api保持100%一致，总体代码80%以上会直接复制Ant Design Mobile大佬们写的源码，剩余的不到20%主要还是为了适配微信小程序(多多学习Ant Design Mobile开发者大佬们写的代码)
+核心：基于Taro框架以antd-mobile的设计为标准，尽最大可能与Ant Design Mobile 5.13.1的api保持100%一致，目前来看总体代码75%以上会直接复制Ant Design Mobile大佬们的源码，剩余的25%主要还是为了适配小程序(多多学习Ant Design Mobile开发者大佬们写的代码)
 
-个人观点：站在巨人的肩膀上，才能造出高质量的轮子
+站在巨人的肩膀上，造出高质量的轮子
 
 ## 进度展示和兼容情况
 
@@ -17,7 +17,7 @@
 | `Space`      | 间距       | `done`  | no                                                                                      |
 | `DotLoading` | 点状加载中 | `done`  | 由于小程序不支持svg，这里使用css3动画完成，动画与antd表现一致，区别是不支持自动适配字号 |
 | `Button`     | 按钮       | `done`  | 不支持type、onMouseDown、onMouseUp属性                                                  |
-| `List`       | 列表       | `doing` |                                                                                         |
+| `List`       | 列表       | `done`  | demo4和demo5不支持展示                                                                  |
 | `Mask`       | 遮罩层     | `doing` |                                                                                         |
 | `Popup`      | 弹出层     | `doing` |                                                                                         |
 
