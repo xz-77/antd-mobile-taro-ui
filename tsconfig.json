@@ -8,6 +8,8 @@
     "types": ["jest"],
     "strict": true,
     "skipLibCheck": true,
-    "declaration": true
-  }
+    "declaration": true,
+    "baseUrl": "."
+  },
+  "exclude": [".history", ".husky", "node_modules", ".vscode", "dist"]
 }
