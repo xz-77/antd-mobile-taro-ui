@@ -1,16 +1,9 @@
 {
-  "private": true,
   "name": "antd-mobile-taro-ui",
   "version": "1.0.0",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "templateInfo": {
-    "name": "default",
-    "typescript": true,
-    "css": "less"
-  },
+  "private": true,
+  "description": "基于taro的微信小程序组件库",
+  "author": "",
   "workspaces": {
     "packages": [
       "packages/*"
@@ -21,20 +14,7 @@
     "lint-staged": "lint-staged",
     "prepare": "husky install",
     "release": "standard-version",
-    "start": "dumi dev",
-    "docs:build": "dumi build",
-    "docs:deploy": "gh-pages -d docs-dist",
-    "build": "father-build",
-    "deploy": "npm run docs:build && npm run docs:deploy",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build"
-  },
-  "module": "es/index.js",
-  "typings": "es/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+    "start:ui": "lerna run dev:weapp"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -55,6 +35,11 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.4.3",
@@ -71,25 +56,36 @@
     "react-virtualized": "^9.22.3"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.15.1",
-    "@testing-library/react": "^12.1.2",
-    "@types/jest": "^27.0.3",
-    "@umijs/fabric": "^2.8.1",
-    "@umijs/test": "^3.0.5",
-    "dumi": "^1.1.0",
-    "dumi-theme-mobile": "^1.1.22",
-    "father-build": "^1.17.2",
-    "gh-pages": "^3.0.0",
-    "prettier": "^2.2.1",
-    "yorkie": "^2.0.0",
+    "@babel/core": "^7.8.0",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "@tarojs/mini-runner": "3.4.3",
+    "@tarojs/webpack-runner": "3.4.3",
+    "@types/classnames": "^2.3.1",
+    "@types/react": "^17.0.2",
+    "@types/react-virtualized": "^9.21.21",
+    "@types/webpack-env": "^1.13.6",
+    "@types/wechat-miniprogram": "^3.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "babel-preset-taro": "3.4.3",
     "commitizen": "^4.2.4",
+    "cross-env": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
+    "lerna": "^4.0.0",
     "lint-staged": "^12.3.7",
     "standard-version": "^9.3.2",
-    "typescript": "^4.1.0"
-    
+    "typescript": "^4.1.0",
+    "verify-fabric": "^1.1.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "less"
   }
 }

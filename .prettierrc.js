@@ -1,5 +1,1 @@
-const fabric = require('verify-fabric/dist/prettier');
-
-module.exports = {
-  ...fabric,
-};
+module.exports = require('@umijs/fabric').prettier;
