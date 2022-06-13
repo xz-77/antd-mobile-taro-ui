@@ -48,6 +48,7 @@
     "lodash": "^4.17.21",
     "lorem-ipsum": "^2.0.4",
     "react": "^17.0.0",
+    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.0",
     "react-virtualized": "^9.22.3"
   },
