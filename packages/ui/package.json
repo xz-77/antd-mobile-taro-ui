@@ -35,7 +35,7 @@
     "dev:swan": "npm run build:swan -- --watch",
     "dev:tt": "npm run build:tt -- --watch",
     "dev:weapp": "npm run build:weapp -- --watch",
-    "build:component": "gulp"
+    "build": "gulp"
   },
   "browserslist": [
     "last 3 versions",

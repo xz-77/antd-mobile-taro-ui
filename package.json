@@ -1,12 +1,7 @@
 {
   "private": true,
   "name": "antd-mobile-taro-ui",
-  "version": "1.0.0",
-  "templateInfo": {
-    "name": "default",
-    "typescript": true,
-    "css": "less"
-  },
+  "version": "0.0.0",
   "scripts": {
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged",
