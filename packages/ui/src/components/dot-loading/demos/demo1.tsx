@@ -1,7 +1,7 @@
-import React from 'react';
 import { Text, View } from '@tarojs/components';
 import { DotLoading } from 'antd-mobile';
 import { DemoBlock } from 'demos';
+import React from 'react';
 
 export default () => {
   return (

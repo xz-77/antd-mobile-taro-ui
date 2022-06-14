@@ -1,9 +1,9 @@
-import React, { useState, FC } from 'react';
 import { Button, Mask, Space } from 'antd-mobile';
 import { DemoBlock } from 'demos';
+import React, { FC, useState } from 'react';
 
-import './demo1.less';
 import { View } from '@tarojs/components';
+import './demo1.less';
 
 // 基础用法
 const Simple: FC = () => {

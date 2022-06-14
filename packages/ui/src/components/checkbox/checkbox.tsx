@@ -1,11 +1,11 @@
-import React, { FC, useContext } from 'react';
-import classNames from 'classnames';
-import { View } from '@tarojs/components';
 import { NativeProps, withNativeProps } from '@/utils/native-props';
-import { CheckboxGroupContext } from './group-context';
 import { usePropsValue } from '@/utils/use-props-value';
 import { mergeProps } from '@/utils/with-default-props';
+import { View } from '@tarojs/components';
+import classNames from 'classnames';
+import React, { FC, useContext } from 'react';
 import { CheckIcon } from './check-icon';
+import { CheckboxGroupContext } from './group-context';
 
 const classPrefix = `adm-checkbox`;
 
@@ -55,11 +55,7 @@ export const Checkbox: FC<CheckboxProps> = p => {
 
   const renderIcon = () => {
     if (props.icon) {
-      return (
-        <View className={`${classPrefix}-custom-icon`}>
-          {props.icon(checked, props.indeterminate)}
-        </View>
-      );
+      return <View className={`${classPrefix}-custom-icon`}>{props.icon(checked, props.indeterminate)}</View>;
     }
 
     return (

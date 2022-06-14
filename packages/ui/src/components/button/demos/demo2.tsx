@@ -1,7 +1,7 @@
-import React from 'react';
+import { Text } from '@tarojs/components';
 import { Button, Space } from 'antd-mobile';
 import { DemoBlock, sleep } from 'demos';
-import { Text } from '@tarojs/components';
+import React from 'react';
 import { CheckIcon } from '../../checkbox/check-icon';
 // import { SearchOutline } from 'antd-mobile-icons'
 

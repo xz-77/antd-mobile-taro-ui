@@ -1,6 +1,6 @@
-import React from 'react';
 import { Button, Space } from 'antd-mobile';
 import { DemoBlock } from 'demos';
+import React from 'react';
 
 export default () => {
   return (

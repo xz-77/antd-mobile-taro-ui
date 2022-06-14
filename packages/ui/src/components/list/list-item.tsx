@@ -1,9 +1,9 @@
-import React, { FC, ReactNode } from 'react';
+import { ITouchEvent, View } from '@tarojs/components';
 import classNames from 'classnames';
-import { View } from '@tarojs/components';
-import { RightOutline } from './right-outline';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
+import React, { FC, ReactNode } from 'react';
 import { isNodeWithContent } from '../../utils/is-node-with-content';
+import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { RightOutline } from './right-outline';
 
 const classPrefix = `adm-list-item`;
 
@@ -16,7 +16,7 @@ export type ListItemProps = {
   clickable?: boolean;
   arrow?: boolean | ReactNode;
   disabled?: boolean;
-  onClick?: (e: React.MouseEvent) => void;
+  onClick?: (e: ITouchEvent) => void;
 } & NativeProps<'--prefix-width' | '--align-items' | '--active-background-color'>;
 
 export const ListItem: FC<ListItemProps> = props => {
@@ -25,25 +25,17 @@ export const ListItem: FC<ListItemProps> = props => {
 
   const content = (
     <View className={`${classPrefix}-content`}>
-      {isNodeWithContent(props.prefix) && (
-        <View className={`${classPrefix}-content-prefix`}>{props.prefix}</View>
-      )}
+      {isNodeWithContent(props.prefix) && <View className={`${classPrefix}-content-prefix`}>{props.prefix}</View>}
       <View className={`${classPrefix}-content-main`}>
-        {isNodeWithContent(props.title) && (
-          <View className={`${classPrefix}-title`}>{props.title}</View>
-        )}
+        {isNodeWithContent(props.title) && <View className={`${classPrefix}-title`}>{props.title}</View>}
         {props.children}
         {isNodeWithContent(props.description) && (
           <View className={`${classPrefix}-description`}>{props.description}</View>
         )}
       </View>
-      {isNodeWithContent(props.extra) && (
-        <View className={`${classPrefix}-content-extra`}>{props.extra}</View>
-      )}
+      {isNodeWithContent(props.extra) && <View className={`${classPrefix}-content-extra`}>{props.extra}</View>}
       {isNodeWithContent(arrow) && (
-        <View className={`${classPrefix}-content-arrow`}>
-          {arrow === true ? <RightOutline /> : arrow}
-        </View>
+        <View className={`${classPrefix}-content-arrow`}>{arrow === true ? <RightOutline /> : arrow}</View>
       )}
     </View>
   );

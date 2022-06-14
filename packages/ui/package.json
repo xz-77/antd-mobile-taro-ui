@@ -1,16 +1,21 @@
 {
   "name": "antd-mobile-taro-ui",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "基于taro的微信小程序组件库",
-  "author": "",
+  "author": "7",
+  "license": "MIT",
   "sideEffects": [
     "**/*.css",
     "**/*.less",
     "**/*.scss"
   ],
   "files": [
-    "dist"
+    "lib"
   ],
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/es/index.js",
+  "types": "./lib/es/index.d.ts",
+  "typings": "./lib/es/index.d.ts",
   "scripts": {
     "build:alipay": "taro build --type alipay",
     "build:h5": "taro build --type h5",
@@ -29,7 +34,8 @@
     "dev:rn": "npm run build:rn -- --watch",
     "dev:swan": "npm run build:swan -- --watch",
     "dev:tt": "npm run build:tt -- --watch",
-    "dev:weapp": "npm run build:weapp -- --watch"
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "build:component": "gulp"
   },
   "browserslist": [
     "last 3 versions",
@@ -48,9 +54,8 @@
     "lodash": "^4.17.21",
     "lorem-ipsum": "^2.0.4",
     "react": "^17.0.0",
-    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.0",
-    "react-virtualized": "^9.22.3"
+    "react-native": "^0.68.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
@@ -58,20 +63,24 @@
     "@tarojs/webpack-runner": "3.4.11",
     "@types/classnames": "^2.3.1",
     "@types/react": "^17.0.2",
-    "@types/react-virtualized": "^9.21.21",
     "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "babel-preset-taro": "3.4.11",
     "cross-env": "^7.0.3",
+    "del": "^6.1.1",
     "eslint": "^8.12.0",
     "eslint-config-taro": "3.4.11",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "stylelint": "^14.4.0",
     "typescript": "^4.1.0",
-    "verify-fabric": "^1.1.4"
+    "verify-fabric": "^1.2.0"
   },
   "templateInfo": {
     "name": "default",
