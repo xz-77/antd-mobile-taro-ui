@@ -1,9 +1,9 @@
-import classNames from 'classnames';
-import React, { FC } from 'react';
-import type { ReactElement } from 'react';
 import { ITouchEvent, View } from '@tarojs/components';
-import { NativeProps, withNativeProps } from '@/utils/native-props';
-import { mergeProps } from '@/utils/with-default-props';
+import classNames from 'classnames';
+import type { ReactElement } from 'react';
+import React, { FC } from 'react';
+import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { mergeProps } from '../../utils/with-default-props';
 import Mask from '../mask';
 
 const classPrefix = `adm-popup`;

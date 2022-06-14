@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import { mergeProps } from '@/utils/with-default-props';
 import { RadioValue } from '.';
+import { usePropsValue } from '../../utils/use-props-value';
+import { mergeProps } from '../../utils/with-default-props';
 import { RadioGroupContext } from './group-context';
-import { usePropsValue } from '@/utils/use-props-value';
 
 export interface RadioGroupProps {
   value?: RadioValue | null;

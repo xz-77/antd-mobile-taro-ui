@@ -1,11 +1,11 @@
-import React, { FC, useContext } from 'react';
-import classNames from 'classnames';
 import { View } from '@tarojs/components';
-import { RadioGroupContext } from './group-context';
-import { usePropsValue } from '@/utils/use-props-value';
-import { mergeProps } from '@/utils/with-default-props';
+import classNames from 'classnames';
+import React, { FC, useContext } from 'react';
+import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { usePropsValue } from '../../utils/use-props-value';
+import { mergeProps } from '../../utils/with-default-props';
 import { CheckIcon } from './check-icon';
-import { NativeProps, withNativeProps } from '@/utils/native-props';
+import { RadioGroupContext } from './group-context';
 
 const classPrefix = `adm-radio`;
 
@@ -36,7 +36,7 @@ export const Radio: FC<RadioProps> = p => {
     onChange: props.onChange,
   });
 
-  let {disabled} = props;
+  let { disabled } = props;
 
   const { value } = props;
   if (groupContext && value !== undefined) {

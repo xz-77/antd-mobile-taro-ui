@@ -1,9 +1,9 @@
-import { NativeProps, withNativeProps } from '@/utils/native-props';
-import { usePropsValue } from '@/utils/use-props-value';
-import { mergeProps } from '@/utils/with-default-props';
 import { View } from '@tarojs/components';
 import classNames from 'classnames';
 import React, { FC, useContext } from 'react';
+import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { usePropsValue } from '../../utils/use-props-value';
+import { mergeProps } from '../../utils/with-default-props';
 import { CheckIcon } from './check-icon';
 import { CheckboxGroupContext } from './group-context';
 

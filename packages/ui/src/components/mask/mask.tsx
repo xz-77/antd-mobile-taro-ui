@@ -1,10 +1,10 @@
-import React, { useMemo } from 'react';
-import type { ReactElement } from 'react';
-import { View } from '@tarojs/components';
 import type { ITouchEvent } from '@tarojs/components';
-import { NativeProps, withNativeProps } from '@/utils/native-props';
+import { View } from '@tarojs/components';
+import type { ReactElement } from 'react';
+import React, { useMemo } from 'react';
+import { NativeProps, withNativeProps } from '../../utils/native-props';
 
-import { mergeProps } from '@/utils/with-default-props';
+import { mergeProps } from '../../utils/with-default-props';
 
 const classPrefix = `adm-mask`;
 
@@ -57,9 +57,7 @@ export const Mask: React.FC<MaskProps> = p => {
         opacity: props.visible ? '1' : '0',
       }}
     >
-      {props.onMaskClick && (
-        <View className={`${classPrefix}-aria-button`} onClick={props.onMaskClick} />
-      )}
+      {props.onMaskClick && <View className={`${classPrefix}-aria-button`} onClick={props.onMaskClick} />}
       <View className={`${classPrefix}-content`}>{props.children}</View>
     </View>
   );

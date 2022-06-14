@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import { mergeProps } from '@/utils/with-default-props';
 import { CheckboxValue } from '.';
+import { usePropsValue } from '../../utils/use-props-value';
+import { mergeProps } from '../../utils/with-default-props';
 import { CheckboxGroupContext } from './group-context';
-import { usePropsValue } from '@/utils/use-props-value';
 
 export interface CheckboxGroupProps {
   value?: CheckboxValue[];

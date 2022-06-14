@@ -21,8 +21,8 @@
     "typeRoots": ["./node_modules/@types", "./src/typings"],
     "paths": {
       "@/*": ["./src/*"],
-      "antd-mobile": ["./src/index.ts"],
-      "demos": ["./src/demos"]
+      "antd-mobile": ["./lib/es/index"],
+      "demos": ["./lib/es/demos"]
     }
   },
   "include": ["src", "global.d.ts"],

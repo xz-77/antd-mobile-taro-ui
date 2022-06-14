@@ -16,7 +16,7 @@ function buildStyle() {
   return gulp
     .src(['./src/**/*.less'], {
       base: './src/',
-      ignore: ['**/demos/**/*', '**/tests/**/*'],
+      ignore: ['**/tests/**/*'],
     })
     .pipe(
       less({
@@ -38,7 +38,7 @@ function buildES() {
   });
   return gulp
     .src(['./src/**/*.{ts,tsx}'], {
-      ignore: ['**/demos/**/*', '**/tests/**/*', '**/pages/**/*', '*/app.config.ts', '*/app.ts', '*/app.less'],
+      ignore: ['**/tests/**/*', '**/pages/**/*', '*/app.config.ts', '*/app.ts', '*/app.less'],
     })
     .pipe(tsProject)
     .pipe(
