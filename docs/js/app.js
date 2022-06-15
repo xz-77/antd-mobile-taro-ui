@@ -137,7 +137,7 @@
     (__webpack_require__.o = function (o, u) {
       return Object.prototype.hasOwnProperty.call(o, u);
     }),
-    (__webpack_require__.p = '/'),
+    (__webpack_require__.p = './'),
     (__webpack_require__.oe = function (o) {
       throw (console.error(o), o);
     });
