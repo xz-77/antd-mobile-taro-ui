@@ -58,7 +58,9 @@ const config = {
     },
   },
   alias: {
-    '@': path.resolve(__dirname, '..', 'src'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    // 'antd-mobile': path.resolve(__dirname, '..', 'lib/es/index'),
+    // demos: path.resolve(__dirname, '..', 'lib/es/demos'),
     'antd-mobile': path.resolve(__dirname, '..', 'src/index'),
     demos: path.resolve(__dirname, '..', 'src/demos'),
   },

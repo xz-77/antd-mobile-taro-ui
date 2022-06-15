@@ -1,5 +1,4 @@
 import type { IConfig } from 'dumi';
-import path from 'path';
 import { menus } from './menus';
 
 const config: IConfig = {
@@ -12,10 +11,8 @@ const config: IConfig = {
     includes: ['docs', 'packages/ui/src'],
   },
   alias: {
-    'antd-mobile': path.resolve(__dirname, '..', 'packages/ui/src/index'),
-    demos: path.resolve(__dirname, '..', './packages/ui/src/demos'),
-    '@/styles': path.resolve(__dirname, '..', './packages/ui/src/styles'),
-    '@/utils': path.resolve(__dirname, '..', './packages/ui/src/utils'),
+    // 'antd-mobile': path.resolve(__dirname, '..', 'packages/ui/lib/es/index'),
+    // demos: path.resolve(__dirname, '..', 'packages/ui/lib/es/demos'),
   },
   menus,
   locales: [

@@ -20,7 +20,7 @@
     "declaration": true,
     "typeRoots": ["./node_modules/@types", "./src/typings"],
     "paths": {
-      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
       "antd-mobile": ["./src/index"],
       "demos": ["./src/demos"]
     }

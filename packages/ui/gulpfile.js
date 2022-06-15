@@ -27,7 +27,7 @@ function buildStyle() {
     .pipe(gulp.dest('./lib/cjs'));
 }
 
-function buildAssets() {
+function copyAssets() {
   return gulp.src(['./src/**/assets/*']).pipe(gulp.dest('./lib/es')).pipe(gulp.dest('./lib/cjs'));
 }
 
@@ -49,4 +49,31 @@ function buildES() {
     .pipe(gulp.dest('./lib/es'));
 }
 
-exports.default = gulp.series(clean, buildAssets, buildStyle, buildES);
+function buildCJS() {
+  return gulp
+    .src(['lib/es/**/*.js'])
+    .pipe(
+      babel({
+        plugins: ['@babel/plugin-transform-modules-commonjs'],
+      })
+    )
+    .pipe(gulp.dest('lib/cjs/'));
+}
+
+function buildDeclaration() {
+  const tsProject = ts({
+    ...tsconfig.compilerOptions,
+    module: 'ES6',
+    declaration: true,
+    emitDeclarationOnly: true,
+  });
+  return gulp
+    .src(['src/**/*.{ts,tsx}'], {
+      ignore: ['**/demos/**/*', '**/tests/**/*'],
+    })
+    .pipe(tsProject)
+    .pipe(gulp.dest('lib/es/'))
+    .pipe(gulp.dest('lib/cjs/'));
+}
+
+exports.default = gulp.series(clean, buildES, buildCJS, gulp.parallel(buildDeclaration, buildStyle), copyAssets);
