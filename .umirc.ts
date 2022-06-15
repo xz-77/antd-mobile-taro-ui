@@ -11,8 +11,8 @@ export default defineConfig({
     includes: ['docs', 'packages/ui/src'],
   },
   alias: {
-    'antd-mobile': path.resolve(__dirname, './packages/ui/lib/es/index'),
-    demos: path.resolve(__dirname, './packages/ui/lib/es/demos'),
+    'antd-mobile': path.resolve(__dirname, './packages/ui/src/index'),
+    demos: path.resolve(__dirname, './packages/ui/src/demos'),
     // '@/': path.resolve(__dirname, './packages/ui/src/'),
     '@/styles': path.resolve(__dirname, './packages/ui/src/styles'),
     '@/utils': path.resolve(__dirname, './packages/ui/src/utils'),

@@ -1,6 +1,7 @@
-import { List } from 'antd-mobile';
 import { Image } from '@tarojs/components';
+import { List } from 'antd-mobile';
 import React from 'react';
+import './demo2.less';
 import { users } from './users';
 
 export default () => {
@@ -12,7 +13,7 @@ export default () => {
           prefix={
             <Image
               src={user.avatar}
-              style={{ borderRadius: 20, width: 40, height: 40 }}
+              className='demo2-image'
               // fit='cover'
               mode='aspectFit'
               // width={40}
