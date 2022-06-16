@@ -11,7 +11,7 @@ const config = {
     375: 2 / 1,
   },
   sourceRoot: 'src',
-  outputRoot: `dist-${process.env.TARO_ENV}`,
+  outputRoot: `${process.env.TARO_ENV === 'h5' ? 'docs' : 'dist'}`,
   plugins: [],
   defineConstants: {},
   copy: {
