@@ -1,15 +1,5 @@
-const prettier = require('@umijs/fabric').prettier;
+const fabric = require('verify-fabric/dist/prettier');
+
 module.exports = {
-  ...prettier,
-  printWidth: 120,
-  tabWidth: 2,
-  useTabs: false,
-  semi: true,
-  singleQuote: true,
-  jsxSingleQuote: true,
-  trailingComma: 'es5',
-  bracketSpacing: true,
-  bracketSameLine: false,
-  arrowParens: 'avoid',
-  endOfLine: 'lf',
+  ...fabric,
 };

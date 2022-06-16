@@ -1,26 +1,101 @@
 {
-  "private": true,
   "name": "antd-mobile-taro-ui",
   "version": "0.0.0",
+  "description": "基于taro的微信小程序组件库",
+  "author": "7",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css",
+    "**/*.less",
+    "**/*.scss"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/es/index.js",
+  "types": "./lib/es/index.d.ts",
+  "typings": "./lib/es/index.d.ts",
   "scripts": {
+    "build:alipay": "taro build --type alipay",
+    "build:h5": "taro build --type h5",
+    "build:jd": "taro build --type jd",
+    "build:qq": "taro build --type qq",
+    "build:quickapp": "taro build --type quickapp",
+    "build:rn": "taro build --type rn",
+    "build:swan": "taro build --type swan",
+    "build:tt": "taro build --type tt",
+    "build:weapp": "taro build --type weapp",
+    "dev:alipay": "npm run build:alipay -- --watch",
+    "dev:h5": "npm run build:h5 -- --watch",
+    "dev:jd": "npm run build:jd -- --watch",
+    "dev:qq": "npm run build:qq -- --watch",
+    "dev:quickapp": "npm run build:quickapp -- --watch",
+    "dev:rn": "npm run build:rn -- --watch",
+    "dev:swan": "npm run build:swan -- --watch",
+    "dev:tt": "npm run build:tt -- --watch",
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "build": "gulp",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
-    "release": "standard-version",
-    "start": "dumi dev",
-    "docs:build": "dumi build",
-    "docs:deploy": "gh-pages -d docs-dist",
-    "build": "father-build",
-    "deploy": "npm run docs:build && npm run docs:deploy",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build"
+    "release": "standard-version"
   },
-  "module": "es/index.js",
-  "typings": "es/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "@tarojs/components": "3.4.11",
+    "@tarojs/plugin-framework-react": "3.4.11",
+    "@tarojs/react": "3.4.11",
+    "@tarojs/runtime": "3.4.11",
+    "@tarojs/taro": "3.4.11",
+    "ahooks": "2.10.14",
+    "classnames": "^2.3.1",
+    "lodash": "^4.17.21",
+    "lorem-ipsum": "^2.0.4",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-native": "^0.68.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@tarojs/mini-runner": "3.4.11",
+    "@tarojs/webpack-runner": "3.4.11",
+    "@types/classnames": "^2.3.1",
+    "@types/react": "^17.0.2",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "babel-preset-taro": "3.4.11",
+    "cross-env": "^7.0.3",
+    "del": "^6.1.1",
+    "eslint": "^8.12.0",
+    "eslint-config-taro": "3.4.11",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "stylelint": "^14.4.0",
+    "typescript": "^4.1.0",
+    "verify-fabric": "^1.2.0",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7"
+  },
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "less"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
@@ -34,28 +109,5 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "react": "^16.12.0 || ^17.0.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
-    "@testing-library/jest-dom": "^5.15.1",
-    "@testing-library/react": "^12.1.2",
-    "@types/jest": "^27.0.3",
-    "@umijs/fabric": "^2.8.1",
-    "@umijs/test": "^3.0.5",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "dumi": "^1.1.0",
-    "dumi-theme-mobile": "^1.1.22",
-    "father-build": "^1.17.2",
-    "gh-pages": "^3.0.0",
-    "husky": "^7.0.4",
-    "lerna": "^5.1.1",
-    "lint-staged": "^12.3.7",
-    "prettier": "^2.2.1",
-    "yorkie": "^2.0.0"
   }
 }

@@ -1,15 +1,30 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es6",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
     "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
     "jsx": "react",
-    "esModuleInterop": true,
-    "types": ["jest"],
-    "strict": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "declaration": true,
-    "baseUrl": "."
+    "typeRoots": ["./node_modules/@types", "./src/typings"],
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "antd-mobile": ["./src/index"],
+      "demos": ["./src/demos"]
+    }
   },
-  "exclude": [".history", ".husky", "node_modules", ".vscode", "dist"]
+  "include": ["src", "global.d.ts"],
+  "compileOnSave": false
 }
