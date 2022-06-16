@@ -14,8 +14,7 @@ deploy_versions/
 /coverage
 
 # dist
-dist/
-lib/
+dist-weapp/
 
 # misc
 .DS_Store
