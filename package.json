@@ -39,7 +39,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
-    "release": "standard-version"
+    "release": "standard-version",
+    "deploy":"gh-pages -d dist/h5"
   },
   "browserslist": [
     "last 3 versions",
@@ -63,6 +64,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@tarojs/mini-runner": "3.4.11",
     "@tarojs/webpack-runner": "3.4.11",
     "@types/classnames": "^2.3.1",
@@ -71,26 +74,25 @@
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "babel-preset-taro": "3.4.11",
+    "commitizen": "^4.2.4",
     "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
     "del": "^6.1.1",
     "eslint": "^8.12.0",
     "eslint-config-taro": "3.4.11",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-less": "^5.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
     "stylelint": "^14.4.0",
     "typescript": "^4.1.0",
-    "verify-fabric": "^1.2.0",
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.7"
+    "verify-fabric": "^1.2.0"
   },
   "templateInfo": {
     "name": "default",
