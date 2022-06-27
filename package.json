@@ -17,6 +17,20 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xz-77/antd-mobile-taro-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xz-77/antd-mobile-taro-ui/issues"
+  },
+  "homepage": "https://github.com/xz-77/antd-mobile-taro-ui#readme",
+  "keywords": [
+    "antd-mobile",
+    "Taro",
+    "miniprogram",
+    "wechat"
+  ],
   "main": "./cjs/index.js",
   "module": "./es/index.js",
   "types": "./es/index.d.ts",
