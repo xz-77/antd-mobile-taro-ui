@@ -1,6 +1,6 @@
 {
   "name": "antd-mobile-taro-ui",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "description": "以antd-mobile为设计标准，基于taro框架的微信小程序组件库",
   "author": "7",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "**/*.scss"
   ],
   "files": [
-    "lib"
+    "./lib"
   ],
   "repository": {
     "type": "git",
