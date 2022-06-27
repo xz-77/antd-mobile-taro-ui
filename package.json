@@ -1,9 +1,14 @@
 {
   "name": "antd-mobile-taro-ui",
   "version": "0.0.0",
-  "description": "基于taro的微信小程序组件库",
+  "description": "以antd-mobile为设计标准，基于taro框架的微信小程序组件库",
   "author": "7",
   "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "sideEffects": [
     "**/*.css",
     "**/*.less",
@@ -12,10 +17,10 @@
   "files": [
     "lib"
   ],
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/es/index.js",
-  "types": "./lib/es/index.d.ts",
-  "typings": "./lib/es/index.d.ts",
+  "main": "./cjs/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "typings": "./es/index.d.ts",
   "scripts": {
     "build:alipay": "taro build --type alipay",
     "build:h5": "taro build --type h5",

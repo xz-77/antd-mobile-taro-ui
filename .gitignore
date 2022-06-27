@@ -15,7 +15,7 @@ deploy_versions/
 
 # dist
 dist/
-dist-weapp/
+lib/
 
 # misc
 .DS_Store
