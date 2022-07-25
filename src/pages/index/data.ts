@@ -39,4 +39,9 @@ export const data = [
     desc: 'react-spring动画不能复用，使用transition实现动画 ',
     url: '/pages/popup/index',
   },
+  {
+    title: 'Divider 分割线',
+    desc: 'react-spring动画不能复用，使用transition实现动画 ',
+    url: '/pages/divider/index',
+  },
 ];

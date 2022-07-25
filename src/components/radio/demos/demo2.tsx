@@ -1,4 +1,4 @@
-import { Radio } from 'antd-mobile';
+import { Radio } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
 import React from 'react';
 

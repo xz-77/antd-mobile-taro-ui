@@ -1,4 +1,4 @@
-import { List } from 'antd-mobile';
+import { List } from 'antd-mobile-taro-ui';
 import React from 'react';
 
 export default () => {

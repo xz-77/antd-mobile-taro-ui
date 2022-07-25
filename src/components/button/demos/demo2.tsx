@@ -1,5 +1,5 @@
 import { Text } from '@tarojs/components';
-import { Button, Space } from 'antd-mobile';
+import { Button, Space } from 'antd-mobile-taro-ui';
 import { DemoBlock, sleep } from 'demos';
 import React from 'react';
 import { CheckIcon } from '../../checkbox/check-icon';

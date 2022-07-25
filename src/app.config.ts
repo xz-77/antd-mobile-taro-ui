@@ -9,6 +9,7 @@ export default defineAppConfig({
     'pages/mask/index',
     'pages/popup/index',
     'pages/space/index',
+    'pages/divider/index',
   ],
   window: {
     backgroundTextStyle: 'light',

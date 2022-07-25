@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Checkbox, Space } from 'antd-mobile';
+import { Checkbox, Space } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
 import { View } from '@tarojs/components';
 

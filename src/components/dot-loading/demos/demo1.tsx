@@ -1,5 +1,5 @@
 import { Text, View } from '@tarojs/components';
-import { DotLoading } from 'antd-mobile';
+import { DotLoading } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
 import React from 'react';
 

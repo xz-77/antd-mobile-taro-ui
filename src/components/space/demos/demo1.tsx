@@ -1,5 +1,5 @@
 import React from 'react';
-import { Space, Button } from 'antd-mobile';
+import { Space, Button } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
 
 export default () => {

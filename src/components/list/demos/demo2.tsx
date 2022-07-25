@@ -1,5 +1,5 @@
 import { Image } from '@tarojs/components';
-import { List } from 'antd-mobile';
+import { List } from 'antd-mobile-taro-ui';
 import React from 'react';
 import './demo2.less';
 import { users } from './users';

@@ -1,4 +1,4 @@
-import { Button, Space } from 'antd-mobile';
+import { Button, Space } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
 import React from 'react';
 

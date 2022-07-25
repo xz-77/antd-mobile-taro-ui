@@ -22,7 +22,7 @@ export { default as Checkbox } from './components/checkbox';
 // export { default as DatePicker } from './components/date-picker'
 // export { default as DatePickerView } from './components/date-picker-view'
 // export { default as Dialog } from './components/dialog'
-// export { default as Divider } from './components/divider'
+export { default as Divider } from './components/divider';
 export { default as DotLoading } from './components/dot-loading';
 // export { default as Dropdown } from './components/dropdown'
 // export { default as Ellipsis } from './components/ellipsis'

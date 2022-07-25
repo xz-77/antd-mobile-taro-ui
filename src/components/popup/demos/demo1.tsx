@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Popup, Space, Button } from 'antd-mobile';
+import { Popup, Space, Button } from 'antd-mobile-taro-ui';
 import { DemoBlock, lorem } from 'demos';
 import { View } from '@tarojs/components';
 

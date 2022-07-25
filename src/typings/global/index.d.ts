@@ -9,6 +9,6 @@ declare module '*.png';
 
 declare module '*.svg';
 
-// declare module 'antd-mobile';
+// declare module 'antd-mobile-taro-ui';
 
 // declare module 'demos';

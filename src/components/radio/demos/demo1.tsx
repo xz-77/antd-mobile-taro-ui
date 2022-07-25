@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Radio, Space } from 'antd-mobile';
+import { Radio, Space } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
 import { View } from '@tarojs/components';
 // import { SmileOutline, SmileFill } from 'antd-mobile-icons'

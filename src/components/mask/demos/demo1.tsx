@@ -1,4 +1,4 @@
-import { Button, Mask, Space } from 'antd-mobile';
+import { Button, Mask, Space } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
 import React, { FC, useState } from 'react';
 

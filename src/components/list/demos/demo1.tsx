@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from 'antd-mobile';
+import { List } from 'antd-mobile-taro-ui';
 import { RightOutline } from '../right-outline';
 // import {
 //   UnorderedListOutline,
