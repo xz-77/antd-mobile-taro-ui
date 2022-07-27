@@ -14192,10 +14192,15 @@ typedarray@^0.0.6:
   resolved "https://registry.npmmirror.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
-typescript@^4.1.0, typescript@^4.4.3, typescript@^4.6.4:
+typescript@^4.4.3, typescript@^4.6.4:
   version "4.7.3"
   resolved "https://registry.npmmirror.com/typescript/-/typescript-4.7.3.tgz#8364b502d5257b540f9de4c40be84c98e23a129d"
   integrity sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==
+
+typescript@~4.6.4:
+  version "4.6.4"
+  resolved "https://registry.npmmirror.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
+  integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
 
 uglify-es@^3.1.9:
   version "3.3.9"
@@ -14577,10 +14582,10 @@ vary@~1.1.2:
   resolved "https://registry.npmmirror.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-verify-fabric@1.4.1:
-  version "1.4.1"
-  resolved "https://registry.npmmirror.com/verify-fabric/-/verify-fabric-1.4.1.tgz#c21c4bce467033e552ac54d30b4f4be837dcc5a2"
-  integrity sha512-yAij3l3BXrzmu+7cHqIzICj0TCis1SKyELSVzn3Lcpaq0I47VHznL6folFSKbH2Nsh6bgAThwguI9pJzVPTn1w==
+verify-fabric@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.npmmirror.com/verify-fabric/-/verify-fabric-1.5.0.tgz#87b9ec2f19d3a0d3091abf9e9a90756a747c7f63"
+  integrity sha512-gqEiZRm/9SQC3QjbZ3JpnpqPyuNf5mgQ9ySmwDaBwvTNdkvnpHe/7J1lgJI4nKrMQsKugagXe/PtIRPz87wnQQ==
 
 vfile-location@^2.0.0:
   version "2.0.6"

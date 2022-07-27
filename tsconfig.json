@@ -1,30 +1,38 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "removeComments": false,
-    "preserveConstEnums": true,
+    "outDir": "./lib",
+    "rootDirs": ["src"],
+    "target": "ES6",
     "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "noImplicitAny": false,
-    "allowSyntheticDefaultImports": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strictNullChecks": true,
-    "sourceMap": true,
-    "baseUrl": ".",
     "jsx": "react",
     "allowJs": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "declaration": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "baseUrl": ".",
     "typeRoots": ["./node_modules/@types", "./src/typings"],
+    "lib": ["ES2016", "DOM"],
     "paths": {
       "@/components/*": ["./src/components/*"],
-      "antd-mobile": ["./src/index"],
+      "antd-mobile-taro-ui": ["./src/index"],
       "demos": ["./src/demos"]
-    }
+    },
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+
+    "module": "CommonJS",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true
   },
   "include": ["src", "global.d.ts"],
-  "compileOnSave": false
+  "exclude": ["node_modules", "lib", "dist", "config"]
 }

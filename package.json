@@ -129,8 +129,8 @@
     "stylelint-config-standard": "^26.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-order": "^5.0.0",
-    "typescript": "^4.1.0",
-    "verify-fabric": "1.4.1"
+    "typescript": "~4.6.4",
+    "verify-fabric": "1.5.0"
   },
   "templateInfo": {
     "name": "default",

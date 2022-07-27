@@ -2,10 +2,10 @@ import React, { forwardRef, useImperativeHandle, useRef, useState } from 'react'
 import classNames from 'classnames';
 import { View } from '@tarojs/components';
 import type { ButtonProps as BPS, ITouchEvent } from '@tarojs/components';
+import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
+import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
+import { isPromise } from 'antd-mobile/es/utils/validate';
 import DotLoading from '../dot-loading';
-import { mergeProps } from '../../utils/with-default-props';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
-import { isPromise } from '../../utils/validate';
 
 const classPrefix = `adm-button`;
 

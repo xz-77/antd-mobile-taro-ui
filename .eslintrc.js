@@ -1,11 +1,10 @@
+const eslint = require('verify-fabric/dist/eslint');
+
 module.exports = {
-  extends: [require.resolve('verify-fabric/dist/eslint')],
+  ...eslint,
   rules: {
-    'compat/compat': 0,
-    'react/jsx-uses-react': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'jsx-quotes': ['error', 'prefer-single'],
-    'react/function-component-definition': 0,
-    '@typescript-eslint/no-unused-vars': 1,
+    ...eslint.rules,
+    '@typescript-eslint/ban-ts-comment': 0,
+    '@typescript-eslint/naming-convention': 0,
   },
 };

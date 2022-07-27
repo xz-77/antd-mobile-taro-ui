@@ -38,27 +38,29 @@ function copyAssets() {
 function buildES() {
   const tsProject = ts({
     ...tsconfig.compilerOptions,
-    module: 'ES6',
+    module: 'ES2022',
   });
-  return gulp
-    .src(['src/**/*.{ts,tsx}'], {
-      ignore: [
-        '**/demos/**/*',
-        '**/tests/**/*',
-        '**/pages/**/*',
-        '**/app.ts',
-        '**/app.less',
-        '**/app.config.ts',
-        '**/index.html',
-      ],
-    })
-    .pipe(tsProject)
-    .pipe(
-      babel({
-        plugins: ['./babel-transform-less-to-css'],
+  return (
+    gulp
+      .src(['src/**/*.{ts,tsx}'], {
+        ignore: [
+          '**/demos/**/*',
+          '**/tests/**/*',
+          '**/pages/**/*',
+          '**/app.ts',
+          '**/app.less',
+          '**/app.config.ts',
+          '**/index.html',
+        ],
       })
-    )
-    .pipe(gulp.dest('./lib/es'));
+      .pipe(tsProject)
+      // .pipe(
+      //   babel({
+      //     plugins: ['./babel-transform-less-to-css'],
+      //   })
+      // )
+      .pipe(gulp.dest('./lib/es'))
+  );
 }
 
 function buildCJS() {
@@ -70,6 +72,10 @@ function buildCJS() {
       })
     )
     .pipe(gulp.dest('lib/cjs/'));
+}
+
+function copyMetaFiles() {
+  return gulp.src(['./README.md', './LICENSE']).pipe(gulp.dest('./lib/'));
 }
 
 function buildDeclaration() {
@@ -88,4 +94,11 @@ function buildDeclaration() {
     .pipe(gulp.dest('lib/cjs/'));
 }
 
-exports.default = gulp.series(clean, buildES, buildCJS, gulp.parallel(buildDeclaration, buildStyle), copyAssets);
+exports.default = gulp.series(
+  clean,
+  buildES,
+  buildCJS,
+  gulp.parallel(buildDeclaration, buildStyle),
+  copyAssets,
+  copyMetaFiles
+);

@@ -1,5 +1,6 @@
 # common
 dist/
+lib/
 
 # .eslintrc.js
 .eslintrc.js
