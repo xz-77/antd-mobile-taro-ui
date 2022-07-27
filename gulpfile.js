@@ -40,27 +40,25 @@ function buildES() {
     ...tsconfig.compilerOptions,
     module: 'ES2022',
   });
-  return (
-    gulp
-      .src(['src/**/*.{ts,tsx}'], {
-        ignore: [
-          '**/demos/**/*',
-          '**/tests/**/*',
-          '**/pages/**/*',
-          '**/app.ts',
-          '**/app.less',
-          '**/app.config.ts',
-          '**/index.html',
-        ],
+  return gulp
+    .src(['src/**/*.{ts,tsx}'], {
+      ignore: [
+        '**/demos/**/*',
+        '**/tests/**/*',
+        '**/pages/**/*',
+        '**/app.ts',
+        '**/app.less',
+        '**/app.config.ts',
+        '**/index.html',
+      ],
+    })
+    .pipe(tsProject)
+    .pipe(
+      babel({
+        plugins: ['./babel-transform-less-to-css'],
       })
-      .pipe(tsProject)
-      // .pipe(
-      //   babel({
-      //     plugins: ['./babel-transform-less-to-css'],
-      //   })
-      // )
-      .pipe(gulp.dest('./lib/es'))
-  );
+    )
+    .pipe(gulp.dest('./lib/es'));
 }
 
 function buildCJS() {
