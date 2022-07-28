@@ -37,7 +37,7 @@
   "typings": "./lib/es/index.d.ts",
   "scripts": {
     "build:alipay": "taro build --type alipay",
-    "build:h5": "taro build --type h5",
+    "build:h5": "taro build --type h5 && yarn run deploy",
     "build:jd": "taro build --type jd",
     "build:qq": "taro build --type qq",
     "build:quickapp": "taro build --type quickapp",
