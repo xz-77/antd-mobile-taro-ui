@@ -46,7 +46,7 @@
     "build:tt": "taro build --type tt",
     "build:weapp": "taro build --type weapp",
     "dev:alipay": "npm run build:alipay -- --watch",
-    "dev:h5": "npm run build:h5 -- --watch",
+    "dev:h5": "taro build --type h5 --watch",
     "dev:jd": "npm run build:jd -- --watch",
     "dev:qq": "npm run build:qq -- --watch",
     "dev:quickapp": "npm run build:quickapp -- --watch",
