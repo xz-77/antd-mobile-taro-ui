@@ -44,4 +44,9 @@ export const data = [
     desc: '',
     url: '/pages/divider/index',
   },
+  {
+    title: 'AutoCenter 自动居中',
+    desc: '',
+    url: '/pages/auto-center/index',
+  },
 ];

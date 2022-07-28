@@ -10,6 +10,7 @@ export default defineAppConfig({
     'pages/popup/index',
     'pages/space/index',
     'pages/divider/index',
+    'pages/auto-center/index',
   ],
   window: {
     backgroundTextStyle: 'light',

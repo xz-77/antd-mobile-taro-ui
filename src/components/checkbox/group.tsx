@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
-import { CheckboxValue } from '.';
 import { usePropsValue } from 'antd-mobile/es/utils/use-props-value';
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
+import { CheckboxValue } from '.';
 import { CheckboxGroupContext } from './group-context';
 
 export interface CheckboxGroupProps {
