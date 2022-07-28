@@ -23,6 +23,11 @@ export const data = [
         url: '/pages/divider/index',
       },
       {
+        title: 'Grid 栅格',
+        desc: '由于number类型会被加上px单位，内部对 span 参数进行数据类型转化 number->string',
+        url: '/pages/grid/index',
+      },
+      {
         title: 'Space间距',
         desc: '',
         url: '/pages/space/index',
