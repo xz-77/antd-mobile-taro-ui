@@ -1,8 +1,8 @@
 import React, { FC, ReactNode } from 'react';
 import classNames from 'classnames';
 import { View } from '@tarojs/components';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
-import { mergeProps } from '../../utils/with-default-props';
+import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
+import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 
 const classPrefix = `adm-list`;
 

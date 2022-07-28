@@ -2,8 +2,8 @@ import { ITouchEvent, View } from '@tarojs/components';
 import classNames from 'classnames';
 import type { ReactElement } from 'react';
 import React, { FC } from 'react';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
-import { mergeProps } from '../../utils/with-default-props';
+import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
+import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 import Mask from '../mask';
 
 const classPrefix = `adm-popup`;

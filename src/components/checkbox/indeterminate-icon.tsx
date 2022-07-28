@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 
 export const IndeterminateIcon = memo<NativeProps>(props => {
   return withNativeProps(

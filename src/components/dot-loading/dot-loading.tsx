@@ -1,8 +1,8 @@
 import React, { memo, useMemo } from 'react';
 import classNames from 'classnames';
 import { View, Text } from '@tarojs/components';
-import { mergeProps } from '../../utils/with-default-props';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
+import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 
 const classPrefix = `adm-dot-loading`;
 

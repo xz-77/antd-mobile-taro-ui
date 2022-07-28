@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { RadioValue } from '.';
-import { usePropsValue } from '../../utils/use-props-value';
-import { mergeProps } from '../../utils/with-default-props';
+import { usePropsValue } from 'antd-mobile/es/utils/use-props-value';
+import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 import { RadioGroupContext } from './group-context';
 
 export interface RadioGroupProps {

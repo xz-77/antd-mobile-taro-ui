@@ -6,17 +6,17 @@ export const data = [
   },
   {
     title: 'Checkbox复选框',
-    desc: '--',
+    desc: '',
     url: '/pages/checkbox/index',
   },
   {
     title: 'Radio单选框',
-    desc: '--',
+    desc: '',
     url: '/pages/radio/index',
   },
   {
     title: 'Space间距',
-    desc: '--',
+    desc: '',
     url: '/pages/space/index',
   },
   {
@@ -36,12 +36,12 @@ export const data = [
   },
   {
     title: 'Popup弹出层',
-    desc: 'react-spring动画不能复用，使用transition实现动画 ',
+    desc: 'react-spring动画不能复用，使用transition实现动画',
     url: '/pages/popup/index',
   },
   {
     title: 'Divider 分割线',
-    desc: 'react-spring动画不能复用，使用transition实现动画 ',
+    desc: '',
     url: '/pages/divider/index',
   },
 ];

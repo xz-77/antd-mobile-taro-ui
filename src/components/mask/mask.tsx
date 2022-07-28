@@ -2,9 +2,9 @@ import type { ITouchEvent } from '@tarojs/components';
 import { View } from '@tarojs/components';
 import type { ReactElement } from 'react';
 import React, { useMemo } from 'react';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 
-import { mergeProps } from '../../utils/with-default-props';
+import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 
 const classPrefix = `adm-mask`;
 

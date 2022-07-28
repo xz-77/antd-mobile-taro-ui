@@ -1,8 +1,8 @@
 import { ITouchEvent, View } from '@tarojs/components';
 import classNames from 'classnames';
 import React, { FC, ReactNode } from 'react';
-import { isNodeWithContent } from '../../utils/is-node-with-content';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
+import { isNodeWithContent } from 'antd-mobile/es/utils/is-node-with-content';
+import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { RightOutline } from './right-outline';
 
 const classPrefix = `adm-list-item`;

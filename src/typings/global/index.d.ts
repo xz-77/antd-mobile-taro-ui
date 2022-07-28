@@ -8,7 +8,3 @@ declare module '*.less' {
 declare module '*.png';
 
 declare module '*.svg';
-
-// declare module 'antd-mobile-taro-ui';
-
-// declare module 'demos';

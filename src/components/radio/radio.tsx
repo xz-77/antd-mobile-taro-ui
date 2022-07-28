@@ -1,9 +1,9 @@
 import { View } from '@tarojs/components';
 import classNames from 'classnames';
 import React, { FC, useContext } from 'react';
-import { NativeProps, withNativeProps } from '../../utils/native-props';
-import { usePropsValue } from '../../utils/use-props-value';
-import { mergeProps } from '../../utils/with-default-props';
+import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
+import { usePropsValue } from 'antd-mobile/es/utils/use-props-value';
+import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 import { CheckIcon } from './check-icon';
 import { RadioGroupContext } from './group-context';
 

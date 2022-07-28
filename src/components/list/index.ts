@@ -1,5 +1,5 @@
 import './list.less';
-import { attachPropertiesToComponent } from '../../utils/attach-properties-to-component';
+import { attachPropertiesToComponent } from 'antd-mobile/es/utils/attach-properties-to-component';
 import { List } from './list';
 import { ListItem } from './list-item';
 
