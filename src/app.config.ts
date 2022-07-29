@@ -12,6 +12,7 @@ export default defineAppConfig({
     'pages/divider/index',
     'pages/auto-center/index',
     'pages/grid/index',
+    'pages/safe-area/index',
   ],
   window: {
     backgroundTextStyle: 'light',

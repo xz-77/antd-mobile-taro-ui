@@ -28,6 +28,11 @@ export const data = [
         url: '/pages/grid/index',
       },
       {
+        title: 'SafeArea 安全区',
+        desc: '',
+        url: '/pages/safe-area/index',
+      },
+      {
         title: 'Space间距',
         desc: '',
         url: '/pages/space/index',
