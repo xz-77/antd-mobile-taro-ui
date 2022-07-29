@@ -1,5 +1,6 @@
 import { Component } from 'react';
-import './styles/theme-default.less';
+import './styles/miniprogram/theme-default.less';
+import './styles/h5/theme-default.less';
 import './app.less';
 
 class App extends Component {

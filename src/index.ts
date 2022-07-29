@@ -1,4 +1,4 @@
-import './styles/theme-default.less';
+import './styles/miniprogram/theme-default.less';
 
 // export { setDefaultConfig } from './components/config-provider'
 
