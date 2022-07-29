@@ -54,7 +54,7 @@ export const Popup: FC<PopupProps> = p => {
       return `translate(0, -${v}%)`;
     }
     if (props.position === 'left') {
-      return `translate(-${v}%', 0)`;
+      return `translate(-${v}%, 0)`;
     }
     if (props.position === 'right') {
       return `translate(${v}%, 0)`;
