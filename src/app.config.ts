@@ -13,6 +13,7 @@ export default defineAppConfig({
     'pages/auto-center/index',
     'pages/grid/index',
     'pages/safe-area/index',
+    'pages/capsule-tabs/index',
   ],
   window: {
     backgroundTextStyle: 'light',

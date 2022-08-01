@@ -41,7 +41,13 @@ export const data = [
   },
   {
     name: '导航',
-    items: [],
+    items: [
+      {
+        title: 'CapsuleTabs 胶囊选项卡',
+        desc: '暂时没有实现antd mobile的《ScrollMask 滚动两侧遮罩效果》，另外动画被替换使用微信小程序的ScrollView实现',
+        url: '/pages/capsule-tabs/index',
+      },
+    ],
   },
   {
     name: '信息展示',

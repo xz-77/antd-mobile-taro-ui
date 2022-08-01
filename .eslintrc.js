@@ -6,5 +6,7 @@ module.exports = {
     ...eslint.rules,
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/naming-convention': 0,
+    'consistent-return': 0,
+    'react/destructuring-assignment': 0,
   },
 };
