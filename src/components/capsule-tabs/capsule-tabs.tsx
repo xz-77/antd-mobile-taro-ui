@@ -1,13 +1,4 @@
-import React, {
-  FC,
-  ReactNode,
-  ReactElement,
-  ComponentProps,
-  useState,
-  useEffect,
-  useMemo,
-  useLayoutEffect,
-} from 'react';
+import React, { FC, ReactNode, ReactElement, ComponentProps, useState, useMemo, useEffect, useCallback } from 'react';
 import classNames from 'classnames';
 // import { animated } from 'react-spring';
 import { ITouchEvent, ScrollView, View } from '@tarojs/components';
@@ -43,7 +34,7 @@ export type CapsuleTabsProps = {
   children?: React.ReactNode;
 } & NativeProps;
 
-// TODO: 有待优化
+// TODO: 待优化
 export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
   // 生成唯一id
   const id = useMemo(() => uuid(16, undefined, false), []);
@@ -94,10 +85,19 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
 
   const [scrollLeft, setScrollLeft] = useState(0);
 
-  const { windowWidth } = Taro.getSystemInfoSync();
+  const [layoutWidth, setLayoutWidth] = useState(0);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
+      let width = 0;
+      Taro.createSelectorQuery()
+        .select(`#${id}  .adm-capsule-tabs-header`)
+        .boundingClientRect(rect => {
+          setLayoutWidth(rect?.width ?? 0);
+          width = rect?.width ?? 0;
+        })
+        .exec();
+
       const map = new Map<string, number>();
       for (let i = 0; i < panes.length; i++) {
         map.set(panes[i].key as string, i);
@@ -105,24 +105,37 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
       Taro.createSelectorQuery()
         .selectAll(`#${id} .adm-capsule-tabs-tab-wrapper`)
         .boundingClientRect(rect => {
+          let offsetLeft = 0;
           // @ts-ignore
-          const obj = rect[map.get(activeKey)] as Taro.NodesRef.BoundingClientRectCallbackResult;
+          const m = map.get(activeKey) as number;
+          // eslint-disable-next-line no-restricted-syntax
+          for (const [, index] of map) {
+            if (index < m) {
+              // @ts-ignore
+              offsetLeft += rect[index].width;
+            }
+          }
+          // @ts-ignore
+          const obj = rect[m] as Taro.NodesRef.BoundingClientRectCallbackResult;
 
-          setScrollLeft(obj.left - windowWidth / 2 + obj.width / 2);
+          setScrollLeft(offsetLeft - width / 2 + obj.width / 2);
         })
         .exec();
-    }, 200);
+    }, 0);
   }, []);
 
-  const handleAnimation = (e: ITouchEvent) => {
-    Taro.createSelectorQuery()
-      .select(`#${e.target.id}`)
-      .boundingClientRect(rect => {
-        // @ts-ignore
-        setScrollLeft(e.target.offsetLeft - windowWidth / 2 + rect.width / 2);
-      })
-      .exec();
-  };
+  const handleAnimation = useCallback(
+    (e: ITouchEvent) => {
+      Taro.createSelectorQuery()
+        .select(`#${e.target.id}`)
+        .boundingClientRect(rect => {
+          // @ts-ignore
+          setScrollLeft(e.target.offsetLeft - layoutWidth / 2 + rect.width / 2);
+        })
+        .exec();
+    },
+    [layoutWidth]
+  );
 
   return withNativeProps(
     props,
