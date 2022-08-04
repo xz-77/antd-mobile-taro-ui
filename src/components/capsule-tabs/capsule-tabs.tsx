@@ -1,7 +1,7 @@
 import React, { FC, ReactNode, ReactElement, ComponentProps, useState, useMemo, useEffect, useCallback } from 'react';
 import classNames from 'classnames';
 // import { animated } from 'react-spring';
-import { ITouchEvent, ScrollView, View } from '@tarojs/components';
+import { ScrollView, View } from '@tarojs/components';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { usePropsValue } from 'antd-mobile/es/utils/use-props-value';
 // import { useResizeEffect } from 'antd-mobile/es/utils/use-resize-effect';
@@ -86,6 +86,19 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
   const [scrollLeft, setScrollLeft] = useState(0);
 
   const [layoutWidth, setLayoutWidth] = useState(0);
+  const [offsetLeft, setOffsetLeft] = useState<number[]>([]);
+
+  const computeScrollLeft = useCallback(
+    index => {
+      let left = 0;
+      for (let i = 0; i < offsetLeft.length; i++) {
+        if (i >= index) break;
+        left += offsetLeft[i];
+      }
+      return left;
+    },
+    [offsetLeft]
+  );
 
   useEffect(() => {
     setTimeout(() => {
@@ -105,36 +118,38 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
       Taro.createSelectorQuery()
         .selectAll(`#${id} .adm-capsule-tabs-tab-wrapper`)
         .boundingClientRect(rect => {
-          let offsetLeft = 0;
+          const n: number[] = [];
+          // @ts-ignore
+          for (let i = 0; i < rect.length; i++) {
+            // @ts-ignore
+            n.push(rect[i].width);
+          }
+          setOffsetLeft([...n]);
+
+          let left = 0;
           // @ts-ignore
           const m = map.get(activeKey) as number;
           // eslint-disable-next-line no-restricted-syntax
           for (const [, index] of map) {
             if (index < m) {
               // @ts-ignore
-              offsetLeft += rect[index].width;
+              left += rect[index].width;
             }
           }
-          // @ts-ignore
-          const obj = rect[m] as Taro.NodesRef.BoundingClientRectCallbackResult;
 
-          setScrollLeft(offsetLeft - width / 2 + obj.width / 2);
+          // @ts-ignore
+          setScrollLeft(left - width / 2 + rect[m].width / 2);
         })
         .exec();
     }, 0);
   }, []);
 
   const handleAnimation = useCallback(
-    (e: ITouchEvent) => {
-      Taro.createSelectorQuery()
-        .select(`#${e.target.id}`)
-        .boundingClientRect(rect => {
-          // @ts-ignore
-          setScrollLeft(e.target.offsetLeft - layoutWidth / 2 + rect.width / 2);
-        })
-        .exec();
+    (index: number) => {
+      const left = computeScrollLeft(index);
+      setScrollLeft(left - layoutWidth / 2 + offsetLeft[index] / 2);
     },
-    [layoutWidth]
+    [layoutWidth, offsetLeft]
   );
 
   return withNativeProps(
@@ -146,12 +161,12 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
 
         <ScrollView scrollX scrollLeft={scrollLeft} scrollWithAnimation>
           <View className={`${classPrefix}-tab-list`}>
-            {panes.map(pane =>
+            {panes.map((pane, index) =>
               withNativeProps(
                 pane.props,
                 <View key={pane.key as string} className={`${classPrefix}-tab-wrapper`}>
                   <View
-                    onClick={e => {
+                    onClick={() => {
                       const { key } = pane;
                       if (pane.props.disabled) return;
                       if (key === undefined || key === null) {
@@ -159,7 +174,7 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
                       }
                       setActiveKey(key.toString());
                       // animation 滑动距离计算
-                      handleAnimation(e);
+                      handleAnimation(index);
                     }}
                     className={classNames(`${classPrefix}-tab`, {
                       [`${classPrefix}-tab-active`]: pane.key === activeKey,
