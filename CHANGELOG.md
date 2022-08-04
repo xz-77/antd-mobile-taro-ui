@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.1.0...v0.2.0) (2022-08-04)
+
+### Features
+
+- jumboTabs 复杂选项卡 ([7a0631f](https://github.com/xz-77/antd-mobile-taro-ui/commit/7a0631f3648e14814cb93970efae6c1cb4daf9bc))
+
 ## [0.1.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.0.2-alpha.0...v0.1.0) (2022-08-04)
 
 ### Features
