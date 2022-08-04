@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.0.2-alpha.0...v0.1.0) (2022-08-04)
+
+### Features
+
+- 样式分割 ([ab60eff](https://github.com/xz-77/antd-mobile-taro-ui/commit/ab60eff0f64ac75eb62985d83ea32be1fc1223aa))
+- capsuleTabs 胶囊选项卡 ([8e26115](https://github.com/xz-77/antd-mobile-taro-ui/commit/8e26115036c00f653207eab1ad304923a9f4da86))
+- safeArea 安全区 ([09dddc6](https://github.com/xz-77/antd-mobile-taro-ui/commit/09dddc6795d36f80c52813c5d315f55b3953ff16))
+
+### Bug Fixes
+
+- 修复一个 bug ([24a4b1a](https://github.com/xz-77/antd-mobile-taro-ui/commit/24a4b1a17034c49c94f93ea06848d6dd453e7fee))
+- 修复 bug ([e4d269d](https://github.com/xz-77/antd-mobile-taro-ui/commit/e4d269dfad2c1e8288554db7fc62c871e169112c))
+- 修改 bug ([e9a1d54](https://github.com/xz-77/antd-mobile-taro-ui/commit/e9a1d5458b70120f0d27add67876534fad880112))
+
 ### [0.0.2](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.0.2-alpha.0...v0.0.2) (2022-08-04)
 
 ### Features
