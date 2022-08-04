@@ -38,7 +38,7 @@ export { default as Grid } from './components/grid';
 // export { default as IndexBar } from './components/index-bar'
 // export { default as InfiniteScroll } from './components/infinite-scroll'
 // export { default as Input } from './components/input'
-// export { default as JumboTabs } from './components/jumbo-tabs'
+export { default as JumboTabs } from './components/jumbo-tabs';
 export { default as List } from './components/list';
 // export { default as Loading } from './components/loading'
 export { default as Mask } from './components/mask';

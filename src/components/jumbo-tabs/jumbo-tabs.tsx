@@ -1,49 +1,47 @@
-import React, { FC, ReactNode, ReactElement, ComponentProps, useState, useMemo, useEffect, useCallback } from 'react';
+import React, { FC, ReactNode, ReactElement, ComponentProps, useMemo, useState, useCallback, useEffect } from 'react';
 import classNames from 'classnames';
-// import { animated } from 'react-spring';
-import { ScrollView, View } from '@tarojs/components';
+// import { animated } from '@react-spring/web'
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { usePropsValue } from 'antd-mobile/es/utils/use-props-value';
 // import { useResizeEffect } from 'antd-mobile/es/utils/use-resize-effect';
 // import { useTabListScroll } from 'antd-mobile/es/utils/use-tab-list-scroll';
+// import ScrollMask from '../scroll-mask'
 import { ShouldRender } from 'antd-mobile/es/utils/should-render';
 import { traverseReactNode } from 'antd-mobile/es/utils/traverse-react-node';
+import { ScrollView, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { uuid } from '../../utils/uuid';
-// import ScrollMask from '../scroll-mask';
 
-const classPrefix = `adm-capsule-tabs`;
+const classPrefix = `adm-jumbo-tabs`;
 
-export type CapsuleTabProps = {
-  key: string;
+export type JumboTabProps = {
   title: ReactNode;
+  description: ReactNode;
   disabled?: boolean;
   forceRender?: boolean;
   destroyOnClose?: boolean;
-  children?: ReactNode;
+  children?: React.ReactNode;
 } & NativeProps;
 
-export const CapsuleTab: FC<CapsuleTabProps> = () => {
+export const JumboTab: FC<JumboTabProps> = () => {
   return null;
 };
 
-export type CapsuleTabsProps = {
+export type JumboTabsProps = {
   activeKey?: string | null;
   defaultActiveKey?: string | null;
   onChange?: (key: string) => void;
   children?: React.ReactNode;
 } & NativeProps;
 
-// TODO: 待优化
-export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
-  // 生成唯一id
+export const JumboTabs: FC<JumboTabsProps> = props => {
   const id = useMemo(() => uuid(16, undefined, false), []);
   // const tabListContainerRef = useRef<HTMLDivElement>(null);
   // const rootRef = useRef<HTMLDivElement>(null);
   // const keyToIndexRecord: Record<string, number> = {};
   let firstActiveKey: string | null = null;
 
-  const panes: ReactElement<ComponentProps<typeof CapsuleTab>>[] = [];
+  const panes: ReactElement<ComponentProps<typeof JumboTab>>[] = [];
 
   traverseReactNode(props.children, (child, index) => {
     if (!React.isValidElement(child)) return;
@@ -65,17 +63,6 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
       props.onChange?.(v);
     },
   });
-
-  // const [activeIndex, setActiveIndex] = useState(0);
-
-  // useEffect(() => {
-  //   for (let i = 0; i < panes.length; i++) {
-  //     if (panes[i].key === (props.defaultActiveKey ?? firstActiveKey)) {
-  //       setActiveIndex(i);
-  //       break;
-  //     }
-  //   }
-  // }, []);
 
   // const { scrollLeft, animate } = useTabListScroll(tabListContainerRef, keyToIndexRecord[activeKey as string]);
 
@@ -147,6 +134,7 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
   const handleAnimation = useCallback(
     (index: number) => {
       const left = computeScrollLeft(index);
+
       setScrollLeft(left - layoutWidth / 2 + offsetLeft[index] / 2);
     },
     [layoutWidth, offsetLeft]
@@ -157,8 +145,7 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
     <View className={classPrefix} id={id}>
       <View className={`${classPrefix}-header`}>
         {/* <ScrollMask scrollTrackRef={tabListContainerRef} /> */}
-        {/* <animated.div className={`${classPrefix}-tab-list`} ref={tabListContainerRef} scrollLeft={scrollLeft}> */}
-
+        {/* <animated.View className={`${classPrefix}-tab-list`} ref={tabListContainerRef} scrollLeft={scrollLeft}> */}
         <ScrollView scrollX scrollLeft={scrollLeft} scrollWithAnimation>
           <View className={`${classPrefix}-tab-list`}>
             {panes.map((pane, index) =>
@@ -181,13 +168,14 @@ export const CapsuleTabs: FC<CapsuleTabsProps> = props => {
                       [`${classPrefix}-tab-disabled`]: pane.props.disabled,
                     })}
                   >
-                    {pane.props.title}
+                    <View className={`${classPrefix}-tab-title`}>{pane.props.title}</View>
+                    <View className={`${classPrefix}-tab-description`}>{pane.props.description}</View>
                   </View>
                 </View>
               )
             )}
           </View>
-          {/* </animated.div> */}
+          {/* </animated.View> */}
         </ScrollView>
       </View>
       {panes.map(pane => {
