@@ -1,0 +1,88 @@
+@class-prefix-tabs: ~'adm-tabs';
+
+.@{class-prefix-tabs} {
+  --title-font-size: var(--adm-font-size-9);
+  --content-padding: 12px;
+  --active-line-height: 2px;
+  --active-line-border-radius: var(--active-line-height);
+  --active-line-color: var(--adm-color-primary);
+  --active-title-color: var(--adm-color-primary);
+  position: relative;
+  // Hack for auto scroll fail when the parent element is a flex layout
+  min-width: 0;
+
+  &-header {
+    position: relative;
+    border-bottom: solid 1px var(--adm-color-border);
+  }
+
+  &-tab-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    // overflow-x: scroll;
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
+    // scrollbar-width: none;
+  }
+  &-tab-wrapper {
+    padding: 0 12px;
+    &-stretch {
+      flex: auto;
+    }
+  }
+  &-tab {
+    white-space: nowrap;
+    padding: 8px 0 10px;
+    width: min-content;
+    margin: 0 auto;
+    font-size: var(--title-font-size);
+    position: relative;
+    cursor: pointer;
+  }
+  &-tab-active {
+    color: var(--active-title-color);
+  }
+  &-tab-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  &-tab-line {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    // height: var(--active-line-height);
+    // background: var(--active-line-color);
+    // border-radius: var(--active-line-border-radius);
+    &-content {
+      height: var(--active-line-height);
+      background: var(--active-line-color);
+      border-radius: var(--active-line-border-radius);
+    }
+  }
+
+  &-content {
+    padding: var(--content-padding);
+  }
+  &-header-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 30px;
+    height: 100%;
+    pointer-events: none;
+  }
+  &-header-mask-left {
+    left: 0;
+    background: linear-gradient(to right, var(--adm-color-background), rgba(255, 255, 255, 0));
+  }
+  &-header-mask-right {
+    right: 0;
+    background: linear-gradient(to left, var(--adm-color-background), rgba(255, 255, 255, 0));
+  }
+}

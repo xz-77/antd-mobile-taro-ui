@@ -15,6 +15,7 @@ export default defineAppConfig({
     'pages/safe-area/index',
     'pages/capsule-tabs/index',
     'pages/jumbo-tabs/index',
+    'pages/tabs/index',
   ],
   window: {
     backgroundTextStyle: 'light',
