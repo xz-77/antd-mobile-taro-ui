@@ -37,7 +37,7 @@
   "typings": "./lib/es/index.d.ts",
   "scripts": {
     "build:alipay": "taro build --type alipay",
-    "build:h5": "taro build --type h5 && yarn run deploy",
+    "build:h5": "taro build --type h5",
     "build:jd": "taro build --type jd",
     "build:qq": "taro build --type qq",
     "build:quickapp": "taro build --type quickapp",
@@ -58,7 +58,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
-    "deploy": "gh-pages -d dist/h5",
+    "deploy": "yarn run build:h5 && gh-pages -d dist/h5",
     "install-peers": "install-peerdeps",
     "release": "standard-version",
     "release:minor": "yarn run release --release-as minor"
