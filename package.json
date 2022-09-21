@@ -61,7 +61,9 @@
     "deploy": "yarn run build:h5 && gh-pages -d dist/h5",
     "install-peers": "install-peerdeps",
     "release": "standard-version",
-    "release:minor": "yarn run release --release-as minor"
+    "release:minor": "yarn run release --release-as minor",
+    "release:major": "yarn run release --release-as major",
+    "build:all":"yarn run build && yarn run build:weapp && yarn run deploy"
   },
   "browserslist": [
     "last 3 versions",
