@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.2.0...v0.3.0) (2022-09-21)
+
+### Features
+
+- 新增命令 ([3a8751d](https://github.com/xz-77/antd-mobile-taro-ui/commit/3a8751d74b2e7881a42ef6992d55bc963e629e1f))
+- badge 徽标 ([8f48189](https://github.com/xz-77/antd-mobile-taro-ui/commit/8f48189dce77ae21d941767e060d2c6074badf27))
+- tabs 标签页 ([ef26a69](https://github.com/xz-77/antd-mobile-taro-ui/commit/ef26a69ea92b02c30dd45e732f399ff66678f52f))
+
 ## [0.2.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.1.0...v0.2.0) (2022-08-04)
 
 ### Features
