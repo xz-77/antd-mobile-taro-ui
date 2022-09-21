@@ -8,5 +8,7 @@ module.exports = {
     '@typescript-eslint/naming-convention': 0,
     'consistent-return': 0,
     'react/destructuring-assignment': 0,
+    'react/jsx-fragments': 0,
+    'react/jsx-no-useless-fragment': 0,
   },
 };

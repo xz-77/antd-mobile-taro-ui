@@ -1,0 +1,47 @@
+@class-prefix-badge: ~'adm-badge';
+
+.@{class-prefix-badge}-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.@{class-prefix-badge} {
+  display: inline-flex;
+  vertical-align: middle;
+  box-sizing: content-box;
+  border-radius: 100px;
+  background-color: var(--color);
+  --right: 0;
+  --top: 0;
+  --color: var(--adm-badge-color, #ff411c);
+
+  &-content {
+    color: var(--adm-color-white);
+    box-sizing: border-box;
+    min-width: 8px;
+    padding: 1px 4px;
+    font-size: var(--adm-font-size-1);
+    line-height: 12px;
+    white-space: nowrap;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &-fixed {
+    position: absolute;
+    right: var(--right);
+    top: var(--top);
+    transform: translate(50%, -50%);
+  }
+
+  &-dot {
+    min-width: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+
+  &-bordered {
+    border: solid 1px var(--adm-color-white);
+  }
+}

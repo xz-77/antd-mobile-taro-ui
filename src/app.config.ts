@@ -16,6 +16,7 @@ export default defineAppConfig({
     'pages/capsule-tabs/index',
     'pages/jumbo-tabs/index',
     'pages/tabs/index',
+    'pages/badge/index',
   ],
   window: {
     backgroundTextStyle: 'light',
