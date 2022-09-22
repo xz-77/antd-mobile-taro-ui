@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.3.0...v0.4.0) (2022-09-22)
+
+### Features
+
+- 新增 iconfont ([deba9fd](https://github.com/xz-77/antd-mobile-taro-ui/commit/deba9fdba1d3733ac20d8abebede1fcff3e9605e))
+- miniprogram-ci ([7a75ecb](https://github.com/xz-77/antd-mobile-taro-ui/commit/7a75ecbb013f3ddfadb8d98c7aa8b0b2f43f7f8f))
+- noticeBar 通告栏 ([a0c3cbd](https://github.com/xz-77/antd-mobile-taro-ui/commit/a0c3cbda1fb300d0519a115181ef7c77e8a54ade))
+
 ## [0.3.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.2.0...v0.3.0) (2022-09-21)
 
 ### Features
