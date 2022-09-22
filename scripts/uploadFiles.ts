@@ -2,6 +2,7 @@ import { Project, upload as ciUpload } from 'miniprogram-ci';
 import path from 'path';
 import config from '../project.config.json';
 import pack from '../package.json';
+import { key } from '../privateKey.json';
 
 const upload = async () => {
   // 注意： new ci.Project 调用时，请确保项目代码已经是完整的，避免编译过程出现找不到文件的报错。
@@ -9,7 +10,7 @@ const upload = async () => {
     appid: config.appid,
     type: 'miniProgram',
     projectPath: path.resolve(__dirname, '../'),
-    privateKey: '',
+    privateKey: key,
     ignores: ['node_modules/**/*'],
   });
   const uploadResult = await ciUpload({

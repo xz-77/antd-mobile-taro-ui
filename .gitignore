@@ -27,3 +27,4 @@ lerna-debug.log*
 
 #frame
 project.private.config.json
+privateKey.json

@@ -44,7 +44,7 @@
     "build:rn": "taro build --type rn",
     "build:swan": "taro build --type swan",
     "build:tt": "taro build --type tt",
-    "build:weapp": "taro build --type weapp",
+    "build:weapp": "taro build --type weapp && ts-node scripts/uploadFiles.ts",
     "dev:alipay": "npm run build:alipay -- --watch",
     "dev:h5": "taro build --type h5 --watch",
     "dev:jd": "npm run build:jd -- --watch",
@@ -63,7 +63,7 @@
     "release": "standard-version",
     "release:minor": "yarn run release --release-as minor",
     "release:major": "yarn run release --release-as major",
-    "build:all": "yarn run build && yarn run build:weapp && yarn run deploy"
+    "build:all": "yarn run build && yarn run deploy && yarn run build:weapp"
   },
   "browserslist": [
     "last 3 versions",
