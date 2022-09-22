@@ -17,6 +17,7 @@ export default defineAppConfig({
     'pages/jumbo-tabs/index',
     'pages/tabs/index',
     'pages/badge/index',
+    'pages/notice-bar/index',
   ],
   window: {
     backgroundTextStyle: 'light',

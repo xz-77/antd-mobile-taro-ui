@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3551277 */
+  src: 
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQsAAsAAAAACFAAAAPdAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDFAqEBIMrATYCJAMQCwoABCAFhGcHRhspB8i+IRqH9yo2iCyhKj1248x8jdP6VPjXJLee8+w9BW7oeHjaH9+5M/PeN5O86wRnMq9Do+O69HUqag5Vf+peFSBWiD5OAcIxd4795G/zyQpQcarXME9F3DpMwGM7LO3Y1ANOrBgTctSKCudtQxQUHJ5eq+ZvV0RnONuNmjN+DQCcynHoXLdhWYVNJGlgkYKz+rBIbKuyaHqVboAAP8G9WX39rwECpMxmxS16rjX6dxEiZrk/7lXOsgjMZwGAOSYHP1hsAgVo7N1WvFcQ6kO8ddCdPkeg2Qr1/Le3946i6LMc01G6QEZhEGfGWUnkUCivVGoyQ6NQY8cW8RhUpDvwB4/834/fnJBUmbHIrrcJ6N0vvsk3/iV/4hYI0D6hQsbCwtRxqt54REAYXBCguWy5QEuQWhHSt53f/J/BGb6SBYcakTr986JmpLeCNRDKfGuzqSS+tTPLRAqwD36tAhpR4xU+MvCjHluEGI4vTEvN1GxjPNw+byG4srugevAtuslV5TKxctqeA5ePZvqNJQWF0RVk2tTaMzrjrjkoFrc1vDZXtvZ8NiHTLglh97KwMdM/dWW/vezTn7zddB+4a4NV1eEf3N6w79kr6dqYEMbXavMSya2SSav36JT1AXG9HNvBZY0QSDEBhJXSYm4RVuurMhUVc0Yf763058+5d+m85kYSA02c+OO/ynl9JCpHPSqnRW08HpVxxfmRLn6CiKkzZe7+K5W5c2MfU4K9emI5+aNfYfHYOh5Jh5fuDSM1Eod5VdMTufPA4j0J6s2FuQ/vGJ1X5eUV8K7gvltg/Q9sdKrL58flZWz4w9Q8FDnc7I5791MeVSws5DaXl77RyDWx8bkZGx4t4j2hGDl9Y/OT4gvvuAjh/7E8hMjX4IoQeYv/m1fbzsV9O1b7txG9sqKvQ2+PvvP/SbdQowSa+SJFx5CIRXVRShnXZv8cotOJOAnNpop3lw3dfg5h7oFifWjkWQBJgxHIGo2hCm4OKi1WQa3RBmg2r21yix6mAFGaMOU2gdDpEpJ2ryHr9B5VcJ+g0u831Dr9g2YHipqvxVSjhQLHQMCTc1jiDZ1YEubXOgzilMrRIt84UEsCD3Y7XNlIB+hA+xhgTYsexggm1NBwO7sZqKqBTWrIwDOHjzGz2ukkZS9x8IaGWlCAwwABNmkOJuEZdMRFZum/NwyIpqg4FIkaD1IWCWrH3BxcCFSHUEflXcgilmkiD4YhMIKSsAZr5/VAVYIGzCxvJQM8xsHXwW+q5jSRCFbomF6s3d4qaGYsVCJFjhKV1vMGk4jEc+wKYoJ4H/CKm6AaFiAEAAAA') format('woff2'),
+       url('iconfont.woff?t=1663830840715') format('woff'),
+       url('iconfont.ttf?t=1663830840715') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-notification:before {
+  content: "\e66b";
+}
+
+.icon-check:before {
+  content: "\e645";
+}
+
+.icon-close:before {
+  content: "\e646";
+}
+

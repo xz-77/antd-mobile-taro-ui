@@ -22,9 +22,11 @@ $ npm install antd-mobile-taro-ui --save-dev
 
 ## 遇到的问题
 
-由于[dumi](https://d.umijs.org/zh-CN)的`dumi-theme-mobile`展示暂时还不支持`Taro`框架，目前的解决方案是使用`demoUrl`，[antd-mobile-taro-ui](https://github.com/xz-77/antd-mobile-taro-ui)有一个`lerna`分支，希望可以探讨一下是否可以使用`monorepo`的方式[monorepo-docs](https://github.com/xz-77/antd-mobile-taro-ui/tree/monorepo-docs)
+- 由于[dumi](https://d.umijs.org/zh-CN)的`dumi-theme-mobile`展示暂时还不支持`Taro`框架，目前的解决方案是使用`demoUrl`，[antd-mobile-taro-ui](https://github.com/xz-77/antd-mobile-taro-ui)有一个`lerna`分支，希望可以探讨一下是否可以使用`monorepo`的方式[monorepo-docs](https://github.com/xz-77/antd-mobile-taro-ui/tree/monorepo-docs)
 
-由于`dumi-theme-mobile`中展示的是`Taro`进行`h5`打包后的效果，所以与**小程序**对比会有一些细微的差别 **(影响不大，又不是不能看 🐶)**，这边会尽量做到展示的一致
+- 由于`dumi-theme-mobile`中展示的是`Taro`进行`h5`打包后的效果，所以与**小程序**对比会有一些细微的差别 **(影响不大，又不是不能看 🐶)**，这边会尽量做到展示的一致
+
+- 由于小程序不支持`svg`，在[iconfont](https://www.iconfont.cn/)上也没有找到`antd-mobile`的矢量图，所以这里使用的是[iconfont](https://www.iconfont.cn/)中[手机淘宝图标库](https://www.iconfont.cn/collections/index?spm=a313x.7781069.1998910419.5&type=1&page=4)转`base64`，与`antd-mobile`会有细微的差别
 
 如果有更好的方式实现，希望可以一起进行探讨 🙏
 
@@ -42,6 +44,6 @@ $ npm install antd-mobile-taro-ui --save-dev
 
 ## 进度展示和兼容情况
 
-_由于小程序不支持 SVG 所以 antd 所有用到 svg 图片的地方这里会使用 css3 动画或者图片的解决方案，后期计划一部分用 iconfont 替代_
+_由于小程序不支持 SVG 所以 antd 所有用到 svg 图片的地方这里会使用 css3 动画或 iconfont 替代_
 
 请扫描上面的二维码查看组件列表或访问[antd-mobile-taro-ui](https://xz-77.github.io/components)

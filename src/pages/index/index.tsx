@@ -3,6 +3,7 @@ import React from 'react';
 import { View } from '@tarojs/components';
 import List from '@/components/list';
 import { data } from './data';
+import { SafeArea } from 'antd-mobile-taro-ui';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
           ))}
         </List>
       ))}
+      <SafeArea position='bottom' />
     </>
   );
 };
