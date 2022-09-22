@@ -4,7 +4,7 @@ import React, { FC, useContext } from 'react';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { usePropsValue } from 'antd-mobile/es/utils/use-props-value';
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
-import { CheckIcon } from './check-icon';
+import { CheckIcon } from 'antd-mobile-taro-icons';
 import { RadioGroupContext } from './group-context';
 
 const classPrefix = `adm-radio`;

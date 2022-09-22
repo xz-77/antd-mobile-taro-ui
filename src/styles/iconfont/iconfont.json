@@ -1,0 +1,23 @@
+{
+  "id": "3551277",
+  "name": "antd-mobile-taro-ui",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29924",
+      "name": "check",
+      "font_class": "check",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "29925",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    }
+  ]
+}

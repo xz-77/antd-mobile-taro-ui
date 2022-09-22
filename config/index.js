@@ -60,6 +60,7 @@ const config = {
   alias: {
     '@/components': path.resolve(__dirname, '..', 'src/components'),
     'antd-mobile-taro-ui': path.resolve(__dirname, '..', 'src/index'),
+    'antd-mobile-taro-icons': path.resolve(__dirname, '..', 'src/iconfontComponents/index'),
     demos: path.resolve(__dirname, '..', 'src/demos'),
   },
 };

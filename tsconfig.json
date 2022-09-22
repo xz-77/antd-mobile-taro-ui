@@ -17,7 +17,8 @@
     "paths": {
       "@/components/*": ["./src/components/*"],
       "antd-mobile-taro-ui": ["./src/index"],
-      "demos": ["./src/demos"]
+      "demos": ["./src/demos"],
+      "antd-mobile-taro-icons": ["./src/iconfontComponents/index"]
     },
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
@@ -33,6 +34,6 @@
     "noUnusedParameters": true,
     "strictNullChecks": true
   },
-  "include": ["src", "global.d.ts"],
+  "include": ["src", "global.d.ts", "scripts"],
   "exclude": ["node_modules", "lib", "dist", "config"]
 }

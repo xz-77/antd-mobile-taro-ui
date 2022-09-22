@@ -82,6 +82,7 @@
     "classnames": "^2.3.1",
     "lodash": "^4.17.21",
     "lorem-ipsum": "^2.0.4",
+    "miniprogram-ci": "^1.8.35",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-native": "^0.68.2"
@@ -121,6 +122,7 @@
     "gulp-typescript": "^6.0.0-alpha.1",
     "husky": "^7.0.4",
     "install-peerdeps": "^3.0.3",
+    "lerna": "^5.1.8",
     "lint-staged": "^12.3.7",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",

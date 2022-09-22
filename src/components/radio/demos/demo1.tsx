@@ -81,9 +81,7 @@ export default () => {
       </DemoBlock>
 
       <DemoBlock title='禁用状态'>
-        <Radio defaultChecked disabled>
-          禁用状态
-        </Radio>
+        <Radio disabled>禁用状态</Radio>
       </DemoBlock>
     </>
   );
