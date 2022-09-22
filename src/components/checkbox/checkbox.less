@@ -33,6 +33,12 @@
     .@{class-prefix-checkbox}-icon {
       background-color: var(--adm-color-primary);
       border-color: var(--adm-color-primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-checked {
+        font-size: calc(var(--icon-size) * 16 / 22);
+      }
     }
   }
   &.@{class-prefix-checkbox}-disabled {
@@ -44,6 +50,18 @@
       color: #b7b7b7;
       background-color: var(--adm-color-box);
       border-color: var(--adm-color-light);
+    }
+
+    .@{class-prefix-checkbox}-icon {
+      color: #b7b7b7;
+      background-color: var(--adm-color-box);
+      border-color: var(--adm-color-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-checked {
+        font-size: calc(var(--icon-size) * 16 / 22);
+      }
     }
   }
   .@{class-prefix-checkbox}-custom-icon {

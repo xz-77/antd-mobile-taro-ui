@@ -37,7 +37,7 @@
       align-items: center;
       justify-content: center;
       &-checked {
-        font-size: calc(var(--icon-size) - 6px);
+        font-size: calc(var(--icon-size) * 16 / 22);
       }
     }
   }
@@ -53,6 +53,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      &-checked {
+        font-size: calc(var(--icon-size) * 16 / 22);
+      }
     }
   }
   .@{class-prefix-radio}-custom-icon {
