@@ -40,7 +40,7 @@ $ npm install antd-mobile-taro-ui --save-dev
 
 ## 组件展示小程序
 
-![](/assets/miniprogram.jpg)
+![](https://xz-77.github.io/assets/miniprogram.jpg)
 
 ## 进度展示和兼容情况
 
