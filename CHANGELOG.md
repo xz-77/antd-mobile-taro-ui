@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.4.0...v0.4.1) (2022-09-23)
+
+### Features
+
+- 抽离图标为单独 lib ([99a3f39](https://github.com/xz-77/antd-mobile-taro-ui/commit/99a3f398d25029747164fa71edc79ef618be00be))
+- 抽离图标为单独 lib ([1170319](https://github.com/xz-77/antd-mobile-taro-ui/commit/117031977f43cad3b5eea7e3d573e588dce1bb54))
+- 机器人自动上传体验版 ([3f1c643](https://github.com/xz-77/antd-mobile-taro-ui/commit/3f1c643b45203f1deba126c4ed6e0576b0006367))
+
+### Bug Fixes
+
+- 修复 tree-shaking ([ce1f553](https://github.com/xz-77/antd-mobile-taro-ui/commit/ce1f55369aa8f18f56632f3cd00c27d6b86eee0e))
+
 ## [0.4.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.3.0...v0.4.0) (2022-09-22)
 
 ### Features
