@@ -17,8 +17,7 @@
     "paths": {
       "@/components/*": ["./src/components/*"],
       "antd-mobile-taro-ui": ["./src/index"],
-      "demos": ["./src/demos"],
-      "antd-mobile-taro-icons": ["./src/iconfontComponents/index"]
+      "demos": ["./src/demos"]
     },
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,

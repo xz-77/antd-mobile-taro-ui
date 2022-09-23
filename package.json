@@ -44,7 +44,7 @@
     "build:rn": "taro build --type rn",
     "build:swan": "taro build --type swan",
     "build:tt": "taro build --type tt",
-    "build:weapp": "taro build --type weapp && ts-node scripts/uploadFiles.ts",
+    "build:weapp": "taro build --type weapp",
     "dev:alipay": "npm run build:alipay -- --watch",
     "dev:h5": "taro build --type h5 --watch",
     "dev:jd": "npm run build:jd -- --watch",
@@ -54,7 +54,6 @@
     "dev:swan": "npm run build:swan -- --watch",
     "dev:tt": "npm run build:tt -- --watch",
     "dev:weapp": "npm run build:weapp -- --watch",
-    "build": "cross-env NODE_ENV=components gulp",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
@@ -63,7 +62,9 @@
     "release": "standard-version",
     "release:minor": "yarn run release --release-as minor",
     "release:major": "yarn run release --release-as major",
-    "build:all": "yarn run build && yarn run deploy && yarn run build:weapp"
+    "build:upload":"yarn run build:weapp && ts-node scripts/uploadFiles.ts",
+    "build:components": "cross-env NODE_ENV=components gulp",
+    "build:all": "yarn run build:components && yarn run deploy && yarn run build:upload"
   },
   "browserslist": [
     "last 3 versions",
@@ -79,6 +80,7 @@
     "@tarojs/taro": "3.4.11",
     "ahooks": "^3.6.2",
     "antd-mobile": "^5.19.0",
+    "antd-mobile-taro-icons": "^0.1.2",
     "classnames": "^2.3.1",
     "lodash": "^4.17.21",
     "lorem-ipsum": "^2.0.4",
