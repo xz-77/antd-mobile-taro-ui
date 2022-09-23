@@ -4919,10 +4919,10 @@ antd-mobile-icons@^0.3.0:
   resolved "https://registry.npmmirror.com/antd-mobile-icons/-/antd-mobile-icons-0.3.0.tgz#9b29e4588a62370909061f10ff0579aabb0b32a9"
   integrity sha512-rqINQpJWZWrva9moCd1Ye695MZYWmqLPE+bY8d2xLRy7iSQwPsinCdZYjpUPp2zL/LnKYSyXxP2ut2A+DC+whQ==
 
-antd-mobile-taro-icons@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/antd-mobile-taro-icons/-/antd-mobile-taro-icons-0.1.2.tgz#bc8e0ab2e6211fed471366eb2261e2c25055ba7c"
-  integrity sha512-OAgJCPi3G5Bf/wsXypEEfyIIcSoniI45m6mHRMTPjQ5sBn4B8XfoEvUnIFXg6L4UgP1haXhyqSgnDeUU04R0lg==
+antd-mobile-taro-icons@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/antd-mobile-taro-icons/-/antd-mobile-taro-icons-0.1.3.tgz#ec660d0d58c6f83af428592856315e80b5516c5b"
+  integrity sha512-MQ3SWZH6JcoXLhhvHRuiavOBF4FsdYEwP4PB9NbGZzLO707E/srKS9kkkOyfeU9yjR3nCmApSP8ynAtLF3zHQw==
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@tarojs/components" "3.5.5"
