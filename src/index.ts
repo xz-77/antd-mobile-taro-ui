@@ -1,4 +1,5 @@
 import './styles/miniprogram/theme-default.less';
+import 'antd-mobile-taro-icons/lib/es/index.css';
 
 // export { setDefaultConfig } from './components/config-provider'
 
