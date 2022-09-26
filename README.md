@@ -1,4 +1,4 @@
-[antd-mobile-taro-ui](https://github.com/xz-77/antd-mobile-taro-ui)
+GitHub 仓库: [antd-mobile-taro-ui](https://github.com/xz-77/antd-mobile-taro-ui)
 
 ## 新手指南
 
@@ -11,7 +11,7 @@ $ npm install antd-mobile-taro-ui --save-dev
 ## 核心思路
 
 - 基于 `Taro` 框架以 `antd-mobile` 的设计为标准
-- 尽最大可能与 `Ant Design Mobile 5.x` 的 api 保持 100%一致
+- 尽最大可能与 `Ant Design Mobile 5.x` 的 `api` 保持 100%一致
 - 预计总体代码 75%会使用 `Ant Design Mobile` 的源码，25%处理小程序带来的兼容问题
 
 ## 个人想法
@@ -42,8 +42,10 @@ $ npm install antd-mobile-taro-ui --save-dev
 
 ![](https://xz-77.github.io/assets/miniprogram.jpg)
 
-## 进度展示和兼容情况
+## 兼容情况
 
-_由于小程序不支持 SVG 所以 antd 所有用到 svg 图片的地方这里会使用 css3 动画或 iconfont 替代_
+_由于小程序不支持 `SVG` 所以 `antd-mobile-taro-ui` 所有用到 `svg` 图片的地方这里会使用 `css3` 动画或 `iconfont` 替代_
+
+## 进度展示
 
 请扫描上面的二维码查看组件列表或访问[antd-mobile-taro-ui](https://xz-77.github.io/components)
