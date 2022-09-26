@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.4.1...v0.5.0) (2022-09-26)
+
+### Features
+
+- 增加 card 入口 ([d45c68e](https://github.com/xz-77/antd-mobile-taro-ui/commit/d45c68edaa5e98797ff2248d19eab17277360774))
+- avatar 头像 ([5fd3d0c](https://github.com/xz-77/antd-mobile-taro-ui/commit/5fd3d0ceaa59ed21589a28b464c5528f5eb25dce))
+- card 卡片 ([d887441](https://github.com/xz-77/antd-mobile-taro-ui/commit/d887441e4e3d8f3504ea453a7eb48d0faa757a9b))
+
+### Bug Fixes
+
+- 更新 demo 的样式 ([cdd1b90](https://github.com/xz-77/antd-mobile-taro-ui/commit/cdd1b90530582f96e2d66381e9272c39a11dec78))
+- 兼容 h5 无法引入 iconfont 样式文件问题 ([63b249f](https://github.com/xz-77/antd-mobile-taro-ui/commit/63b249fbefb3c3fd03d9f9d2b02e2d1f1a5a5319))
+
 ### [0.4.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.4.0...v0.4.1) (2022-09-23)
 
 ### Features
