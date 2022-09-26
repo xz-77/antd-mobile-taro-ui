@@ -68,6 +68,11 @@ export const data = [
         url: '/pages/avatar/index',
       },
       {
+        title: 'Card 卡片',
+        desc: '',
+        url: '/pages/card/index',
+      },
+      {
         title: 'List 列表',
         desc: 'antd-mobile的demo4和demo5不支持展示',
         url: '/pages/list/index',
