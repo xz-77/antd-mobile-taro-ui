@@ -63,7 +63,12 @@ export const data = [
     name: '信息展示',
     items: [
       {
-        title: 'List列表',
+        title: 'Avatar 头像',
+        desc: '不支持fit，支持fallback以及Taro的Image组件的其他API',
+        url: '/pages/avatar/index',
+      },
+      {
+        title: 'List 列表',
         desc: 'antd-mobile的demo4和demo5不支持展示',
         url: '/pages/list/index',
       },

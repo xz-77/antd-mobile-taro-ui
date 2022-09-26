@@ -18,6 +18,7 @@ export default defineAppConfig({
     'pages/tabs/index',
     'pages/badge/index',
     'pages/notice-bar/index',
+    'pages/avatar/index',
   ],
   window: {
     backgroundTextStyle: 'light',

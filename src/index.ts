@@ -4,7 +4,7 @@ import './styles/miniprogram/theme-default.less';
 
 // export { default as ActionSheet } from './components/action-sheet'
 export { default as AutoCenter } from './components/auto-center';
-// export { default as Avatar } from './components/avatar'
+export { default as Avatar } from './components/avatar';
 export { default as Badge } from './components/badge';
 export { default as Button } from './components/button';
 // export { default as Calendar } from './components/calendar'
