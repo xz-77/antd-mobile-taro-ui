@@ -9,7 +9,7 @@ export { default as Badge } from './components/badge';
 export { default as Button } from './components/button';
 // export { default as Calendar } from './components/calendar'
 export { default as CapsuleTabs } from './components/capsule-tabs';
-// export { default as Card } from './components/card'
+export { default as Card } from './components/card';
 // export { default as CascadePicker } from './components/cascade-picker'
 // export { default as CascadePickerView } from './components/cascade-picker-view'
 // export { default as Cascader } from './components/cascader'
