@@ -74,7 +74,7 @@ export { default as Steps } from './components/steps';
 // export { default as Switch } from './components/switch'
 // export { default as TabBar } from './components/tab-bar'
 export { default as Tabs } from './components/tabs';
-// export { default as Tag } from './components/tag'
+export { default as Tag } from './components/tag';
 // export { default as TextArea } from './components/text-area'
 // export { default as Toast } from './components/toast'
 // export { default as TreeSelect } from './components/tree-select'
