@@ -1,9 +1,9 @@
 import Taro from '@tarojs/taro';
 import React from 'react';
 import { View } from '@tarojs/components';
+import { SafeArea } from 'antd-mobile-taro-ui';
 import List from '@/components/list';
 import { data } from './data';
-import { SafeArea } from 'antd-mobile-taro-ui';
 
 const Index = () => {
   return (

@@ -73,6 +73,11 @@ export const data = [
         url: '/pages/card/index',
       },
       {
+        title: 'List 列表',
+        desc: 'antd-mobile的demo4和demo5不支持展示',
+        url: '/pages/list/index',
+      },
+      {
         title: 'Steps 步骤条',
         desc: '',
         url: '/pages/steps/index',
@@ -83,9 +88,9 @@ export const data = [
         url: '/pages/tag/index',
       },
       {
-        title: 'List 列表',
-        desc: 'antd-mobile的demo4和demo5不支持展示',
-        url: '/pages/list/index',
+        title: 'Footer 页脚',
+        desc: '',
+        url: '/pages/footer/index',
       },
     ],
   },
