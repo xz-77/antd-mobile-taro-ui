@@ -73,6 +73,11 @@ export const data = [
         url: '/pages/card/index',
       },
       {
+        title: 'Steps 步骤条',
+        desc: '',
+        url: '/pages/steps/index',
+      },
+      {
         title: 'List 列表',
         desc: 'antd-mobile的demo4和demo5不支持展示',
         url: '/pages/list/index',

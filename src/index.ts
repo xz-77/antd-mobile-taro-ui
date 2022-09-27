@@ -68,7 +68,7 @@ export { default as SafeArea } from './components/safe-area';
 export { default as Space } from './components/space';
 // export { default as SpinLoading } from './components/spin-loading'
 // export { default as Stepper } from './components//stepper'
-// export { default as Steps } from './components/steps'
+export { default as Steps } from './components/steps';
 // export { default as SwipeAction } from './components/swipe-action'
 // export { default as Swiper } from './components/swiper'
 // export { default as Switch } from './components/switch'

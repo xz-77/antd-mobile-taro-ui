@@ -20,6 +20,7 @@ export default defineAppConfig({
     'pages/notice-bar/index',
     'pages/avatar/index',
     'pages/card/index',
+    'pages/steps/index',
   ],
   window: {
     backgroundTextStyle: 'light',
