@@ -42,12 +42,12 @@ export default () => {
 
   const onChipClick = (item: ChipItem, index: number) => {
     console.log(item, index);
-    Taro.showToast({ title: `${item?.text}被点击了` });
+    Taro.showToast({ title: `${item?.text}被点击了`, icon: 'none' });
   };
   const onLinkClick = (item: LinkItem, index: number) => {
     console.log(item, index);
 
-    Taro.showToast({ title: '跳转' });
+    Taro.showToast({ title: '跳转', icon: 'none' });
   };
 
   return (
