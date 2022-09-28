@@ -8,7 +8,9 @@ import { updateVersion } from './utils/updateVersion';
 
 class App extends Component {
   componentDidMount() {
-    updateVersion();
+    if (process.env.TARO_ENV === 'weapp') {
+      updateVersion();
+    }
   }
 
   componentDidShow() {}
