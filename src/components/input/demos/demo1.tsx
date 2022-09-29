@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Input } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
-import styles from './demo1.less';
+import styles from './demo1.module.less';
 import { AttentionIcon, AttentionForbidIcon } from 'antd-mobile-taro-icons';
 import { View } from '@tarojs/components';
 
