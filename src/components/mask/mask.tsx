@@ -1,6 +1,6 @@
 import type { ITouchEvent } from '@tarojs/components';
 import { View } from '@tarojs/components';
-import type { ReactElement } from 'react';
+// import type { ReactElement } from 'react';
 import React, { useMemo } from 'react';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 
@@ -17,26 +17,26 @@ const opacityRecord = {
 export type MaskProps = {
   visible?: boolean;
   onMaskClick?: (event: ITouchEvent) => void;
-  destroyOnClose?: boolean;
-  forceRender?: boolean;
-  disableBodyScroll?: boolean;
+  // destroyOnClose?: boolean;
+  // forceRender?: boolean;
+  // disableBodyScroll?: boolean;
   color?: 'black' | 'white';
   opacity?: 'default' | 'thin' | 'thick' | number;
-  getContainer?: ReactElement | null;
-  afterShow?: () => void;
-  afterClose?: () => void;
-  stopPropagation?: ['click'];
+  // getContainer?: ReactElement | null;
+  // afterShow?: () => void;
+  // afterClose?: () => void;
+  // stopPropagation?: ['click'];
 } & NativeProps<'--z-index'>;
 
 const defaultProps = {
   visible: true,
-  destroyOnClose: false,
-  forceRender: false,
+  // destroyOnClose: false,
+  // forceRender: false,
   color: 'black',
   opacity: 'default',
-  disableBodyScroll: true,
-  getContainer: null,
-  stopPropagation: ['click'],
+  // disableBodyScroll: true,
+  // getContainer: null,
+  // stopPropagation: ['click'],
 };
 
 export const Mask: React.FC<MaskProps> = p => {
