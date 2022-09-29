@@ -103,6 +103,11 @@ export const data = [
         url: '/pages/checkbox/index',
       },
       {
+        title: 'Input 输入框',
+        desc: '不支持onlyShowClearWhenFocus属性，支持Taro的Input部分属性',
+        url: '/pages/input/index',
+      },
+      {
         title: 'Radio单选框',
         desc: '',
         url: '/pages/radio/index',
