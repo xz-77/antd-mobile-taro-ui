@@ -138,6 +138,11 @@ export const data = [
         desc: 'react-spring动画不能复用，使用transition实现动画',
         url: '/pages/popup/index',
       },
+      {
+        title: 'ProgressBar 进度条',
+        desc: '',
+        url: '/pages/progress-bar/index',
+      },
     ],
   },
   {

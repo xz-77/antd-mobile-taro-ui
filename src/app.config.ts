@@ -25,6 +25,7 @@ export default defineAppConfig({
     'pages/footer/index',
     'pages/input/index',
     'pages/search-bar/index',
+    'pages/progress-bar/index',
   ],
   window: {
     backgroundTextStyle: 'light',
