@@ -23,6 +23,7 @@ export default defineAppConfig({
     'pages/steps/index',
     'pages/tag/index',
     'pages/footer/index',
+    'pages/input/index',
   ],
   window: {
     backgroundTextStyle: 'light',

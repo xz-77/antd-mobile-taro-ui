@@ -1,6 +1,6 @@
 import './styles/miniprogram/theme-default.less';
 
-// export { setDefaultConfig } from './components/config-provider'
+export { setDefaultConfig } from './components/config-provider';
 
 // export { default as ActionSheet } from './components/action-sheet'
 export { default as AutoCenter } from './components/auto-center';
@@ -18,7 +18,7 @@ export { default as Card } from './components/card';
 // export { default as CheckList } from './components/check-list'
 export { default as Checkbox } from './components/checkbox';
 // export { default as Collapse } from './components/collapse'
-// export { default as ConfigProvider } from './components/config-provider'
+export { default as ConfigProvider } from './components/config-provider';
 // export { default as DatePicker } from './components/date-picker'
 // export { default as DatePickerView } from './components/date-picker-view'
 // export { default as Dialog } from './components/dialog'
@@ -37,7 +37,7 @@ export { default as Grid } from './components/grid';
 // export { default as ImageViewer } from './components/image-viewer'
 // export { default as IndexBar } from './components/index-bar'
 // export { default as InfiniteScroll } from './components/infinite-scroll'
-// export { default as Input } from './components/input'
+export { default as Input } from './components/input';
 export { default as JumboTabs } from './components/jumbo-tabs';
 export { default as List } from './components/list';
 // export { default as Loading } from './components/loading'

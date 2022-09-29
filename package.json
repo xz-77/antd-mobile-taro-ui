@@ -94,7 +94,7 @@
     "@tarojs/webpack-runner": "^3.5.6",
     "ahooks": "^3.6.2",
     "antd-mobile": "^5.24.0",
-    "antd-mobile-taro-icons": "^0.1.7",
+    "antd-mobile-taro-icons": "^0.1.9",
     "classnames": "^2.3.1",
     "lodash": "^4.17.21",
     "lorem-ipsum": "^2.0.4",
