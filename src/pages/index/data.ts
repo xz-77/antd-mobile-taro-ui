@@ -108,6 +108,11 @@ export const data = [
         url: '/pages/input/index',
       },
       {
+        title: 'SearchBar 搜索框',
+        desc: '',
+        url: '/pages/search-bar/index',
+      },
+      {
         title: 'Radio单选框',
         desc: '',
         url: '/pages/radio/index',

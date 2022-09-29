@@ -24,6 +24,7 @@ export default defineAppConfig({
     'pages/tag/index',
     'pages/footer/index',
     'pages/input/index',
+    'pages/search-bar/index',
   ],
   window: {
     backgroundTextStyle: 'light',
