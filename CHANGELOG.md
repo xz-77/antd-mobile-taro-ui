@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.5.0...v0.5.1) (2022-09-29)
+
+### Features
+
+- 更新 demo ([164c331](https://github.com/xz-77/antd-mobile-taro-ui/commit/164c331cd5328546cf3cccd21685b584ca6d3757))
+- 检查版本更新 ([f0c1816](https://github.com/xz-77/antd-mobile-taro-ui/commit/f0c18162e5d091d28afc1c574abfb0c25cb0dfe9))
+- footer 页脚 ([03086f5](https://github.com/xz-77/antd-mobile-taro-ui/commit/03086f510d6e8159f733f7f5f81af5b2ef896bed))
+- input 输入框 ([9b04f58](https://github.com/xz-77/antd-mobile-taro-ui/commit/9b04f5861ca5827d0c629f32cfe1b3dbb9d40026))
+- searchBar 搜索框 ([d09773e](https://github.com/xz-77/antd-mobile-taro-ui/commit/d09773e83616a8816f0fab921399d3d1df3f531b))
+- steps 步骤条 ([2d187d6](https://github.com/xz-77/antd-mobile-taro-ui/commit/2d187d6393d5f5f0ec0f94e11f471f9855098235))
+- tag 标签 ([39d95c9](https://github.com/xz-77/antd-mobile-taro-ui/commit/39d95c9dc2ae9a54224fbbcc965311142299dfe3))
+
+### Bug Fixes
+
+- 新增编译环境判断 ([c56ef33](https://github.com/xz-77/antd-mobile-taro-ui/commit/c56ef330137057d7efec7a47d85183ca4f8de14b))
+
 ## [0.5.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.4.1...v0.5.0) (2022-09-26)
 
 ### Features
