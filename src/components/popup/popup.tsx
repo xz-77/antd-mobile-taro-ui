@@ -23,7 +23,7 @@ export type PopupProps = {
   maskClassName?: string;
   maskStyle?: React.CSSProperties;
   onClick?: (event: ITouchEvent) => void;
-  stopPropagation?: ['click'];
+  // stopPropagation?: ['click'];
 } & NativeProps<'--z-index'>;
 
 const defaultProps = {
@@ -31,7 +31,7 @@ const defaultProps = {
   visible: false,
   getContainer: () => document.body,
   mask: true,
-  stopPropagation: ['click'],
+  // stopPropagation: ['click'],
 };
 
 export const Popup: FC<PopupProps> = p => {
@@ -78,8 +78,8 @@ export const Popup: FC<PopupProps> = p => {
           onMaskClick={props.onMaskClick}
           className={props.maskClassName}
           style={props.maskStyle}
-          disableBodyScroll={false}
-          stopPropagation={props.stopPropagation}
+          // disableBodyScroll={false}
+          // stopPropagation={props.stopPropagation}
         />
       )}
       <View
