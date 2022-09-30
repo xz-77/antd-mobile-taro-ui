@@ -143,6 +143,11 @@ export const data = [
         desc: '',
         url: '/pages/progress-bar/index',
       },
+      {
+        title: 'ProgressCircle 进度圈',
+        desc: '使用css3替换svg实现，API保持不变',
+        url: '/pages/progress-circle/index',
+      },
     ],
   },
   {
