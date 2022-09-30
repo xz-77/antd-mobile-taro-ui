@@ -53,7 +53,7 @@ export { default as NoticeBar } from './components/notice-bar';
 // export { default as Popover } from './components/popover'
 export { default as Popup } from './components/popup';
 export { default as ProgressBar } from './components/progress-bar';
-// export { default as ProgressCircle } from './components/progress-circle'
+export { default as ProgressCircle } from './components/progress-circle';
 // export { default as PullToRefresh } from './components/pull-to-refresh'
 export { default as Radio } from './components/radio';
 // export { default as Rate } from './components/rate'
