@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.5.1...v0.6.0) (2022-09-30)
+
+### Features
+
+- 新增进度圈入口 ([505ea63](https://github.com/xz-77/antd-mobile-taro-ui/commit/505ea6388f284d0db08c3801db9cadcbebad1e38))
+- progressBar 进度条 ([ddeb552](https://github.com/xz-77/antd-mobile-taro-ui/commit/ddeb5520a188121c18fde06ae460ba88062d27d6))
+- progressCircle 进度圈 ([54d8544](https://github.com/xz-77/antd-mobile-taro-ui/commit/54d854485f1c077b148151526fb96864d7f96a91))
+
 ### [0.5.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.5.0...v0.5.1) (2022-09-29)
 
 ### Features
