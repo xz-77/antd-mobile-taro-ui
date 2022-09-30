@@ -1,8 +1,10 @@
 import { Component } from 'react';
-import './styles/miniprogram/theme-default.less';
-import './styles/h5/theme-default.less';
-// TODO: 兼容h5不引入iconfont样式文件问题
-import 'antd-mobile-taro-icons/lib/es/styles/iconfont.css';
+if (process.env.TARO_ENV === 'weapp') {
+  import('./styles/index.less');
+}
+if (process.env.TARO_ENV === 'h5') {
+  import('./styles/index.h5.less');
+}
 import './app.less';
 import { updateVersion } from './utils/updateVersion';
 
