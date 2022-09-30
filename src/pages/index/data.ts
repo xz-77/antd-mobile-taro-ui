@@ -3,9 +3,14 @@ export const data = [
     name: '通用',
     items: [
       {
-        title: 'Button按钮',
+        title: 'Button 按钮',
         desc: '不支持type、onMouseDown、onMouseUp属性',
         url: '/pages/button/index',
+      },
+      {
+        title: 'Icon 图标',
+        desc: '',
+        url: '/pages/iconfont/index',
       },
     ],
   },
@@ -116,6 +121,11 @@ export const data = [
         title: 'Radio单选框',
         desc: '',
         url: '/pages/radio/index',
+      },
+      {
+        title: 'Stepper 步进器',
+        desc: '',
+        url: '/pages/stepper/index',
       },
     ],
   },

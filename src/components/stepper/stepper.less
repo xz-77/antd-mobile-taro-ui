@@ -1,0 +1,76 @@
+@class-prefix-stepper: ~'adm-stepper';
+
+.@{class-prefix-stepper} {
+  --height: 28px;
+  --input-width: 44px;
+  --input-font-size: var(--adm-font-size-main);
+  --input-font-color: var(--adm-color-text);
+  --input-background-color: var(--adm-color-box);
+  --border-radius: 2px;
+  --border: none;
+  --border-inner: solid 2px transparent;
+  --active-border: var(--border);
+  --button-font-size: var(--adm-font-size-7);
+  --button-text-color: var(--adm-color-primary);
+  --button-background-color: var(--adm-color-box);
+  --button-width: var(--height);
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  width: calc(var(--input-width) + 2 * var(--button-width));
+  border: var(--border);
+  border-radius: var(--border-radius);
+  &-active {
+    border: var(--active-border);
+  }
+
+  &-middle {
+    flex: 1;
+    border-left: var(--border-inner);
+    border-right: var(--border-inner);
+  }
+
+  .@{class-prefix-stepper}-input {
+    height: var(--height);
+    --background-color: var(--input-background-color);
+    --font-size: var(--input-font-size);
+    --color: var(--input-font-color);
+    --text-align: center;
+  }
+
+  &-minus,
+  &-plus {
+    width: var(--button-width);
+    height: var(--height);
+    padding: 0;
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    font-size: var(--button-font-size);
+    --border-width: 0;
+    &-iconfont {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: var(--button-font-size);
+      color: var(--button-text-color);
+      &-disabled {
+        color: var(--adm-color-weak);
+      }
+    }
+    &:disabled {
+      color: var(--adm-color-weak);
+    }
+  }
+
+  &-minus {
+    border-radius: 0;
+  }
+
+  &-plus {
+    border-radius: 0;
+  }
+}

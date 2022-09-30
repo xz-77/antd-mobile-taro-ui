@@ -67,7 +67,7 @@ export { default as SearchBar } from './components/search-bar';
 // export { default as Slider } from './components/slider'
 export { default as Space } from './components/space';
 // export { default as SpinLoading } from './components/spin-loading'
-// export { default as Stepper } from './components//stepper'
+export { default as Stepper } from './components/stepper';
 export { default as Steps } from './components/steps';
 // export { default as SwipeAction } from './components/swipe-action'
 // export { default as Swiper } from './components/swiper'
