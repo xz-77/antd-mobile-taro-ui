@@ -18,7 +18,7 @@ export default () => {
       </DemoBlock>
 
       <DemoBlock title='指定线条宽度'>
-        <Space style={{ '--gap': '24px' }}>
+        <Space style={{ '--gap': '24px' }} wrap>
           <ProgressCircle percent={75} style={{ '--track-width': '2px' }} />
           <ProgressCircle percent={75} style={{ '--track-width': '4px' }} />
           <ProgressCircle percent={75} style={{ '--track-width': '12px' }} />
@@ -66,7 +66,7 @@ export default () => {
       </DemoBlock>
 
       <DemoBlock title='自定义颜色'>
-        <Space style={{ '--gap': '24px' }}>
+        <Space style={{ '--gap': '24px' }} wrap>
           <ProgressCircle
             percent={60}
             style={{
