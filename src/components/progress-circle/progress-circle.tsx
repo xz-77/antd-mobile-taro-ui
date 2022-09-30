@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC } from 'react';
+import React, { CSSProperties, FC, useMemo } from 'react';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 import { View } from '@tarojs/components';
@@ -12,17 +12,21 @@ export type ProgressCircleProps = {
 
 export const ProgressCircle: FC<ProgressCircleProps> = p => {
   const props = mergeProps({ percent: 0 }, p);
-  // const style: CSSProperties & Record<'--percent', string> = {
-  //   '--percent': `${props.percent.toString()}deg`,
-  // };
 
-  const l = Math.max(props.percent - 50, 0) === 0 ? '-135' : `${props.percent * 3.6 - 315}`;
+  const l = useMemo(
+    () => (Math.max(props.percent - 50, 0) === 0 ? '-135' : `${props.percent * 3.6 - 315}`),
+    [props.percent]
+  );
 
   const lPercent: CSSProperties & Record<'--percent', string> = {
     '--percent': `${l}deg`,
   };
 
-  const r = Math.min(props.percent, 50) === 50 ? '45' : `${props.percent * 3.6 - 135}`;
+  const r = useMemo(
+    () => (Math.min(props.percent, 50) === 50 ? '45' : `${props.percent * 3.6 - 135}`),
+    [props.percent]
+  );
+
   const rPercent: CSSProperties & Record<'--percent', string> = {
     '--percent': `${r}deg`,
   };
