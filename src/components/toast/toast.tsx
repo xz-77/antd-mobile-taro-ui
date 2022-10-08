@@ -39,7 +39,7 @@ export const InternalToast: React.FC<ToastProps> = p => {
     if (icon === null || icon === undefined) return null;
     switch (icon) {
       case 'success':
-        return <CheckIcon className={`${classPrefix}-icon-success`} style={{ fontSize: 36 }} />;
+        return <CheckIcon className={`${classPrefix}-icon-success`} />;
       case 'fail':
         return <CloseIcon className={`${classPrefix}-icon-fail`} />;
       case 'loading':
