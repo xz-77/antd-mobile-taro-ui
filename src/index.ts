@@ -76,7 +76,7 @@ export { default as Steps } from './components/steps';
 export { default as Tabs } from './components/tabs';
 export { default as Tag } from './components/tag';
 // export { default as TextArea } from './components/text-area'
-// export { default as Toast } from './components/toast'
+export { default as Toast } from './components/toast';
 // export { default as TreeSelect } from './components/tree-select'
 // export { default as VirtualInput } from './components/virtual-input'
 // export { default as WaterMark } from './components/water-mark'

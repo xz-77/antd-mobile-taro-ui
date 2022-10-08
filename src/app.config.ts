@@ -29,6 +29,7 @@ export default defineAppConfig({
     'pages/progress-circle/index',
     'pages/stepper/index',
     'pages/iconfont/index',
+    'pages/toast/index',
   ],
   window: {
     backgroundTextStyle: 'light',

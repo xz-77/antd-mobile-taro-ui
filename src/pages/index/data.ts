@@ -158,6 +158,11 @@ export const data = [
         desc: '使用css3替换svg实现，API保持不变',
         url: '/pages/progress-circle/index',
       },
+      {
+        title: 'Toast 轻提示',
+        desc: 'Taro不支持Portal，相关部分重写实现，部分属性暂不支持',
+        url: '/pages/toast/index',
+      },
     ],
   },
   {

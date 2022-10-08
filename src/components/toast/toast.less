@@ -1,0 +1,49 @@
+@class-prefix-toast: ~'adm-toast';
+
+.@{class-prefix-toast}-mask {
+  .@{class-prefix-toast}-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .@{class-prefix-toast}-main {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 204px;
+    max-height: 70%;
+    overflow: auto;
+    color: white;
+    word-break: break-all;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    pointer-events: all;
+    font-size: var(--adm-font-size-7);
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  .@{class-prefix-toast}-main-text {
+    padding: 12px;
+    min-width: 0px;
+  }
+  .@{class-prefix-toast}-main-icon {
+    padding: 35px 12px;
+    min-width: 150px;
+    .@{class-prefix-toast}-icon {
+      text-align: center;
+      margin-bottom: 8px;
+      font-size: 36px;
+      line-height: 1;
+    }
+  }
+}
+
+.@{class-prefix-toast}-loading {
+  --size: 48px;
+  margin: 0 auto 8px;
+}

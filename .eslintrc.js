@@ -11,5 +11,6 @@ module.exports = {
     'react/jsx-fragments': 0,
     'react/jsx-no-useless-fragment': 0,
     'react/no-array-index-key': 0,
+    'react/jsx-props-no-spreading': 0,
   },
 };
