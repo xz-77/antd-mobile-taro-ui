@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.6.0...v0.7.0) (2022-10-08)
+
+### Features
+
+- stepper 步进器 ([293ce8d](https://github.com/xz-77/antd-mobile-taro-ui/commit/293ce8dddd0e0d832c09a3f86264b9da85964826))
+
+### Bug Fixes
+
+- 解决跨平台样式引入问题 ([0ab63d9](https://github.com/xz-77/antd-mobile-taro-ui/commit/0ab63d95d509d3a37d1d352aa323cdb1a93df0ea))
+
 ## [0.6.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.5.1...v0.6.0) (2022-09-30)
 
 ### Features
