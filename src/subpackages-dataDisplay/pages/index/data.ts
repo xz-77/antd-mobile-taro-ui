@@ -4,7 +4,7 @@ export const data = [
     items: [
       {
         title: 'Avatar 头像',
-        desc: '不支持fit，支持fallback以及Taro的Image组件的其他API',
+        desc: '',
         url: '/subpackages-dataDisplay/pages/avatar/index',
       },
       {
@@ -14,7 +14,7 @@ export const data = [
       },
       {
         title: 'List 列表',
-        desc: 'antd-mobile的demo4和demo5不支持展示',
+        desc: '',
         url: '/subpackages-dataDisplay/pages/list/index',
       },
       {

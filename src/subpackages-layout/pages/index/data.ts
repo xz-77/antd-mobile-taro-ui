@@ -14,7 +14,7 @@ export const data = [
       },
       {
         title: 'Grid 栅格',
-        desc: '由于number类型会被加上px单位，内部对 span 参数进行数据类型转化 number->string',
+        desc: '',
         url: '/subpackages-layout/pages/grid/index',
       },
       {
@@ -23,7 +23,7 @@ export const data = [
         url: '/subpackages-layout/pages/safe-area/index',
       },
       {
-        title: 'Space间距',
+        title: 'Space 间距',
         desc: '',
         url: '/subpackages-layout/pages/space/index',
       },

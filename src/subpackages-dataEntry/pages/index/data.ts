@@ -3,13 +3,13 @@ export const data = [
     name: '信息录入',
     items: [
       {
-        title: 'Checkbox复选框',
+        title: 'Checkbox 复选框',
         desc: '',
         url: '/subpackages-dataEntry/pages/checkbox/index',
       },
       {
         title: 'Input 输入框',
-        desc: '不支持onlyShowClearWhenFocus属性，支持Taro的Input部分属性',
+        desc: '',
         url: '/subpackages-dataEntry/pages/input/index',
       },
       {
@@ -18,7 +18,7 @@ export const data = [
         url: '/subpackages-dataEntry/pages/search-bar/index',
       },
       {
-        title: 'Radio单选框',
+        title: 'Radio 单选框',
         desc: '',
         url: '/subpackages-dataEntry/pages/radio/index',
       },

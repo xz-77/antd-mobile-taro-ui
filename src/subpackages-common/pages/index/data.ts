@@ -4,7 +4,7 @@ export const data = [
     items: [
       {
         title: 'Button 按钮',
-        desc: '不支持type、onMouseDown、onMouseUp属性',
+        desc: '',
         url: '/subpackages-common/pages/button/index',
       },
       {
