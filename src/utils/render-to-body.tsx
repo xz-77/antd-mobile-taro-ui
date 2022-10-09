@@ -3,7 +3,6 @@ import Taro from '@tarojs/taro';
 import { render, unmount as reactUnmount } from 'antd-mobile/es/utils/render';
 
 const container = document.createElement('view');
-
 export function renderToBody(element: ReactElement) {
   // const container = document.createElement('div')
   // document.body.appendChild(container)

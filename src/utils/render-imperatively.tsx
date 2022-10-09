@@ -31,7 +31,8 @@ export function renderImperatively(element: TargetElement) {
       closedRef.current = true;
       setVisible(false);
       elementToRender.props.onClose?.();
-      elementToRender.props.afterClose?.();
+      // 比antd-mobile多执行一步
+      afterClose();
     }
     function afterClose() {
       unmount();
