@@ -14,7 +14,7 @@ export const data = [
     items: [
       {
         title: '布局',
-        desc: '包含自动居中、分割线、栅格、安全区等',
+        desc: '包含自动居中、分割线、栅格、安全区、间距等',
         url: '/subpackages-layout/pages/index/index',
       },
     ],
@@ -34,7 +34,7 @@ export const data = [
     items: [
       {
         title: '信息展示',
-        desc: '包含头像、卡片、列表、步骤条、标签、页脚等',
+        desc: '包含头像、卡片、列表、分页符、步骤条、标签、页脚等',
         url: '/subpackages-dataDisplay/pages/index/index',
       },
     ],

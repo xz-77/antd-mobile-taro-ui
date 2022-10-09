@@ -26,6 +26,7 @@ export default defineAppConfig({
         'pages/list/index',
         'pages/steps/index',
         'pages/tag/index',
+        'pages/page-indicator/index',
       ],
     },
     {

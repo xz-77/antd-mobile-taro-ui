@@ -18,6 +18,11 @@ export const data = [
         url: '/subpackages-dataDisplay/pages/list/index',
       },
       {
+        title: 'PageIndicator 分页符',
+        desc: '',
+        url: '/subpackages-dataDisplay/pages/page-indicator/index',
+      },
+      {
         title: 'Steps 步骤条',
         desc: '',
         url: '/subpackages-dataDisplay/pages/steps/index',
