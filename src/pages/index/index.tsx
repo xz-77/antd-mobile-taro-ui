@@ -1,9 +1,8 @@
 import Taro from '@tarojs/taro';
 import React from 'react';
 import { View, Text } from '@tarojs/components';
-import { Avatar, SafeArea } from 'antd-mobile-taro-ui';
+import { Avatar, SafeArea, List } from 'antd-mobile-taro-ui';
 import { EditIcon } from 'antd-mobile-taro-icons';
-import List from '@/components/list';
 import { data } from './data';
 import styles from './index.module.less';
 import logo from './logo.jpg';

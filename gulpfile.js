@@ -38,7 +38,7 @@ function copyAssets() {
 function buildES() {
   const tsProject = ts({
     ...tsconfig.compilerOptions,
-    module: 'ES2022',
+    module: 'ES6',
   });
   return gulp
     .src(['src/**/*.{ts,tsx}'], {
