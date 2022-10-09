@@ -49,3 +49,35 @@ _由于小程序不支持 `SVG` 所以 `antd-mobile-taro-ui` 所有用到 `svg` 
 ## 进度展示
 
 请扫描上面的二维码查看组件列表或访问[antd-mobile-taro-ui](https://xz-77.github.io/components)
+
+## 注意事项
+
+### Taro 的版本
+
+目前版本是@tarojs/cli@3.5.5
+
+### Taro 脚手架尺寸的设置
+
+```javascript
+// config/index.js
+  designWidth: 375,
+  deviceRatio: {
+    640: 2.34 / 2,
+    750: 1,
+    828: 1.81 / 2,
+    375: 2 / 1
+  },
+```
+
+### webpack 版本
+
+```javascript
+// config/index.js
+compiler: "webpack4",
+```
+
+### 编译代码依赖分析忽略问题
+
+[参考网址](https://developers.weixin.qq.com/community/develop/article/doc/00020631afc6c8c6f62e7b91855c13?idescene=6)
+
+设置之后重启微信开发工具
