@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.7.0...v0.8.0) (2022-10-09)
+
+### Features
+
+- pageIndicator 分页符 ([126300f](https://github.com/xz-77/antd-mobile-taro-ui/commit/126300fcd3180b6060ac1979b063b8d44b865584))
+- toast 轻提示 ([4947626](https://github.com/xz-77/antd-mobile-taro-ui/commit/4947626bc11f453d79986db8edf9e976c4f711fc))
+
+### Bug Fixes
+
+- 修改 icon 字体大小 ([b9e8c48](https://github.com/xz-77/antd-mobile-taro-ui/commit/b9e8c4823c40d0d67579c2550511c8513532229f))
+- toast 需要手动卸载 ([0881980](https://github.com/xz-77/antd-mobile-taro-ui/commit/0881980b417edc3a0aa4529f934a3538b196e458))
+
 ## [0.7.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.6.0...v0.7.0) (2022-10-08)
 
 ### Features
