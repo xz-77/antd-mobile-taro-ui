@@ -1,37 +1,23 @@
-import { ITouchEvent, View } from '@tarojs/components';
+import { View } from '@tarojs/components';
 import classNames from 'classnames';
-import type { ReactElement } from 'react';
+import type { PropsWithChildren } from 'react';
 import React, { FC } from 'react';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 import Mask from '../mask';
+import { defaultPopupBaseProps, PopupBaseProps } from './popup-base-props';
 
 const classPrefix = `adm-popup`;
 
-export type PopupProps = {
-  visible?: boolean;
-  mask?: boolean;
-  onMaskClick?: (event: ITouchEvent) => void;
-  destroyOnClose?: boolean;
-  forceRender?: boolean;
-  getContainer?: ReactElement | null;
-  afterShow?: () => void;
-  afterClose?: () => void;
-  position?: 'bottom' | 'top' | 'left' | 'right';
-  bodyClassName?: string;
-  bodyStyle?: React.CSSProperties;
-  maskClassName?: string;
-  maskStyle?: React.CSSProperties;
-  onClick?: (event: ITouchEvent) => void;
-  // stopPropagation?: ['click'];
-} & NativeProps<'--z-index'>;
+export type PopupProps = PopupBaseProps &
+  PropsWithChildren<{
+    position?: 'bottom' | 'top' | 'left' | 'right';
+  }> &
+  NativeProps<'--z-index'>;
 
 const defaultProps = {
+  ...defaultPopupBaseProps,
   position: 'bottom',
-  visible: false,
-  getContainer: () => document.body,
-  mask: true,
-  // stopPropagation: ['click'],
 };
 
 export const Popup: FC<PopupProps> = p => {
