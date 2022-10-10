@@ -57,7 +57,7 @@ export { default as ProgressCircle } from './components/progress-circle';
 // export { default as PullToRefresh } from './components/pull-to-refresh'
 export { default as Radio } from './components/radio';
 // export { default as Rate } from './components/rate'
-// export { default as Result } from './components/result'
+export { default as Result } from './components/result';
 export { default as SafeArea } from './components/safe-area';
 // export { default as ScrollMask } from './components/scroll-mask';
 export { default as SearchBar } from './components/search-bar';

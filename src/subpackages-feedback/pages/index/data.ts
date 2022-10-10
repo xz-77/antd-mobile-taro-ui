@@ -29,6 +29,11 @@ export const data = [
         url: '/subpackages-feedback/pages/progress-circle/index',
       },
       {
+        title: 'Result 结果',
+        desc: '',
+        url: '/subpackages-feedback/pages/result/index',
+      },
+      {
         title: 'Toast 轻提示',
         desc: '',
         url: '/subpackages-feedback/pages/toast/index',

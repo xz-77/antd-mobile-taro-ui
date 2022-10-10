@@ -49,6 +49,7 @@ export default defineAppConfig({
         'pages/popup/index',
         'pages/progress-bar/index',
         'pages/progress-circle/index',
+        'pages/result/index',
         'pages/toast/index',
       ],
     },
