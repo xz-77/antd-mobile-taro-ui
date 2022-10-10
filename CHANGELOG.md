@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.8.0...v0.8.1) (2022-10-10)
+
+### Features
+
+- 更新 Toast 有更多的属性支持 ([ccfd7aa](https://github.com/xz-77/antd-mobile-taro-ui/commit/ccfd7aa5d7af3a8bb7cfcc5202b6e3ffea5a07dc))
+- 新增属性支持，与 antd-mobile 尽可能保持一致 ([2a14868](https://github.com/xz-77/antd-mobile-taro-ui/commit/2a14868ea10c5e82714b319bda10e593b97d618b))
+- result 结果 ([0612004](https://github.com/xz-77/antd-mobile-taro-ui/commit/0612004b376da554c1f6b96c1fbf155f55709c22))
+
 ## [0.8.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.7.0...v0.8.0) (2022-10-09)
 
 ### Features
