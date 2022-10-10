@@ -11,8 +11,11 @@ const BODY_UNLOCK_STYLE = {
 };
 
 export function useLockScroll(shouldLock: boolean) {
+  if (process.env.TARO_ENV === 'h5') return;
+
   if (!shouldLock) {
     // Taro对外没抛出这个方法，但是能用，否则没办法在page上添加style
+    // h5不生效会报错
     // @ts-ignore
     Taro?.setPageStyle({
       style: BODY_UNLOCK_STYLE,
