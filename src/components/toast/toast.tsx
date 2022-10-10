@@ -2,7 +2,7 @@ import React, { ReactNode, useMemo } from 'react';
 import classNames from 'classnames';
 import { CheckIcon, CloseIcon } from 'antd-mobile-taro-icons';
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
-// import { PropagationEvent } from 'antd-mobile/es/utils/with-stop-propagation';
+import { PropagationEvent } from 'antd-mobile/es/utils/with-stop-propagation';
 // import { GetContainer } from 'antd-mobile/es/utils/render-to-container';
 import { View } from '@tarojs/components';
 import type { MaskProps } from '../mask';
@@ -23,7 +23,7 @@ export interface ToastProps {
   position?: 'top' | 'bottom' | 'center';
   visible?: boolean;
   // getContainer?: GetContainer;
-  // stopPropagation?: PropagationEvent[];
+  stopPropagation?: PropagationEvent[];
 }
 
 const defaultProps = {
@@ -63,17 +63,17 @@ export const InternalToast: React.FC<ToastProps> = p => {
   return (
     <Mask
       visible={props.visible}
-      // destroyOnClose
+      destroyOnClose
       opacity={0}
-      // disableBodyScroll={!maskClickable}
+      disableBodyScroll={!maskClickable}
       // getContainer={props.getContainer}
-      // afterClose={props.afterClose}
+      afterClose={props.afterClose}
       style={{
         pointerEvents: maskClickable ? 'none' : 'auto',
         ...props.maskStyle,
       }}
       className={classNames(`${classPrefix}-mask`, props.maskClassName)}
-      // stopPropagation={props.stopPropagation}
+      stopPropagation={props.stopPropagation}
     >
       <View className={classNames(`${classPrefix}-wrap`)}>
         <View
