@@ -4313,11 +4313,6 @@
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
 
-"@types/runes@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@types/runes/-/runes-0.4.1.tgz#ec16e8d73dd1acfa09aca3b6a9180dfef45045ae"
-  integrity sha512-wb2qEPRr/BXKB1xx7S5OzbnZmqIGRPrw0SjBJYnLA+l5DEGmyw7veFXQ0Cko/gotDTB+yGpsZOAkLDWZTyJo6w==
-
 "@types/sass@^1.16.0":
   version "1.43.1"
   resolved "https://registry.npmmirror.com/@types/sass/-/sass-1.43.1.tgz#86bb0168e9e881d7dade6eba16c9ed6d25dc2f68"
