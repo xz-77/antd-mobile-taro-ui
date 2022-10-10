@@ -34,6 +34,11 @@ export const data = [
         url: '/subpackages-feedback/pages/result/index',
       },
       {
+        title: 'Skeleton 骨架屏',
+        desc: '',
+        url: '/subpackages-feedback/pages/skeleton/index',
+      },
+      {
         title: 'Toast 轻提示',
         desc: '',
         url: '/subpackages-feedback/pages/toast/index',

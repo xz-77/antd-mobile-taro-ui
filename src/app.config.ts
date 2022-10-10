@@ -50,6 +50,7 @@ export default defineAppConfig({
         'pages/progress-bar/index',
         'pages/progress-circle/index',
         'pages/result/index',
+        'pages/skeleton/index',
         'pages/toast/index',
       ],
     },
