@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Popup, Space, Button } from 'antd-mobile-taro-ui';
+import { Popup, Space, Button, Toast } from 'antd-mobile-taro-ui';
 import { DemoBlock, lorem } from 'demos';
 import { View } from '@tarojs/components';
 
@@ -31,6 +31,8 @@ export default () => {
               onClose={() => {
                 setVisible1(false);
               }}
+              afterClose={() => Toast.show('afterClose')}
+              afterShow={() => Toast.show('afterShow')}
               showCloseButton
             >
               {mockContent}

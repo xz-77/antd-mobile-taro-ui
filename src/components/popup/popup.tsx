@@ -1,11 +1,12 @@
 import { View } from '@tarojs/components';
 import classNames from 'classnames';
-import type { PropsWithChildren } from 'react';
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren, useEffect, useRef, useState } from 'react';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 import { CloseIcon } from 'antd-mobile-taro-icons';
 import { withStopPropagation } from 'antd-mobile/es/utils/with-stop-propagation';
+import { ShouldRender } from 'antd-mobile/es/utils/should-render';
+import { useUnmountedRef } from 'ahooks';
 import Mask from '../mask';
 import { defaultPopupBaseProps, PopupBaseProps } from './popup-base-props';
 
@@ -50,7 +51,26 @@ export const Popup: FC<PopupProps> = p => {
     return 'none';
   };
 
-  return withStopPropagation(
+  const [active, setActive] = useState(props.visible);
+
+  const unmountedRef = useUnmountedRef();
+
+  const init = useRef(true);
+
+  useEffect(() => {
+    if (init.current) return;
+    if (unmountedRef.current) return;
+    setActive(props.visible);
+  }, [props.visible]);
+
+  useEffect(() => {
+    if (init.current) {
+      setActive(true);
+      init.current = false;
+    }
+  }, []);
+
+  const node = withStopPropagation(
     props.stopPropagation,
     withNativeProps(
       props,
@@ -77,6 +97,12 @@ export const Popup: FC<PopupProps> = p => {
             style={props.maskStyle}
             disableBodyScroll={false}
             stopPropagation={props.stopPropagation}
+            afterClose={() => {
+              props.afterClose?.();
+            }}
+            afterShow={() => {
+              props.afterShow?.();
+            }}
           />
         )}
         <View
@@ -102,5 +128,12 @@ export const Popup: FC<PopupProps> = p => {
         </View>
       </View>
     )
+  );
+
+  return (
+    <ShouldRender active={active} forceRender={props.forceRender} destroyOnClose={props.destroyOnClose}>
+      {/* {renderToContainer(props.getContainer, node)} */}
+      {node}
+    </ShouldRender>
   );
 };
