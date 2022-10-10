@@ -1,7 +1,7 @@
 import React from 'react';
 import { GetContainer } from 'antd-mobile/es/utils/render-to-container';
-// import { PropagationEvent } from 'antd-mobile/es/utils/with-stop-propagation'
 import { ITouchEvent } from '@tarojs/components';
+import { PropagationEvent } from 'antd-mobile/es/utils/with-stop-propagation';
 import { MaskProps } from '../mask';
 
 export type PopupBaseProps = {
@@ -21,7 +21,7 @@ export type PopupBaseProps = {
   onClose?: () => void;
   onMaskClick?: (event: ITouchEvent) => void;
   showCloseButton?: boolean;
-  // stopPropagation?: PropagationEvent[]
+  stopPropagation?: PropagationEvent[];
   visible?: boolean;
 };
 
@@ -33,6 +33,6 @@ export const defaultPopupBaseProps = {
   getContainer: () => document.body,
   mask: true,
   showCloseButton: false,
-  // stopPropagation: ['click'],
+  stopPropagation: ['click'],
   visible: false,
 };

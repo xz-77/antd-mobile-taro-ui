@@ -4,6 +4,8 @@ import type { PropsWithChildren } from 'react';
 import React, { FC } from 'react';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
+import { CloseIcon } from 'antd-mobile-taro-icons';
+import { withStopPropagation } from 'antd-mobile/es/utils/with-stop-propagation';
 import Mask from '../mask';
 import { defaultPopupBaseProps, PopupBaseProps } from './popup-base-props';
 
@@ -48,35 +50,57 @@ export const Popup: FC<PopupProps> = p => {
     return 'none';
   };
 
-  return withNativeProps(
-    props,
-    <View
-      className={classPrefix}
-      onClick={props.onClick}
-      style={{
-        opacity: props.visible ? '1' : '0',
-        zIndex: props.visible ? 'var(--z-index)' : '-1',
-      }}
-    >
-      {props.mask && (
-        <Mask
-          visible={props.visible}
-          onMaskClick={props.onMaskClick}
-          className={props.maskClassName}
-          style={props.maskStyle}
-          // disableBodyScroll={false}
-          // stopPropagation={props.stopPropagation}
-        />
-      )}
+  return withStopPropagation(
+    props.stopPropagation,
+    withNativeProps(
+      props,
       <View
-        className={bodyCls}
+        className={classPrefix}
+        onClick={props.onClick}
         style={{
-          ...props.bodyStyle,
-          transform: percent(100),
+          opacity: props.visible ? '1' : '0',
+          zIndex: props.visible ? 'var(--z-index)' : '-1',
         }}
       >
-        {props.children}
+        {props.mask && (
+          <Mask
+            visible={props.visible}
+            forceRender={props.forceRender}
+            destroyOnClose={props.destroyOnClose}
+            onMaskClick={e => {
+              props.onMaskClick?.(e);
+              if (props.closeOnMaskClick) {
+                props.onClose?.();
+              }
+            }}
+            className={props.maskClassName}
+            style={props.maskStyle}
+            disableBodyScroll={false}
+            stopPropagation={props.stopPropagation}
+          />
+        )}
+        <View
+          className={bodyCls}
+          style={{
+            ...props.bodyStyle,
+            transform: percent(100),
+          }}
+        >
+          {props.showCloseButton &&
+            withStopPropagation(
+              ['click'],
+              <View
+                className={classNames(`${classPrefix}-close-icon`, 'adm-plain-anchor')}
+                onClick={() => {
+                  props.onClose?.();
+                }}
+              >
+                <CloseIcon />
+              </View>
+            )}
+          {props.children}
+        </View>
       </View>
-    </View>
+    )
   );
 };
