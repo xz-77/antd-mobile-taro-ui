@@ -1,0 +1,30 @@
+.iconfont-page {
+  .iconfont-wrapper {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #f1f1f1;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: #fff;
+    .iconfont-size {
+      font-size: 42px;
+    }
+    &-name {
+      margin-top: 10px;
+      color: #333;
+      font-size: 13px;
+    }
+
+    &-hover {
+      background-color: var(--adm-color-primary);
+      .iconfont-wrapper-name {
+        color: #fff;
+      }
+      .iconfont-size {
+        color: #fff;
+      }
+    }
+  }
+}
