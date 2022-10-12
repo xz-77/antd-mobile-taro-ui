@@ -61,7 +61,13 @@ export default defineAppConfig({
     },
     {
       root: 'subpackages-navigation',
-      pages: ['pages/index/index', 'pages/capsule-tabs/index', 'pages/jumbo-tabs/index', 'pages/tabs/index'],
+      pages: [
+        'pages/index/index',
+        'pages/capsule-tabs/index',
+        'pages/jumbo-tabs/index',
+        'pages/nav-bar/index',
+        'pages/tabs/index',
+      ],
     },
   ],
   window: {

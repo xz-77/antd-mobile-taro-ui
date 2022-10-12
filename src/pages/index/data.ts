@@ -24,7 +24,7 @@ export const data = [
     items: [
       {
         title: '导航',
-        desc: '包含胶囊选项卡、复杂选项卡、标签页等',
+        desc: '包含胶囊选项卡、复杂选项卡、导航栏、标签页等',
         url: '/subpackages-navigation/pages/index/index',
       },
     ],

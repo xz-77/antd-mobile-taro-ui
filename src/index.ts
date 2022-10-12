@@ -43,7 +43,7 @@ export { default as List } from './components/list';
 // export { default as Loading } from './components/loading'
 export { default as Mask } from './components/mask';
 // export { default as Modal } from './components/modal'
-// export { default as NavBar } from './components/nav-bar'
+export { default as NavBar } from './components/nav-bar';
 export { default as NoticeBar } from './components/notice-bar';
 // export { default as NumberKeyboard } from './components/number-keyboard'
 export { default as PageIndicator } from './components/page-indicator';
