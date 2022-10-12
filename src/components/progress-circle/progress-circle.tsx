@@ -8,7 +8,7 @@ const classPrefix = `adm-progress-circle`;
 export type ProgressCircleProps = {
   percent?: number;
   children?: React.ReactNode;
-} & NativeProps<'--size' | '--track-width' | '--track-color' | '--fill-color'>;
+} & NativeProps<'--size' | '--track-width' | '--track-color' | '--fill-color' | '--track-duration'>;
 
 export const ProgressCircle: FC<ProgressCircleProps> = p => {
   const props = mergeProps({ percent: 0 }, p);

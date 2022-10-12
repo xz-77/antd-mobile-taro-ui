@@ -7,7 +7,11 @@ export const data = [
         desc: '',
         url: '/subpackages-feedback/pages/dot-loading/index',
       },
-
+      {
+        title: 'SpinLoading 转圈加载中',
+        desc: '',
+        url: '/subpackages-feedback/pages/spin-loading/index',
+      },
       {
         title: 'Mask 遮罩层',
         desc: '',

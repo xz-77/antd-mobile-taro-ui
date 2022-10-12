@@ -1,0 +1,20 @@
+.adm-spin-loading {
+  --color: var(--adm-color-weak);
+  --size: 32px;
+  width: var(--size);
+  height: var(--size);
+  &-circle {
+    --track-color: transparent;
+    --track-duration: 0s;
+    animation: adm-spin-loading-rotate 0.8s infinite linear;
+  }
+}
+
+@keyframes adm-spin-loading-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

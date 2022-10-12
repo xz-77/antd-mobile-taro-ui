@@ -52,6 +52,7 @@ export default defineAppConfig({
         'pages/result/index',
         'pages/skeleton/index',
         'pages/toast/index',
+        'pages/spin-loading/index',
       ],
     },
     {
