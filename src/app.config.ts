@@ -3,7 +3,7 @@ export default defineAppConfig({
   subPackages: [
     {
       root: 'subpackages-common',
-      pages: ['pages/index/index', 'pages/button/index', 'pages/iconfont/index'],
+      pages: ['pages/index/index', 'pages/button/index', 'pages/icon/index'],
     },
     {
       root: 'subpackages-layout',

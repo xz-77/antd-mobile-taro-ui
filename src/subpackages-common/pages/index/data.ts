@@ -10,7 +10,7 @@ export const data = [
       {
         title: 'Icon 图标',
         desc: '',
-        url: '/subpackages-common/pages/iconfont/index',
+        url: '/subpackages-common/pages/icon/index',
       },
     ],
   },
