@@ -13,11 +13,13 @@ export default () => {
           <SpinLoading color='default' />
           <SpinLoading color='primary' />
           <SpinLoading color='currentColor' />
+          <SpinLoading color='#ddd' />
+          <SpinLoading style={{ '--color': 'red' }} />
         </Space>
       </DemoBlock>
       <DemoBlock title='大小'>
         <Space direction='horizontal' wrap block style={{ '--gap': '16px' }}>
-          <SpinLoading style={{ '--size': '24px', '--color': 'red' }} />
+          <SpinLoading style={{ '--size': '24px' }} />
           <SpinLoading style={{ '--size': '32px' }} />
           <SpinLoading style={{ '--size': '48px' }} />
         </Space>
