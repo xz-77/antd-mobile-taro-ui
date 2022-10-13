@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.11.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.10.0...v0.11.0) (2022-10-13)
+
+### Features
+
+- icon 图标 ([8d30871](https://github.com/xz-77/antd-mobile-taro-ui/commit/8d30871ff8197cf675113f0a8bc58ec0999b7a75))
+- navBar 导航栏 ([9566bb5](https://github.com/xz-77/antd-mobile-taro-ui/commit/9566bb527fdbce1175540a7931ab5e3c3444744a))
+- spinLoading 转圈加载中 ([3eb90d9](https://github.com/xz-77/antd-mobile-taro-ui/commit/3eb90d9cbc7ccebdbec6b03af7ba726a37797606))
+
 ## [0.10.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.9.0...v0.10.0) (2022-10-12)
 
 ### Features
