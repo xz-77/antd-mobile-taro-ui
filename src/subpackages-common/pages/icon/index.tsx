@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View } from '@tarojs/components';
 import classNames from 'classnames';
 import './index.less';
-import { Grid, SafeArea, Toast } from 'antd-mobile-taro-ui';
+import { Grid, SafeArea } from 'antd-mobile-taro-ui';
 import Taro from '@tarojs/taro';
 import iconfont from './iconfont.json';
 
 export default () => {
-  useEffect(() => {
-    Toast.show({
-      duration: 3000,
-      content: '点击Icon即可完成复制',
-    });
-  }, []);
+  // useEffect(() => {
+  //   Toast.show({
+  //     duration: 3000,
+  //     content: '点击Icon即可完成复制',
+  //   });
+  // }, []);
 
   const toUpperCaseFirst = (name: string) => {
     return name.slice(0, 1).toUpperCase() + name.slice(1);
