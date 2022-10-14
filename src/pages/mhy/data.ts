@@ -1,0 +1,87 @@
+export const data = [
+  {
+    name: '提纳里',
+    weapon: '破魔5/王下2',
+    skill: 'AQE',
+    relic: '饰金4',
+    entry: '精草暴',
+  },
+  {
+    name: '公子',
+    weapon: '弓藏4/破魔1',
+    skill: 'EQA',
+    relic: '沉沦4/沉沦2+18%攻击',
+    entry: '攻水暴',
+  },
+  {
+    name: '莫娜',
+    weapon: '讨龙4/流浪3/金珀2/明瞳1',
+    skill: 'Q',
+    relic: '绝缘4/宗室4',
+    entry: '充水暴',
+  },
+  {
+    name: '菲谢尔',
+    weapon: '绝弦3',
+    skill: 'E',
+    relic: '千岩4/如雷2+18%攻击/平雷4/如雷4',
+    entry: '攻雷暴',
+  },
+  {
+    name: '芭芭拉',
+    weapon: '金珀3/秘典1/讨龙3',
+    skill: 'EQ',
+    relic: '海染4/少女4',
+    entry: '生生疗/充生疗（生）',
+  },
+  {
+    name: '班尼特',
+    weapon: '西风2/祭礼1',
+    skill: 'Q',
+    relic: '宗室4/千岩+绝缘',
+    entry: '生充暴/充生疗',
+  },
+  {
+    name: '云堇',
+    weapon: '西风4/星镰3',
+    skill: 'QE',
+    relic: '华馆4/华馆+绝缘',
+    entry: '充/防防防（充220+）（西风防防暴）',
+  },
+  {
+    name: '刻晴',
+    weapon: '匣里2',
+    skill: 'AEQ',
+    relic: '如雷4/如雷+18%',
+    entry: '攻雷暴',
+  },
+  {
+    name: '迪卢克',
+    weapon: '古华2/海皇1',
+    skill: 'EAQ',
+    relic: '魔女4/魔女+18%',
+    entry: '攻火暴',
+  },
+  {
+    name: '北斗',
+    weapon: '桂木2/西风1/祭礼1',
+    skill: 'QE',
+    relic: '绝缘4/宗室4/如雷2+18%',
+    entry: '攻/充雷暴',
+  },
+  {
+    name: '砂糖',
+    weapon: '讨龙2/祭礼3/西风1',
+    skill: 'QE',
+    relic: '翠绿4',
+    entry: '精精精',
+  },
+];
+
+export enum MHY_PROPERTY_KEY {
+  name = '人物',
+  weapon = '武器',
+  skill = '技能',
+  relic = '圣遗物',
+  entry = '主词条',
+}
