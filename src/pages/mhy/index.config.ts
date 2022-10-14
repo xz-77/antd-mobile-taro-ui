@@ -1,3 +1,3 @@
 export default definePageConfig({
-  navigationBarTitleText: '元神角色文档',
+  navigationBarTitleText: '原神角色文档',
 });
