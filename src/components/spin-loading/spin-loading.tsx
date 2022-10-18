@@ -23,24 +23,11 @@ const defaultProps = {
 export const SpinLoading = memo<SpinLoadingProps>(p => {
   const props = mergeProps(defaultProps, p);
 
-  const color = useMemo(() => {
-    if (props.color !== 'default') {
-      return colorRecord[props.color] ?? props.color;
-    }
-    return props.style?.['--color'] ?? colorRecord[defaultProps.color];
-  }, [props]);
-
   return withNativeProps(
     props,
-    <View className={classPrefix}>
-      <ProgressCircle
-        percent={80}
-        className={`${classPrefix}-circle`}
-        style={{
-          '--fill-color': color,
-          '--size': props.style?.['--size'] ?? '32px',
-        }}
-      />
+    // @ts-ignore
+    <View className={classPrefix} style={{ '--color': colorRecord[props.color] ?? props.color }}>
+      <ProgressCircle percent={80} className={`${classPrefix}-circle`} />
     </View>
   );
 });
