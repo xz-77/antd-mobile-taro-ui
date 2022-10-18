@@ -44,7 +44,7 @@ export const data = [
     items: [
       {
         title: '信息录入',
-        desc: '包含复选框、输入框、搜索框、单选框、步进器等',
+        desc: '包含复选框、输入框、搜索框、单选框、步进器、开关等',
         url: '/subpackages-dataEntry/pages/index/index',
       },
     ],

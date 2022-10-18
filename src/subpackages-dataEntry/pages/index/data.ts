@@ -27,6 +27,11 @@ export const data = [
         desc: '',
         url: '/subpackages-dataEntry/pages/stepper/index',
       },
+      {
+        title: 'Switch 开关',
+        desc: '',
+        url: '/subpackages-dataEntry/pages/switch/index',
+      },
     ],
   },
 ];

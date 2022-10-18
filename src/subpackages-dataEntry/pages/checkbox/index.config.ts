@@ -1,3 +1,3 @@
 export default definePageConfig({
-  navigationBarTitleText: '复选框',
+  navigationBarTitleText: 'Checkbox 复选框',
 });
