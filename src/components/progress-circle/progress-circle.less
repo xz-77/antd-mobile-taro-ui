@@ -6,12 +6,13 @@
   --size: var(--adm-progress-circle-size, 100px);
   --track-color: var(--adm-progress-circle-track-color, #e5e5e5);
   --fill-color: var(--adm-progress-circle-fill-color, var(--adm-color-primary));
-  --track-duration: 2s;
+  --track-duration: var(--adm-progress-circle-track-duration, 2s);
   // --pi: 3.14159265358979;
   // --radius: calc(var(--size) / 2 - var(--track-width) / 2);
   // --circumference: calc(var(--radius) * var(--pi) * 2);
 
-  display: inline-block;
+  display: flex;
+
   width: var(--size);
   height: var(--size);
 
