@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.11.0...v0.12.0) (2022-10-19)
+
+### Features
+
+- 添加 mhy 角色头像 ([0ecf666](https://github.com/xz-77/antd-mobile-taro-ui/commit/0ecf66637718c3ff34714a72048b0f258b56c0a1))
+- mhy-painted-eggshell ([2a323cd](https://github.com/xz-77/antd-mobile-taro-ui/commit/2a323cd8ba5e645c242e03a58543f18aea9c0269))
+- mhy-painted-eggshell ([83c8c3c](https://github.com/xz-77/antd-mobile-taro-ui/commit/83c8c3cf67cc67853ec709c470895dbcdb142755))
+- switch 开关 ([18400df](https://github.com/xz-77/antd-mobile-taro-ui/commit/18400df07df6a703ecb649bb57d38a5b8104d7c4))
+
+### Bug Fixes
+
+- 修改数值，否则 loading 不对称 ([0aa2bd8](https://github.com/xz-77/antd-mobile-taro-ui/commit/0aa2bd8c900383efed156d4a0d18d3f7f62598f9))
+
 ## [0.11.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.10.0...v0.11.0) (2022-10-13)
 
 ### Features
