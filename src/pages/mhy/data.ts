@@ -1,5 +1,6 @@
 export const data = [
   {
+    avatar: '',
     name: '提纳里',
     weapon: '破魔5/王下2',
     skill: 'AQE',
@@ -7,6 +8,7 @@ export const data = [
     entry: '精草暴',
   },
   {
+    avatar: 'https://xz-77.github.io/mhy/IMG_9748.JPG',
     name: '公子',
     weapon: '弓藏4/破魔1',
     skill: 'EQA',
@@ -14,6 +16,7 @@ export const data = [
     entry: '攻水暴',
   },
   {
+    avatar: 'https://xz-77.github.io/mhy/IMG_9763.JPG',
     name: '莫娜',
     weapon: '讨龙4/流浪3/金珀2/明瞳1',
     skill: 'Q',
@@ -21,6 +24,7 @@ export const data = [
     entry: '充水暴',
   },
   {
+    avatar: 'https://xz-77.github.io/mhy/IMG_9772.JPG',
     name: '菲谢尔',
     weapon: '绝弦3',
     skill: 'E',
@@ -28,6 +32,7 @@ export const data = [
     entry: '攻雷暴',
   },
   {
+    avatar: 'https://xz-77.github.io/mhy/IMG_9775.JPG',
     name: '芭芭拉',
     weapon: '金珀3/秘典1/讨龙3',
     skill: 'EQ',
@@ -35,6 +40,7 @@ export const data = [
     entry: '生生疗/充生疗（生）',
   },
   {
+    avatar: '',
     name: '班尼特',
     weapon: '西风2/祭礼1',
     skill: 'Q',
@@ -42,6 +48,7 @@ export const data = [
     entry: '生充暴/充生疗',
   },
   {
+    avatar: 'https://xz-77.github.io/mhy/IMG_9751.JPG',
     name: '云堇',
     weapon: '西风4/星镰3',
     skill: 'QE',
@@ -49,6 +56,7 @@ export const data = [
     entry: '充/防防防（充220+）（西风防防暴）',
   },
   {
+    avatar: 'https://xz-77.github.io/mhy/IMG_9763.JPG',
     name: '刻晴',
     weapon: '匣里2',
     skill: 'AEQ',
@@ -56,6 +64,7 @@ export const data = [
     entry: '攻雷暴',
   },
   {
+    avatar: 'https://xz-77.github.io/mhy/IMG_9750.JPG',
     name: '迪卢克',
     weapon: '古华2/海皇1',
     skill: 'EAQ',
@@ -63,6 +72,7 @@ export const data = [
     entry: '攻火暴',
   },
   {
+    avatar: '',
     name: '北斗',
     weapon: '桂木2/西风1/祭礼1',
     skill: 'QE',
@@ -70,6 +80,7 @@ export const data = [
     entry: '攻/充雷暴',
   },
   {
+    avatar: '',
     name: '砂糖',
     weapon: '讨龙2/祭礼3/西风1',
     skill: 'QE',
