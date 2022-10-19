@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from 'react';
+import React, { memo } from 'react';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 import { ProgressCircle } from 'antd-mobile-taro-ui';
