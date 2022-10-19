@@ -18,6 +18,11 @@ export const data = [
         url: '/subpackages-dataEntry/pages/search-bar/index',
       },
       {
+        title: 'Selector 选择组',
+        desc: '',
+        url: '/subpackages-dataEntry/pages/selector/index',
+      },
+      {
         title: 'Radio 单选框',
         desc: '',
         url: '/subpackages-dataEntry/pages/radio/index',

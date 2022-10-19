@@ -37,6 +37,7 @@ export default defineAppConfig({
         'pages/input/index',
         'pages/radio/index',
         'pages/search-bar/index',
+        'pages/selector/index',
         'pages/stepper/index',
         'pages/switch/index',
       ],
