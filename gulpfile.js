@@ -6,6 +6,9 @@ const path = require('path');
 const ts = require('gulp-typescript');
 const babel = require('gulp-babel');
 const tsconfig = require('./tsconfig.json');
+const pxMultiplePlugin = require('postcss-px-multiple')({ times: 2 });
+const postcss = require('gulp-postcss');
+const replace = require('gulp-replace');
 
 function clean() {
   return del('./lib/**');
@@ -92,11 +95,38 @@ function buildDeclaration() {
     .pipe(gulp.dest('lib/cjs/'));
 }
 
+function init2xFolder() {
+  return gulp
+    .src('./lib/**', {
+      base: './lib/',
+    })
+    .pipe(gulp.dest('./lib/2x/'));
+}
+
+function build2xCSS() {
+  return (
+    gulp
+      .src('./lib/2x/**/*.css', {
+        base: './lib/2x/',
+      })
+      // Hack fix since postcss-px-multiple ignores the `@supports` block
+      .pipe(replace('@supports not (color: var(--adm-color-text))', '@media screen and (min-width: 999999px)'))
+      .pipe(postcss([pxMultiplePlugin]))
+      .pipe(replace('@media screen and (min-width: 999999px)', '@supports not (color: var(--adm-color-text))'))
+      .pipe(
+        gulp.dest('./lib/2x', {
+          overwrite: true,
+        })
+      )
+  );
+}
+
 exports.default = gulp.series(
   clean,
   buildES,
   buildCJS,
   gulp.parallel(buildDeclaration, buildStyle),
   copyAssets,
-  copyMetaFiles
+  copyMetaFiles,
+  gulp.series(init2xFolder, build2xCSS)
 );
