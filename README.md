@@ -1,4 +1,6 @@
-GitHub 仓库: [antd-mobile-taro-ui](https://github.com/xz-77/antd-mobile-taro-ui)
+GitHub: [![github](https://xz-77.github.io/assets/github.png)](https://github.com/xz-77/antd-mobile-taro-ui)
+
+**喜欢的话，麻烦点个赞，谢谢 🙏**
 
 ## 新手指南
 
