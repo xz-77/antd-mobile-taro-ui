@@ -1,0 +1,15 @@
+@class-prefix-side-bar-corner: ~'adm-side-bar-corner';
+
+.@{class-prefix-side-bar-corner} {
+  &-circle {
+    --2-border-radius: calc(2 * var(--item-border-radius));
+    --position-border-radius: calc(-1 * var(--item-border-radius));
+    position: absolute;
+    left: var(--position-border-radius);
+    bottom: var(--position-border-radius);
+    background-color: var(--background-color);
+    width: var(--2-border-radius);
+    height: var(--2-border-radius);
+    border-radius: var(--2-border-radius);
+  }
+}

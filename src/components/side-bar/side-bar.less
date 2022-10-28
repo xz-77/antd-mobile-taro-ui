@@ -1,0 +1,88 @@
+@class-prefix-side-bar: ~'adm-side-bar';
+
+.@{class-prefix-side-bar} {
+  --height: 100%;
+  --width: 105px;
+  --item-border-radius: 8px;
+  --background-color: var(--adm-color-box);
+
+  width: var(--width);
+  height: var(--height);
+  box-sizing: border-box;
+  font-size: var(--adm-font-size-main);
+  overflow-y: auto;
+  // https://github.com/PolymerElements/iron-list/issues/18
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  background-color: var(--background-color);
+
+  display: flex;
+  flex-direction: column;
+
+  &-items {
+    flex: none;
+    overflow: hidden;
+  }
+  &-extra-space {
+    flex: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 12px;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--background-color);
+    overflow: visible;
+
+    &-highlight {
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      left: -12px;
+      top: 0;
+      background: var(--adm-color-primary);
+      border-radius: 2px;
+    }
+
+    &-active {
+      color: var(--adm-color-primary);
+      background-color: var(--adm-color-background);
+      position: relative;
+    }
+
+    &-corner {
+      width: var(--item-border-radius);
+      height: var(--item-border-radius);
+      position: absolute;
+      z-index: 100;
+      right: 0;
+      user-select: none;
+      pointer-events: none;
+      background-color: #fff;
+      overflow: hidden;
+      &-top {
+        top: 0;
+      }
+      &-bottom {
+        bottom: 0;
+        transform: rotate(90deg);
+      }
+    }
+
+    &-disabled {
+      cursor: not-allowed;
+      .@{class-prefix-side-bar}-item-title {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &-badge.adm-badge {
+    --right: -4px;
+  }
+}

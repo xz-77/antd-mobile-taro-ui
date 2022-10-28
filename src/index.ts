@@ -62,7 +62,7 @@ export { default as SafeArea } from './components/safe-area';
 // export { default as ScrollMask } from './components/scroll-mask';
 export { default as SearchBar } from './components/search-bar';
 export { default as Selector } from './components/selector';
-// export { default as SideBar } from './components/side-bar'
+export { default as SideBar } from './components/side-bar';
 export { default as Skeleton } from './components/skeleton';
 // export { default as Slider } from './components/slider'
 export { default as Space } from './components/space';

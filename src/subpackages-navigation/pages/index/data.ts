@@ -18,6 +18,11 @@ export const data = [
         url: '/subpackages-navigation/pages/nav-bar/index',
       },
       {
+        title: 'SideBar 侧边导航',
+        desc: '',
+        url: '/subpackages-navigation/pages/side-bar/index',
+      },
+      {
         title: 'Tabs 标签页',
         desc: '',
         url: '/subpackages-navigation/pages/tabs/index',

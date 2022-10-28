@@ -68,6 +68,7 @@ export default defineAppConfig({
         'pages/capsule-tabs/index',
         'pages/jumbo-tabs/index',
         'pages/nav-bar/index',
+        'pages/side-bar/index',
         'pages/tabs/index',
       ],
     },
