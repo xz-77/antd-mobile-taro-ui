@@ -59,7 +59,7 @@ export default () => {
   };
 
   return (
-    <View className={styles.container} id='xxx-1'>
+    <View className={styles.container}>
       <View className={styles.side}>
         <SideBar activeKey={activeKey} onChange={key => handleSideBarOnChange(key)}>
           {items.map(item => (
