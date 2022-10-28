@@ -6,6 +6,7 @@ const path = require('path');
 const ts = require('gulp-typescript');
 const babel = require('gulp-babel');
 const tsconfig = require('./tsconfig.json');
+const through = require('through2');
 const pxMultiplePlugin = require('postcss-px-multiple')({ times: 2 });
 const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
@@ -121,6 +122,27 @@ function build2xCSS() {
   );
 }
 
+function generatePackageJSON() {
+  return gulp
+    .src('./package.json')
+    .pipe(
+      through.obj((file, enc, cb) => {
+        const rawJSON = file.contents.toString();
+        const parsed = JSON.parse(rawJSON);
+        delete parsed.scripts;
+        delete parsed.devDependencies;
+        delete parsed.publishConfig;
+        delete parsed.files;
+        delete parsed.resolutions;
+        delete parsed.packageManager;
+        const stringified = JSON.stringify(parsed, null, 2);
+        file.contents = Buffer.from(stringified);
+        cb(null, file);
+      })
+    )
+    .pipe(gulp.dest('./lib/'));
+}
+
 exports.default = gulp.series(
   clean,
   buildES,
@@ -128,5 +150,6 @@ exports.default = gulp.series(
   gulp.parallel(buildDeclaration, buildStyle),
   copyAssets,
   copyMetaFiles,
+  generatePackageJSON,
   gulp.series(init2xFolder, build2xCSS)
 );

@@ -12,9 +12,8 @@
   "sideEffects": [
     "**/*.css",
     "**/*.less",
-    "**/*.scss",
     "./src/index.ts",
-    "./lib/es/index.js"
+    "./es/index.js"
   ],
   "files": [
     "lib"
@@ -33,10 +32,10 @@
     "miniprogram",
     "wechat"
   ],
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/es/index.js",
-  "types": "./lib/es/index.d.ts",
-  "typings": "./lib/es/index.d.ts",
+  "main": "./cjs/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "typings": "./es/index.d.ts",
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -154,6 +153,7 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.4.0",
     "stylelint-order": "^4.1.0",
+    "through2": "^4.0.2",
     "typescript": "~4.6.4",
     "verify-fabric": "1.6.1",
     "webpack": "5.69.0"
