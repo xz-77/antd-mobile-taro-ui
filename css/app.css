@@ -1,1 +1,1 @@
-page{background-color:#fafbfc;color:var(--root-color-text);font-family:var(--root-font-family);font-size:var(--root-font-size-main);position:relative}taro-text-core,taro-view-core{-webkit-box-sizing:border-box;box-sizing:border-box}taro-image-core{height:100%;width:100%}
+page{background-color:#fafbfc;color:var(--root-color-text);font-family:var(--root-font-family);font-size:var(--root-font-size-main);position:relative}taro-text-core,taro-view-core{-webkit-box-sizing:border-box;box-sizing:border-box}taro-image-core{display:block;height:100%;width:100%}
