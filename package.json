@@ -63,6 +63,9 @@
     "release": "standard-version",
     "release:minor": "yarn run release --release-as minor",
     "release:major": "yarn run release --release-as major",
+    "publish": "yarn publish ./lib",
+    "publish:alpha": "yarn publish ./lib --tag alpha",
+    "publish:dev": "yarn publish ./lib --tag dev",
     "build:upload": "yarn run build:weapp && ts-node scripts/uploadFiles.ts",
     "build:components": "cross-env NODE_ENV=components gulp",
     "build:all": "yarn run build:components && yarn run deploy && yarn run build:upload"

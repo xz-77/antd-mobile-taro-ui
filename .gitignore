@@ -14,8 +14,8 @@ deploy_versions/
 /coverage
 
 # dist
-dist/
-lib/
+/dist/
+/lib/
 
 # misc
 .DS_Store
