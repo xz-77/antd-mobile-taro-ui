@@ -56,7 +56,7 @@ export const data = [
     entry: '充/防防防（充220+）（西风防防暴）',
   },
   {
-    avatar: 'https://xz-77.github.io/mhy/IMG_9763.JPG',
+    avatar: 'https://xz-77.github.io/mhy/IMG_9770.JPG',
     name: '刻晴',
     weapon: '匣里2',
     skill: 'AEQ',
