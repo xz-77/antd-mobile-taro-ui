@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from 'antd-mobile-taro-ui';
+import { List, Switch } from 'antd-mobile-taro-ui';
 import { EmojiIcon } from 'antd-mobile-taro-icons';
 
 export default () => {
@@ -24,7 +24,7 @@ export default () => {
       </List>
 
       <List header='复杂列表'>
-        {/* <List.Item extra={<Switch defaultChecked />}>新消息通知</List.Item> */}
+        <List.Item extra={<Switch defaultChecked />}>新消息通知</List.Item>
         <List.Item extra='未开启' clickable>
           大字号模式
         </List.Item>
