@@ -17,9 +17,9 @@ function clean() {
 
 function buildStyle() {
   return gulp
-    .src(['./src/**/*.less'], {
+    .src(['./src/components/**/*.less', './src/styles/miniprogram/*.less'], {
       base: './src/',
-      ignore: ['**/demos/**/*', '**/tests/**/*', '**/pages/**/*', '**/app.less', '**/index.html'],
+      ignore: ['**/demos/**/*', '**/tests/**/*'],
     })
     .pipe(
       less({
@@ -32,8 +32,9 @@ function buildStyle() {
 
 function copyAssets() {
   return gulp
-    .src(['./src/**/assets/*'], {
-      ignore: ['**/demos/**/*', '**/tests/**/*', '**/pages/**/*'],
+    .src(['./src/components/**/assets/*'], {
+      base: './src/',
+      ignore: ['**/demos/**/*', '**/tests/**/*'],
     })
     .pipe(gulp.dest('./lib/es'))
     .pipe(gulp.dest('./lib/cjs'));
@@ -45,16 +46,9 @@ function buildES() {
     module: 'ES6',
   });
   return gulp
-    .src(['src/**/*.{ts,tsx}'], {
-      ignore: [
-        '**/demos/**/*',
-        '**/tests/**/*',
-        '**/pages/**/*',
-        '**/app.ts',
-        '**/app.less',
-        '**/app.config.ts',
-        '**/index.html',
-      ],
+    .src(['./src/components/**/*.{ts,tsx}', './src/utils/*.{ts,tsx}', './src/index.ts'], {
+      base: './src/',
+      ignore: ['**/demos/**/*', '**/tests/**/*'],
     })
     .pipe(tsProject)
     .pipe(
@@ -88,8 +82,9 @@ function buildDeclaration() {
     emitDeclarationOnly: true,
   });
   return gulp
-    .src(['src/**/*.{ts,tsx}'], {
-      ignore: ['**/demos/**/*', '**/tests/**/*', '**/pages/**/*', '**/app.ts', '**/app.config.ts', '**/index.html'],
+    .src(['./src/components/**/*.{ts,tsx}', './src/utils/*.{ts,tsx}', './src/index.ts'], {
+      base: './src/',
+      ignore: ['**/demos/**/*', '**/tests/**/*'],
     })
     .pipe(tsProject)
     .pipe(gulp.dest('lib/es/'))

@@ -5184,10 +5184,10 @@ antd-mobile-icons@^0.3.0:
   resolved "https://registry.npmmirror.com/antd-mobile-icons/-/antd-mobile-icons-0.3.0.tgz#9b29e4588a62370909061f10ff0579aabb0b32a9"
   integrity sha512-rqINQpJWZWrva9moCd1Ye695MZYWmqLPE+bY8d2xLRy7iSQwPsinCdZYjpUPp2zL/LnKYSyXxP2ut2A+DC+whQ==
 
-antd-mobile-taro-icons@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/antd-mobile-taro-icons/-/antd-mobile-taro-icons-0.3.0.tgz#bd7ee716a53827e8911880088611008e405760a8"
-  integrity sha512-h33OTvNpr7V50KhCRVswWLp6SNBwOeHusR0P7YIJjXDPK9Azg0EIMTJiO6Xl9r0pCPvY3N0PaAFSSYpKyfsZpA==
+antd-mobile-taro-icons@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/antd-mobile-taro-icons/-/antd-mobile-taro-icons-0.4.0.tgz#e37f8bd7a4d9d064e29231cd28109fe40741d5f3"
+  integrity sha512-l4zD8WzlvqUvvTPwdAp1BQdTlq6C4q7k7XQOWGKefth0Udzt+lnhiNrLnn9ofiAGqthlSFjsdYjC5U+vJtmoSg==
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@tarojs/components" "3.5.5"
@@ -19567,16 +19567,9 @@ through2@^3.0.1, through2@^3.0.2:
     inherits "^2.0.4"
     readable-stream "2 || 3"
 
-through2@^4.0.0:
+through2@^4.0.0, through2@^4.0.2:
   version "4.0.2"
   resolved "https://registry.npmmirror.com/through2/-/through2-4.0.2.tgz#a7ce3ac2a7a8b0b966c80e7c49f0484c3b239764"
-  integrity sha512-iOqSav00cVxEEICeD7TjLB1sueEL+81Wpzp2bY17uZjZN0pWZPuo4suZ/61VujxmqSGFfgOcNuTZ85QJwNZQpw==
-  dependencies:
-    readable-stream "3"
-
-through2@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-4.0.2.tgz#a7ce3ac2a7a8b0b966c80e7c49f0484c3b239764"
   integrity sha512-iOqSav00cVxEEICeD7TjLB1sueEL+81Wpzp2bY17uZjZN0pWZPuo4suZ/61VujxmqSGFfgOcNuTZ85QJwNZQpw==
   dependencies:
     readable-stream "3"
