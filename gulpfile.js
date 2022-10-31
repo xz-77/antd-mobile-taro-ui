@@ -30,16 +30,6 @@ function buildStyle() {
     .pipe(gulp.dest('./lib/cjs'));
 }
 
-function copyAssets() {
-  return gulp
-    .src(['./src/components/**/assets/*'], {
-      base: './src/',
-      ignore: ['**/demos/**/*', '**/tests/**/*'],
-    })
-    .pipe(gulp.dest('./lib/es'))
-    .pipe(gulp.dest('./lib/cjs'));
-}
-
 function buildES() {
   const tsProject = ts({
     ...tsconfig.compilerOptions,
@@ -143,7 +133,6 @@ exports.default = gulp.series(
   buildES,
   buildCJS,
   gulp.parallel(buildDeclaration, buildStyle),
-  copyAssets,
   copyMetaFiles,
   generatePackageJSON,
   gulp.series(init2xFolder, build2xCSS)
