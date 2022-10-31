@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-alpha.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.13.0...v0.13.1-alpha.0) (2022-10-31)
+
+### Features
+
+- 测试版本 ([75493d1](https://github.com/xz-77/antd-mobile-taro-ui/commit/75493d11453eeadbdc86ff14ff0689d84242d8d8))
+- 支持 2x 高清适配 ([01b79d0](https://github.com/xz-77/antd-mobile-taro-ui/commit/01b79d03f6725763877c4ae28ce2e04b71714162))
+- 重构 mhy 的 UI ([bc848de](https://github.com/xz-77/antd-mobile-taro-ui/commit/bc848de120b594eb4af73ce9412262639c6fc957))
+- sideBar 侧边导航 ([1795272](https://github.com/xz-77/antd-mobile-taro-ui/commit/1795272092d58d0d803ed3f412c15faf63941d1e))
+
 ## [0.14.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.13.0...v0.14.0) (2022-10-28)
 
 ### Features
