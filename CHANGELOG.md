@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.2](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.14.1...v0.14.2) (2022-10-31)
+
+### Features
+
+- 更新 list 组件的 demo ([5851d58](https://github.com/xz-77/antd-mobile-taro-ui/commit/5851d58897735992559eac27d35c293f13ffe4a7))
+
 ### [0.14.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.14.0...v0.14.1) (2022-10-31)
 
 ## [0.14.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.13.1-alpha.0...v0.14.0) (2022-10-31)
