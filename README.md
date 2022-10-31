@@ -62,7 +62,7 @@ _由于小程序不支持 `SVG` 所以 `antd-mobile-taro-ui` 所有用到 `svg` 
 
 ```javascript
 // config/index.js
-  designWidth: 375,
+  designWidth: 750,
   deviceRatio: {
     640: 2.34 / 2,
     750: 1,
@@ -70,6 +70,8 @@ _由于小程序不支持 `SVG` 所以 `antd-mobile-taro-ui` 所有用到 `svg` 
     375: 2 / 1
   },
 ```
+
+目前已支持`750`和`375`两种尺寸大小的样式(>=v0.14.0)，调用方式与`antd-mobile`一致，详情可参考[高清适配](https://mobile.ant.design/zh/guide/hd)
 
 ### webpack 版本
 
