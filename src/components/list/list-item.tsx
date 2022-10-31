@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import React, { FC, ReactNode } from 'react';
 import { isNodeWithContent } from 'antd-mobile/es/utils/is-node-with-content';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
-import { RightOutline } from './right-outline';
+import { RightIcon } from 'antd-mobile-taro-icons';
 
 const classPrefix = `adm-list-item`;
 
@@ -35,7 +35,9 @@ export const ListItem: FC<ListItemProps> = props => {
       </View>
       {isNodeWithContent(props.extra) && <View className={`${classPrefix}-content-extra`}>{props.extra}</View>}
       {isNodeWithContent(arrow) && (
-        <View className={`${classPrefix}-content-arrow`}>{arrow === true ? <RightOutline /> : arrow}</View>
+        <View className={`${classPrefix}-content-arrow`}>
+          {arrow === true ? <RightIcon className={`${classPrefix}-content-arrow-icon`} /> : arrow}
+        </View>
       )}
     </View>
   );

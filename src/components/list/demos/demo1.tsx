@@ -1,11 +1,6 @@
 import React from 'react';
 import { List } from 'antd-mobile-taro-ui';
-import { RightOutline } from '../right-outline';
-// import {
-//   UnorderedListOutline,
-//   PayCircleOutline,
-//   SetOutline,
-// } from 'antd-mobile-icons'
+import { EmojiIcon } from 'antd-mobile-taro-icons';
 
 export default () => {
   return (
@@ -17,13 +12,13 @@ export default () => {
       </List>
 
       <List header='可点击列表'>
-        <List.Item prefix={<RightOutline />} onClick={() => {}}>
+        <List.Item prefix={<EmojiIcon />} onClick={() => {}}>
           账单
         </List.Item>
-        <List.Item prefix={<RightOutline />} onClick={() => {}}>
+        <List.Item prefix={<EmojiIcon />} onClick={() => {}}>
           总资产
         </List.Item>
-        <List.Item prefix={<RightOutline />} onClick={() => {}}>
+        <List.Item prefix={<EmojiIcon />} onClick={() => {}}>
           设置
         </List.Item>
       </List>
@@ -42,10 +37,10 @@ export default () => {
       </List>
 
       <List header='禁用状态'>
-        <List.Item disabled clickable prefix={<RightOutline />}>
+        <List.Item disabled clickable prefix={<EmojiIcon />}>
           账单
         </List.Item>
-        <List.Item disabled prefix={<RightOutline />}>
+        <List.Item disabled prefix={<EmojiIcon />}>
           总资产
         </List.Item>
       </List>
