@@ -33,7 +33,7 @@ export default () => {
     }, 1000);
   }, []);
 
-  // TODO:需要用到防抖
+  // 需要用到防抖
   const { run: handleScroll } = useDebounceFn((e: BaseEventOrig<ScrollViewProps.onScrollDetail>) => {
     const top = e.detail.scrollTop;
 
