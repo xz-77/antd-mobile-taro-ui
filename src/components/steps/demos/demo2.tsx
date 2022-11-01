@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Space, Steps } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
-import { CheckIcon, RoundCheckFillIcon, ShareIcon } from 'antd-mobile-taro-icons';
+import { AllIcon, EmojiIcon, ShareIcon } from 'antd-mobile-taro-icons';
+import { View } from '@tarojs/components';
 
 const { Step } = Steps;
 
@@ -19,18 +20,18 @@ export default () => {
             '--icon-size': '22px',
           }}
         >
-          <Step title='填写机构信息' description='这里是一些描述' icon={<CheckIcon />} />
+          <Step title='填写机构信息' description='这里是一些描述' icon={<AllIcon style={{ fontSize: '16px' }} />} />
           <Step
             title='签约机构'
             description={
               <Space block direction='vertical'>
-                <div>这里是一些描述</div>
+                <View>这里是一些描述</View>
                 <Button color='primary'>去查看</Button>
               </Space>
             }
-            icon={<RoundCheckFillIcon />}
+            icon={<EmojiIcon style={{ fontSize: '16px' }} />}
           />
-          <Step title='关联服务区' description='这里是一些描述' icon={<ShareIcon />} />
+          <Step title='关联服务区' description='这里是一些描述' icon={<ShareIcon style={{ fontSize: '16px' }} />} />
         </Steps>
       </DemoBlock>
     </>
