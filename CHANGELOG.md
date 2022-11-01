@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.15.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.14.2...v0.15.0) (2022-11-01)
+
+### Features
+
+- 更新 step 的 demo ([92e6297](https://github.com/xz-77/antd-mobile-taro-ui/commit/92e629791aa0d89d1473ae3619aa7d52e369584d))
+- 修改 tabBar 的 demo 的样式 ([7786d2e](https://github.com/xz-77/antd-mobile-taro-ui/commit/7786d2e696a767a668c5284c0654821b7b27d862))
+- tabBar 标签栏 ([f040d37](https://github.com/xz-77/antd-mobile-taro-ui/commit/f040d3773530cd3756981c576c372b12a1c9ec23))
+
+### Bug Fixes
+
+- 修改单词错误 ([bc0b43a](https://github.com/xz-77/antd-mobile-taro-ui/commit/bc0b43a5497e168d46afaa7b6212ca34e645732d))
+
 ### [0.14.2](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.14.1...v0.14.2) (2022-10-31)
 
 ### Features
