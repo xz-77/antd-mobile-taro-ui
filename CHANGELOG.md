@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.15.0...v0.15.1) (2022-11-01)
+
 ## [0.15.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.14.2...v0.15.0) (2022-11-01)
 
 ### Features
