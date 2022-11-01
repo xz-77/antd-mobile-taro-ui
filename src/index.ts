@@ -72,7 +72,7 @@ export { default as Steps } from './components/steps';
 // export { default as SwipeAction } from './components/swipe-action'
 // export { default as Swiper } from './components/swiper'
 export { default as Switch } from './components/switch';
-// export { default as TabBar } from './components/tab-bar'
+export { default as TabBar } from './components/tab-bar';
 export { default as Tabs } from './components/tabs';
 export { default as Tag } from './components/tag';
 // export { default as TextArea } from './components/text-area'

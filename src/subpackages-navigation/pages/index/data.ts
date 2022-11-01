@@ -23,6 +23,11 @@ export const data = [
         url: '/subpackages-navigation/pages/side-bar/index',
       },
       {
+        title: 'TabBar 标签栏',
+        desc: '',
+        url: '/subpackages-navigation/pages/tab-bar/index',
+      },
+      {
         title: 'Tabs 标签页',
         desc: '',
         url: '/subpackages-navigation/pages/tabs/index',
