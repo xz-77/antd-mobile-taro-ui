@@ -61,7 +61,7 @@
     "deploy": "yarn run build:h5 && gh-pages -d dist/h5",
     "install-peers": "install-peerdeps",
     "release": "standard-version",
-    "relaese:alpha": "yarn run release -- --prerelease alpha",
+    "release:alpha": "yarn run release -- --prerelease alpha",
     "release:minor": "yarn run release --release-as minor",
     "release:major": "yarn run release --release-as major",
     "release:patch": "yarn run release --release-as patch",
