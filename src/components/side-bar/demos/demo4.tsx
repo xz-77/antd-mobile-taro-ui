@@ -20,6 +20,7 @@ export default () => {
 
   const [h, setH] = useState<number[]>([]);
   const [scrollTop, setScrollTop] = useState(0);
+
   useEffect(() => {
     setTimeout(() => {
       for (const item of items) {
@@ -34,7 +35,7 @@ export default () => {
   }, []);
 
   // 需要用到防抖
-  const { run: handleScroll } = useDebounceFn((e: BaseEventOrig<ScrollViewProps.onScrollDetail>) => {
+  const { run } = useDebounceFn((e: BaseEventOrig<ScrollViewProps.onScrollDetail>) => {
     const top = e.detail.scrollTop;
 
     let index = 0;
@@ -46,6 +47,19 @@ export default () => {
     }
     setActiveKey(items[index].key);
   });
+
+  const handleScroll = e => {
+    const top = e.detail.scrollTop;
+
+    let index = 0;
+    let total = h[index];
+
+    while (total <= top && index < h.length - 1) {
+      index++;
+      total += h[index];
+    }
+    setActiveKey(items[index].key);
+  };
 
   const handleSideBarOnChange = (key: string) => {
     const k = Number(key);
@@ -71,10 +85,10 @@ export default () => {
       </View>
       <ScrollView
         scrollY
-        scrollWithAnimation
+        // scrollWithAnimation
         className={styles.main}
         ref={mainElementRef}
-        onScroll={handleScroll}
+        onScroll={process.env.TARO_ENV === 'weapp' ? handleScroll : run}
         scrollTop={scrollTop}
       >
         {items.map(item => (
