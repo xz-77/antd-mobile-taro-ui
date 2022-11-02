@@ -13,6 +13,11 @@ export const data = [
         url: '/subpackages-dataDisplay/pages/card/index',
       },
       {
+        title: 'Collapse 折叠面板',
+        desc: '',
+        url: '/subpackages-dataDisplay/pages/collapse/index',
+      },
+      {
         title: 'List 列表',
         desc: '',
         url: '/subpackages-dataDisplay/pages/list/index',

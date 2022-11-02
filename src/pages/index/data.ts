@@ -34,7 +34,7 @@ export const data = [
     items: [
       {
         title: '信息展示',
-        desc: '包含头像、卡片、列表、分页符、步骤条、标签、页脚等',
+        desc: '包含头像、卡片、折叠面板、列表、分页符、步骤条、标签、页脚等',
         url: '/subpackages-dataDisplay/pages/index/index',
       },
     ],

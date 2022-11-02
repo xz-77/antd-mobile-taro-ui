@@ -35,9 +35,7 @@ export const ListItem: FC<ListItemProps> = props => {
       </View>
       {isNodeWithContent(props.extra) && <View className={`${classPrefix}-content-extra`}>{props.extra}</View>}
       {isNodeWithContent(arrow) && (
-        <View className={`${classPrefix}-content-arrow`}>
-          {arrow === true ? <RightIcon className={`${classPrefix}-content-arrow-icon`} /> : arrow}
-        </View>
+        <View className={`${classPrefix}-content-arrow`}>{arrow === true ? <RightIcon /> : arrow}</View>
       )}
     </View>
   );

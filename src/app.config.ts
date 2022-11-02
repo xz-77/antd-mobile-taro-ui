@@ -22,6 +22,7 @@ export default defineAppConfig({
         'pages/index/index',
         'pages/avatar/index',
         'pages/card/index',
+        'pages/collapse/index',
         'pages/footer/index',
         'pages/list/index',
         'pages/steps/index',

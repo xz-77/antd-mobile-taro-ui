@@ -17,7 +17,7 @@ export { default as Card } from './components/card';
 // export { default as CenterPopup } from './components/center-popup'
 // export { default as CheckList } from './components/check-list'
 export { default as Checkbox } from './components/checkbox';
-// export { default as Collapse } from './components/collapse'
+export { default as Collapse } from './components/collapse';
 export { default as ConfigProvider } from './components/config-provider';
 // export { default as DatePicker } from './components/date-picker'
 // export { default as DatePickerView } from './components/date-picker-view'
