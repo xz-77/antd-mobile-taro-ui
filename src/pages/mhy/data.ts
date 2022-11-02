@@ -87,6 +87,14 @@ export const data = [
     relic: '翠绿4',
     entry: '精精精',
   },
+  {
+    avatar: 'https://xz-77.github.io/mhy/IMG_0720.JPG',
+    name: '纳西妲',
+    weapon: '魔导绪论/祭礼残章',
+    skill: 'EQ',
+    relic: '深林4/饰金4/饰金2+乐团2',
+    entry: '精精精（1000）',
+  },
 ];
 
 export enum MHY_PROPERTY_KEY {
