@@ -7,8 +7,8 @@ import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props'
 import { useResizeEffect } from 'antd-mobile/es/utils/use-resize-effect';
 import { useMutationEffect } from 'antd-mobile/es/utils/use-mutation-effect';
 import { View } from '@tarojs/components';
-import { uuid } from '../../utils/uuid';
 import Taro from '@tarojs/taro';
+import { uuid } from '../../utils/uuid';
 
 const classPrefix = `adm-notice-bar`;
 
