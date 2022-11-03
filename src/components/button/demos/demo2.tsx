@@ -2,7 +2,7 @@ import { Text } from '@tarojs/components';
 import { Button, Space } from 'antd-mobile-taro-ui';
 import { DemoBlock, sleep } from 'demos';
 import React from 'react';
-import { CheckIcon } from 'antd-mobile-taro-icons';
+import { SearchIcon } from 'antd-mobile-taro-icons';
 
 export default () => {
   return (
@@ -10,7 +10,7 @@ export default () => {
       <DemoBlock title='自定义图标'>
         <Button>
           <Space>
-            <CheckIcon style={{ color: 'red', fontSize: '18px' }} />
+            <SearchIcon style={{ fontSize: '18px' }} />
             <Text>搜索</Text>
           </Space>
         </Button>
