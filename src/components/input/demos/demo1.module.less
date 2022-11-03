@@ -4,14 +4,15 @@
   .input {
     flex: auto;
   }
-  .eye {
-    flex: none;
-    margin-left: 8px;
-    padding: 4px;
-    cursor: pointer;
-    svg {
-      display: block;
-      font-size: var(--adm-font-size-7);
-    }
+}
+
+.eye {
+  flex: none;
+  margin-left: 8px;
+  padding: 4px;
+  cursor: pointer;
+  :global(.icon.iconfont) {
+    display: block;
+    font-size: var(--adm-font-size-7);
   }
 }
