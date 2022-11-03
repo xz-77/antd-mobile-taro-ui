@@ -20,7 +20,7 @@ export default () => {
             '--icon-size': '22px',
           }}
         >
-          <Step title='填写机构信息' description='这里是一些描述' icon={<AllIcon style={{ fontSize: '16px' }} />} />
+          <Step title='填写机构信息' description='这里是一些描述' icon={<AllIcon />} />
           <Step
             title='签约机构'
             description={
@@ -29,9 +29,9 @@ export default () => {
                 <Button color='primary'>去查看</Button>
               </Space>
             }
-            icon={<EmojiIcon style={{ fontSize: '16px' }} />}
+            icon={<EmojiIcon />}
           />
-          <Step title='关联服务区' description='这里是一些描述' icon={<ShareIcon style={{ fontSize: '16px' }} />} />
+          <Step title='关联服务区' description='这里是一些描述' icon={<ShareIcon />} />
         </Steps>
       </DemoBlock>
     </>
