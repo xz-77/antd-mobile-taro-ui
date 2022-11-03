@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, Button } from 'antd-mobile-taro-ui';
+import { Card, Button, Space } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
-import { CloseIcon } from 'antd-mobile-taro-icons';
+import { EmojiIcon, RightIcon } from 'antd-mobile-taro-icons';
 
 import styles from './demo1.module.less';
 import { View } from '@tarojs/components';
@@ -37,12 +37,12 @@ export default () => {
       <DemoBlock title='自定义卡片内容' background='gray'>
         <Card
           title={
-            <View style={{ fontWeight: 'normal', display: 'flex' }}>
-              <CloseIcon style={{ marginRight: '4px', color: '#1677ff' }} />
+            <Space align='center' style={{ fontWeight: 'normal' }}>
+              <EmojiIcon style={{ marginRight: '4px', color: '#1677ff', fontSize: '24px' }} />
               卡片标题
-            </View>
+            </Space>
           }
-          extra={<CloseIcon />}
+          extra={<RightIcon style={{ fontSize: '24px', color: '#ccc' }} />}
           onBodyClick={onBodyClick}
           onHeaderClick={onHeaderClick}
           style={{ borderRadius: '16px' }}
