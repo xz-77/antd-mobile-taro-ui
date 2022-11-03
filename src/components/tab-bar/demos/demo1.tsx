@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Badge, TabBar } from 'antd-mobile-taro-ui';
 import { DemoBlock } from 'demos';
 import { AllIcon, FavorFillIcon, FavorIcon, MyFillIcon, MyIcon, WarnIcon } from 'antd-mobile-taro-icons';
-import styles from './demo1.module.less';
 import { View } from '@tarojs/components';
 
 export default () => {
@@ -35,7 +34,7 @@ export default () => {
   const [activeKey, setActiveKey] = useState('todo');
 
   return (
-    <View className={styles.tabBarDemo1}>
+    <View>
       <DemoBlock title='基础用法' padding='0'>
         <TabBar>
           {tabs.map(item => (
