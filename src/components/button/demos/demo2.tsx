@@ -10,7 +10,7 @@ export default () => {
       <DemoBlock title='自定义图标'>
         <Button>
           <Space>
-            <CheckIcon style={{ color: 'red' }} />
+            <CheckIcon style={{ color: 'red', fontSize: '18px' }} />
             <Text>搜索</Text>
           </Space>
         </Button>
