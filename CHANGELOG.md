@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.16.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.16.0...v0.16.1) (2022-11-03)
+
+### Bug Fixes
+
+- 修复 notice-bar 的 icon 的大小 ([949ccf1](https://github.com/xz-77/antd-mobile-taro-ui/commit/949ccf108ea0b9948b1be47e6b00cc14449e7b6a))
+- collapse 第一版 ([5b92d93](https://github.com/xz-77/antd-mobile-taro-ui/commit/5b92d93cf556c04318707b5f87ef2b383c54f45d))
+
 ## [0.16.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.15.1...v0.16.0) (2022-11-02)
 
 ### Features
