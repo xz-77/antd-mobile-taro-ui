@@ -58,8 +58,8 @@ export default () => {
       <DemoBlock title='自定义 label'>
         <Footer
           label={
-            <Space>
-              <EmojiIcon /> 蚂蚁财富
+            <Space align='center'>
+              <EmojiIcon style={{ fontSize: '24px' }} /> 蚂蚁财富
             </Space>
           }
         ></Footer>
