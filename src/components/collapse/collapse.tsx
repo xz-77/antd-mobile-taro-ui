@@ -1,15 +1,16 @@
-import React, { FC, ReactElement, ComponentProps, useRef, useState } from 'react';
+import React, { FC, ReactElement, ComponentProps } from 'react';
 import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props';
 import { UnfoldIcon } from 'antd-mobile-taro-icons';
 import classNames from 'classnames';
 // import { useSpring, animated } from '@react-spring/web';
 import { usePropsValue } from 'antd-mobile/es/utils/use-props-value';
 // import { useShouldRender } from 'antd-mobile/es/utils/should-render';
-import { useIsomorphicUpdateLayoutEffect } from 'antd-mobile/es/utils/use-isomorphic-update-layout-effect';
+// import { useIsomorphicUpdateLayoutEffect } from 'antd-mobile/es/utils/use-isomorphic-update-layout-effect';
 import { traverseReactNode } from 'antd-mobile/es/utils/traverse-react-node';
 import { ITouchEvent, View } from '@tarojs/components';
-import Taro from '@tarojs/taro';
-import { useMount } from 'ahooks';
+// import Taro, { useResize } from '@tarojs/taro';
+// import { useFavicon, useMount } from 'ahooks';
+import { useShouldRender } from 'antd-mobile/es/utils/should-render';
 import List from '../list';
 
 const classPrefix = `adm-collapse`;
@@ -36,52 +37,59 @@ const CollapsePanelContent: FC<{
   children?: React.ReactNode;
 }> = props => {
   const { visible } = props;
-  const innerRef = useRef<HTMLDivElement>(null);
-  // TODO:代码执行顺序问题 dom渲染会影响盒子高度的获取 暂时先隐藏
-  // const shouldRender = useShouldRender(visible, props.forceRender, props.destroyOnClose);
-  const [height, setHeight] = useState(0);
+  // const innerRef = useRef<HTMLDivElement>(null);
+  const shouldRender = useShouldRender(visible, props.forceRender, props.destroyOnClose);
+  // const [height, setHeight] = useState(0);
 
-  const nodeRef = useRef<Taro.NodesRef | null>(null);
+  // const nodeRef = useRef<Taro.NodesRef | null>(null);
 
-  useMount(() => {
-    setTimeout(() => {
-      const inner = innerRef.current;
+  // useMount(() => {
+  //   setTimeout(() => {
+  //     const inner = innerRef.current;
 
-      if (!inner) return;
-      // TODO:找一个更合适的方式 做节点的唯一标识
-      // @ts-ignore
-      if (inner?.sid) {
-        nodeRef.current = Taro.createSelectorQuery()
-          // @ts-ignore
-          .select(`#${inner?.sid}`);
-      } else {
-        console.error(`HTMLDivElement: Taro node can no find sid`);
-      }
+  //     if (!inner) return;
+  //     // TODO:找一个更合适的方式 做节点的唯一标识
+  //     // @ts-ignore
+  //     if (inner?.sid) {
+  //       nodeRef.current = Taro.createSelectorQuery()
+  //         // @ts-ignore
+  //         .select(`#${inner?.sid}`);
+  //     } else {
+  //       console.error(`HTMLDivElement: Taro node can no find sid`);
+  //     }
 
-      if (!visible) return;
-      if (!nodeRef.current) return;
-      nodeRef.current.boundingClientRect(rect => setHeight(rect.height)).exec();
-    }, 0);
-  });
+  //     if (!visible) return;
+  //     if (!nodeRef.current) return;
+  //     nodeRef.current.boundingClientRect(rect => setHeight(rect.height)).exec();
+  //   }, 0);
+  // });
 
-  useIsomorphicUpdateLayoutEffect(() => {
-    if (!nodeRef.current) return;
-    if (visible) {
-      nodeRef.current.boundingClientRect(rect => setHeight(rect.height)).exec();
-    } else {
-      setHeight(0);
-    }
-  }, [visible, nodeRef.current]);
+  // useIsomorphicUpdateLayoutEffect(() => {
+  //   if (!nodeRef.current) return;
+  //   if (visible) {
+  //     Taro.nextTick(() => {
+  //       if (!nodeRef.current) return;
+  //       nodeRef.current
+  //         .boundingClientRect(rect => {
+  //           console.log(rect.height);
+  //           setHeight(rect.height);
+  //         })
+  //         .exec();
+  //     });
+  //   } else {
+  //     setHeight(0);
+  //   }
+  // }, [visible]);
 
   return (
     <View
       className={`${classPrefix}-panel-content`}
       style={{
-        height,
+        height: visible ? 'auto' : 0,
       }}
     >
-      <View className={`${classPrefix}-panel-content-inner`} ref={innerRef}>
-        <List.Item>{props.children}</List.Item>
+      <View className={`${classPrefix}-panel-content-inner`}>
+        <List.Item>{shouldRender && props.children}</List.Item>
       </View>
     </View>
   );
