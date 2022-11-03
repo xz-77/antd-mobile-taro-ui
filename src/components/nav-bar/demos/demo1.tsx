@@ -41,7 +41,7 @@ export default () => {
       </DemoBlock>
 
       <DemoBlock title='自定义返回按钮图标' padding='0'>
-        <NavBar back='返回' backArrow={<CloseIcon style={{ fontSize: '24px' }} />} onBack={back}>
+        <NavBar back='返回' backArrow={<CloseIcon />} onBack={back}>
           标题
         </NavBar>
       </DemoBlock>
