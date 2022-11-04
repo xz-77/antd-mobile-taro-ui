@@ -9,6 +9,7 @@ import { traverseReactNode } from 'antd-mobile/es/utils/traverse-react-node';
 import { ITouchEvent, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { useMount } from 'ahooks';
+import { isH5, isWeapp } from '../../utils/client';
 import List from '../list';
 
 const classPrefix = `adm-collapse`;
@@ -42,7 +43,7 @@ const CollapsePanelContent: FC<{
   const nodeRef = useRef<Taro.NodesRef | null>(null);
 
   useMount(() => {
-    if (process.env.TARO_ENV === 'weapp') {
+    if (isWeapp) {
       setTimeout(() => {
         const inner = innerRef.current;
 
@@ -65,7 +66,7 @@ const CollapsePanelContent: FC<{
   });
 
   useIsomorphicUpdateLayoutEffect(() => {
-    if (process.env.TARO_ENV === 'weapp') {
+    if (isWeapp) {
       if (!nodeRef.current) return;
       if (visible) {
         if (!nodeRef.current) return;
@@ -100,7 +101,7 @@ const CollapsePanelContent: FC<{
       className={`${classPrefix}-panel-content`}
       style={{
         // eslint-disable-next-line no-nested-ternary
-        height: process.env.TARO_ENV === 'h5' ? (visible ? 'auto' : 0) : height,
+        height: isWeapp ? height : visible ? 'auto' : 0,
       }}
     >
       <View className={`${classPrefix}-panel-content-inner`} ref={innerRef}>

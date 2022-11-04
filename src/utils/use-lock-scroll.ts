@@ -1,4 +1,5 @@
 import Taro from '@tarojs/taro';
+import { isH5 } from './client';
 
 const BODY_LOCK_STYLE = {
   overflow: 'hidden',
@@ -11,7 +12,7 @@ const BODY_UNLOCK_STYLE = {
 };
 
 export function useLockScroll(shouldLock: boolean) {
-  if (process.env.TARO_ENV === 'h5') return;
+  if (isH5) return;
 
   if (!shouldLock) {
     // Taro对外没抛出这个方法，但是能用，否则没办法在page上添加style

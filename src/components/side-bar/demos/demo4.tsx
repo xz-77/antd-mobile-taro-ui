@@ -5,6 +5,7 @@ import { lorem } from '../../../demos';
 import { useDebounceFn } from 'ahooks';
 import { BaseEventOrig, ScrollView, ScrollViewProps, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
+import { isWeapp } from '../../../utils/client';
 
 const items = [
   { key: '1', title: '第一项', text: lorem.generateParagraphs(8) },
@@ -88,7 +89,7 @@ export default () => {
         // scrollWithAnimation
         className={styles.main}
         ref={mainElementRef}
-        onScroll={process.env.TARO_ENV === 'weapp' ? handleScroll : run}
+        onScroll={isWeapp ? handleScroll : run}
         scrollTop={scrollTop}
       >
         {items.map(item => (

@@ -5,6 +5,7 @@ import { NativeProps, withNativeProps } from 'antd-mobile/es/utils/native-props'
 import { mergeProps } from 'antd-mobile/es/utils/with-default-props';
 import { View, Canvas } from '@tarojs/components';
 import Taro from '@tarojs/taro';
+import { isH5, isWeapp } from '../../utils/client';
 
 const classPrefix = `adm-water-mark`;
 
@@ -108,7 +109,7 @@ export const WaterMark: FC<WaterMarkProps> = p => {
         }
       };
 
-      if (process.env.TARO_ENV === 'weapp') {
+      if (isWeapp) {
         const query = Taro.createSelectorQuery();
         if (!canvasRef.current) return;
         query
@@ -120,7 +121,7 @@ export const WaterMark: FC<WaterMarkProps> = p => {
             const img = canvas.createImage();
             canvasDraw(canvas, ratio, img);
           });
-      } else if (process.env.TARO_ENV === 'h5') {
+      } else if (isH5) {
         const canvas = document.createElement('canvas');
         const ratio = window.devicePixelRatio;
         const img = new Image();

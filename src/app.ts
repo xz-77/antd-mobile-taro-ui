@@ -1,16 +1,18 @@
 import { Component } from 'react';
-if (process.env.TARO_ENV === 'weapp') {
+import { isH5, isWeapp } from './utils/client';
+if (isWeapp) {
   import('./styles/index.less');
 }
-if (process.env.TARO_ENV === 'h5') {
+if (isH5) {
   import('./styles/index.h5.less');
 }
 import './app.less';
+
 import { updateVersion } from './utils/updateVersion';
 
 class App extends Component {
   componentDidMount() {
-    if (process.env.TARO_ENV === 'weapp') {
+    if (isWeapp) {
       updateVersion();
     }
   }
