@@ -38,6 +38,11 @@ export const data = [
         url: '/subpackages-dataDisplay/pages/tag/index',
       },
       {
+        title: 'WaterMark 水印',
+        desc: '',
+        url: '/subpackages-dataDisplay/pages/water-mark/index',
+      },
+      {
         title: 'Footer 页脚',
         desc: '',
         url: '/subpackages-dataDisplay/pages/footer/index',

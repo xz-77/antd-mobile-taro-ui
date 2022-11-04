@@ -79,7 +79,7 @@ export { default as Tag } from './components/tag';
 export { default as Toast } from './components/toast';
 // export { default as TreeSelect } from './components/tree-select'
 // export { default as VirtualInput } from './components/virtual-input'
-// export { default as WaterMark } from './components/water-mark'
+export { default as WaterMark } from './components/water-mark';
 export { default as Footer } from './components/footer';
 // export { createErrorBlock } from './components/error-block'
 
