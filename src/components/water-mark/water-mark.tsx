@@ -112,15 +112,19 @@ export const WaterMark: FC<WaterMarkProps> = p => {
       if (isWeapp) {
         const query = Taro.createSelectorQuery();
         if (!canvasRef.current) return;
-        query
-          .select(`#${canvasRef.current.sid}`)
-          .fields({ node: true, size: true })
-          .exec(res => {
-            const canvas = res[0]?.node;
-            const ratio = Taro.getSystemInfoSync()?.pixelRatio || 1;
-            const img = canvas.createImage();
-            canvasDraw(canvas, ratio, img);
-          });
+        // @ts-ignore
+        if (canvasRef.current?.sid) {
+          query
+            // @ts-ignore
+            .select(`#${canvasRef.current?.sid}`)
+            .fields({ node: true, size: true })
+            .exec(res => {
+              const canvas = res[0]?.node;
+              const ratio = Taro.getSystemInfoSync()?.pixelRatio || 1;
+              const img = canvas.createImage();
+              canvasDraw(canvas, ratio, img);
+            });
+        }
       } else if (isH5) {
         const canvas = document.createElement('canvas');
         const ratio = window.devicePixelRatio;

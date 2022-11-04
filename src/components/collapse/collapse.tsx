@@ -9,7 +9,7 @@ import { traverseReactNode } from 'antd-mobile/es/utils/traverse-react-node';
 import { ITouchEvent, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { useMount } from 'ahooks';
-import { isH5, isWeapp } from '../../utils/client';
+import { isWeapp } from '../../utils/client';
 import List from '../list';
 
 const classPrefix = `adm-collapse`;
