@@ -16,7 +16,7 @@ $ npm install antd-mobile-taro-ui --save-dev
 - 尽最大可能与 `Ant Design Mobile 5.x` 的 `api` 保持 100%一致
 - 预计总体代码 75%会使用 `Ant Design Mobile` 的源码，25%处理小程序带来的兼容问题，例如：
   - 元素节点的获取兼容性适配
-  - ` animation``transition `动画的实现
+  - `animation`、 `transition` 动画的实现
   - `svg`替换为`icon`或者`css3`
   - `antd-mobile-icons`、`@react-spring`等依赖包的替换方案
   - 解决小程序`Portal`问题
