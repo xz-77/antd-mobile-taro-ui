@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.16.2...v0.17.0) (2022-11-04)
+
+### Features
+
+- 实现 collapse 动画的解决方案 ([92827a8](https://github.com/xz-77/antd-mobile-taro-ui/commit/92827a829b1249d06e0608a6dff6ee6d2986f75e))
+- 做 h5 端兼容处理 ([d530889](https://github.com/xz-77/antd-mobile-taro-ui/commit/d53088947930649810caf4b55e09116f956d7c97))
+- waterMark 水印 ([efae6b3](https://github.com/xz-77/antd-mobile-taro-ui/commit/efae6b33475cf78da6246978fb476abc3f75c052))
+
 ### [0.16.2](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.16.1...v0.16.2) (2022-11-03)
 
 ### [0.16.1](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.16.0...v0.16.1) (2022-11-03)
