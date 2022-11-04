@@ -42,52 +42,56 @@ const CollapsePanelContent: FC<{
   const nodeRef = useRef<Taro.NodesRef | null>(null);
 
   useMount(() => {
-    setTimeout(() => {
-      const inner = innerRef.current;
+    if (process.env.TARO_ENV === 'weapp') {
+      setTimeout(() => {
+        const inner = innerRef.current;
 
-      if (!inner) return;
-      // TODO:找一个更合适的方式 做节点的唯一标识
-      // @ts-ignore
-      if (inner?.sid) {
-        nodeRef.current = Taro.createSelectorQuery()
-          // @ts-ignore
-          .select(`#${inner?.sid}`);
-      } else {
-        console.error(`HTMLDivElement: Taro node can no find sid`);
-      }
+        if (!inner) return;
+        // TODO:找一个更合适的方式 做节点的唯一标识
+        // @ts-ignore
+        if (inner?.sid) {
+          nodeRef.current = Taro.createSelectorQuery()
+            // @ts-ignore
+            .select(`#${inner?.sid}`);
+        } else {
+          console.error(`HTMLDivElement: Taro node can no find sid`);
+        }
 
-      if (!visible) return;
-      if (!nodeRef.current) return;
-      nodeRef.current.boundingClientRect(rect => setHeight(rect.height)).exec();
-    }, 0);
+        if (!visible) return;
+        if (!nodeRef.current) return;
+        nodeRef.current.boundingClientRect(rect => setHeight(rect.height)).exec();
+      }, 0);
+    }
   });
 
   useIsomorphicUpdateLayoutEffect(() => {
-    if (!nodeRef.current) return;
-    if (visible) {
+    if (process.env.TARO_ENV === 'weapp') {
       if (!nodeRef.current) return;
-      Taro.nextTick(() => {
+      if (visible) {
         if (!nodeRef.current) return;
+        Taro.nextTick(() => {
+          if (!nodeRef.current) return;
+          nodeRef.current
+            .boundingClientRect(rect => {
+              setHeight(rect.height);
+            })
+            .exec();
+        });
+
+        setTimeout(() => {
+          setHeight('auto');
+        }, 200);
+      } else {
         nodeRef.current
           .boundingClientRect(rect => {
             setHeight(rect.height);
           })
           .exec();
-      });
 
-      setTimeout(() => {
-        setHeight('auto');
-      }, 200);
-    } else {
-      nodeRef.current
-        .boundingClientRect(rect => {
-          setHeight(rect.height);
-        })
-        .exec();
-
-      setTimeout(() => {
-        setHeight(0);
-      }, 200);
+        setTimeout(() => {
+          setHeight(0);
+        }, 200);
+      }
     }
   }, [visible]);
 
@@ -95,7 +99,8 @@ const CollapsePanelContent: FC<{
     <View
       className={`${classPrefix}-panel-content`}
       style={{
-        height,
+        // eslint-disable-next-line no-nested-ternary
+        height: process.env.TARO_ENV === 'h5' ? (visible ? 'auto' : 0) : height,
       }}
     >
       <View className={`${classPrefix}-panel-content-inner`} ref={innerRef}>
