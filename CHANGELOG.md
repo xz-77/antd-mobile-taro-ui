@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.17.0...v0.18.0) (2022-11-16)
+
+### Features
+
+- actionSheet 动作面板 ([525d43c](https://github.com/xz-77/antd-mobile-taro-ui/commit/525d43cd61aa782d0ac41c8fb8117f658443ec50))
+
 ## [0.17.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.16.2...v0.17.0) (2022-11-04)
 
 ### Features
