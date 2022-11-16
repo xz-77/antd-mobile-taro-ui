@@ -2,16 +2,15 @@ import React, { FC, useEffect, useRef, useState } from 'react';
 import { Button, Space, Toast } from 'antd-mobile-taro-ui';
 import { Text } from '@tarojs/components';
 import { DemoBlock } from 'demos';
-import { CheckIcon } from 'antd-mobile-taro-icons';
+import { EmojiIcon } from 'antd-mobile-taro-icons';
 import type { ToastHandler } from 'antd-mobile/es/components/toast';
+import { useUnmount } from 'ahooks';
 
 export default () => {
   const handler = useRef<ToastHandler>();
 
-  useEffect(() => {
-    return () => {
-      Toast.clear();
-    };
+  useUnmount(() => {
+    Toast.clear();
   });
 
   return (
@@ -67,7 +66,7 @@ export default () => {
             onClick={() => {
               Toast.show({
                 content: '上传中',
-                icon: <CheckIcon />,
+                icon: <EmojiIcon />,
               });
             }}
           >

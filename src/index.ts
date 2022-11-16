@@ -2,7 +2,7 @@ import './styles/miniprogram/theme-default.less';
 
 export { setDefaultConfig } from './components/config-provider';
 
-// export { default as ActionSheet } from './components/action-sheet'
+export { default as ActionSheet } from './components/action-sheet';
 export { default as AutoCenter } from './components/auto-center';
 export { default as Avatar } from './components/avatar';
 export { default as Badge } from './components/badge';

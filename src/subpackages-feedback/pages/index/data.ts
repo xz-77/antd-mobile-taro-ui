@@ -3,6 +3,11 @@ export const data = [
     name: '反馈',
     items: [
       {
+        title: 'ActionSheet 动作面板',
+        desc: '',
+        url: '/subpackages-feedback/pages/action-sheet/index',
+      },
+      {
         title: 'DotLoading 点状加载中',
         desc: '',
         url: '/subpackages-feedback/pages/dot-loading/index',

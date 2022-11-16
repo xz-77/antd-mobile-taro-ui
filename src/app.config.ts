@@ -48,6 +48,7 @@ export default defineAppConfig({
       root: 'subpackages-feedback',
       pages: [
         'pages/index/index',
+        'pages/action-sheet/index',
         'pages/dot-loading/index',
         'pages/mask/index',
         'pages/popup/index',

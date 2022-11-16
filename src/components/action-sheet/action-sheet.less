@@ -1,0 +1,66 @@
+@class-prefix-action-sheet: ~'adm-action-sheet';
+
+.@{class-prefix-action-sheet} {
+  &-popup {
+    > .adm-popup-body {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      overflow: hidden;
+    }
+  }
+  &-extra {
+    display: flex;
+    justify-content: center;
+    color: var(--adm-color-weak);
+    font-size: var(--adm-font-size-7);
+    padding: 18px 12px;
+    border-bottom: 1px solid var(--adm-color-border);
+  }
+  &-button-list {
+    border-bottom: 1px solid var(--adm-color-border);
+  }
+  &-button-item-wrapper {
+    border-bottom: 1px solid var(--adm-color-border);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &-button-item {
+    text-align: center;
+    display: block;
+    background-color: var(--adm-color-background);
+    padding: 16px;
+    &:active {
+      background-color: #eeeeee;
+    }
+    &-disabled {
+      cursor: not-allowed;
+      pointer-events: none;
+      opacity: 0.4;
+    }
+    &-name {
+      color: var(--adm-color-text);
+      font-size: var(--adm-font-size-10);
+    }
+    &-description {
+      font-size: var(--adm-font-size-6);
+      color: var(--adm-color-weak);
+      padding-top: 4px;
+    }
+    &-danger {
+      .@{class-prefix-action-sheet}-button-item-name {
+        color: var(--adm-color-danger);
+      }
+    }
+    &-bold {
+      .@{class-prefix-action-sheet}-button-item-name {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-cancel {
+    background-color: var(--adm-color-box);
+    padding-top: 8px;
+  }
+}
