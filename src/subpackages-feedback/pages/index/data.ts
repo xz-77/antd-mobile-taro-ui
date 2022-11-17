@@ -8,6 +8,11 @@ export const data = [
         url: '/subpackages-feedback/pages/action-sheet/index',
       },
       {
+        title: 'Dialog 对话框',
+        desc: '',
+        url: '/subpackages-feedback/pages/dialog/index',
+      },
+      {
         title: 'DotLoading 点状加载中',
         desc: '',
         url: '/subpackages-feedback/pages/dot-loading/index',

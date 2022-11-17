@@ -54,7 +54,7 @@ export const data = [
     items: [
       {
         title: '反馈',
-        desc: '包含动作面板、点状加载中、转圈加载中、遮罩层、弹出层、进度条、进度圈、结果、骨架屏、轻提示等',
+        desc: '包含动作面板、对话框、点状加载中、转圈加载中、遮罩层、弹出层、进度条、进度圈、结果、骨架屏、轻提示等',
         url: '/subpackages-feedback/pages/index/index',
       },
     ],

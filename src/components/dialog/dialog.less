@@ -1,0 +1,88 @@
+@class-prefix-dialog: ~'adm-dialog';
+
+.@{class-prefix-dialog} {
+  --z-index: var(--adm-dialog-z-index, 1000);
+
+  ---z-index: var(--z-index);
+  .adm-center-popup {
+    --z-index: var(---z-index);
+  }
+}
+
+.@{class-prefix-dialog}-body {
+  width: 100%;
+  max-height: 70vh;
+  font-size: var(--adm-font-size-6);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  > View {
+    flex: none;
+  }
+  > .adm-dialog-content {
+    flex: auto;
+  }
+
+  &:not(.adm-dialog-with-image) {
+    padding-top: 20px;
+  }
+}
+
+.adm-dialog-image-container {
+  margin-bottom: 12px;
+  max-height: 40vh;
+}
+.adm-dialog-header {
+  margin-bottom: 8px;
+  padding: 0 12px;
+}
+.adm-dialog-title {
+  margin-bottom: 8px;
+  padding: 0 12px;
+  font-weight: bold;
+  font-size: var(--adm-font-size-10);
+  line-height: 25px;
+  text-align: center;
+}
+.adm-dialog-content {
+  padding: 0 12px 20px;
+  max-height: 70vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: var(--adm-font-size-7);
+  line-height: 1.4;
+  color: var(--adm-color-text);
+  &-empty {
+    padding: 0;
+    height: 12px;
+  }
+}
+.@{class-prefix-dialog}-footer {
+  user-select: none;
+  .adm-dialog-action-row {
+    display: flex;
+    align-items: stretch;
+    border-top: 0.5px solid var(--adm-color-border);
+    > View {
+      flex: 1;
+    }
+    > .adm-dialog-button {
+      padding: 10px;
+      font-size: var(--adm-font-size-10);
+      line-height: 25px;
+      border-radius: 0;
+      &-bold {
+        font-weight: bold;
+      }
+      border-right: solid 0.5px var(--adm-color-border);
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.@{class-prefix-dialog}-image-container {
+  overflow-y: auto;
+}

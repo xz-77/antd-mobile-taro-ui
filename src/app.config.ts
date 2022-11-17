@@ -49,6 +49,7 @@ export default defineAppConfig({
       pages: [
         'pages/index/index',
         'pages/action-sheet/index',
+        'pages/dialog/index',
         'pages/dot-loading/index',
         'pages/mask/index',
         'pages/popup/index',
