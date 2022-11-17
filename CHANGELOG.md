@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.19.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.18.0...v0.19.0) (2022-11-17)
+
+### Features
+
+- centerPopup 中心弹窗 ([e0ab992](https://github.com/xz-77/antd-mobile-taro-ui/commit/e0ab99232fb16d9f3df9b43cb202ad81069747d4))
+- dialog 对话框 ([9593eed](https://github.com/xz-77/antd-mobile-taro-ui/commit/9593eedbd6099f0da1e3601520d99b7a9d450485))
+
 ## [0.18.0](https://github.com/xz-77/antd-mobile-taro-ui/compare/v0.17.0...v0.18.0) (2022-11-16)
 
 ### Features
