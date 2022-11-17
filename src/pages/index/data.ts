@@ -69,4 +69,14 @@ export const data = [
       },
     ],
   },
+  {
+    name: '中间层组件',
+    items: [
+      {
+        title: '中间层组件',
+        desc: '包含中心弹窗等',
+        url: '/subpackages-middleware/pages/index/index',
+      },
+    ],
+  },
 ];

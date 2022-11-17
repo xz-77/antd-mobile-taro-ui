@@ -76,6 +76,10 @@ export default defineAppConfig({
         'pages/tabs/index',
       ],
     },
+    {
+      root: 'subpackages-middleware',
+      pages: ['pages/index/index', 'pages/center-popup/index'],
+    },
   ],
   window: {
     backgroundTextStyle: 'light',

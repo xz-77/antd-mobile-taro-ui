@@ -64,16 +64,20 @@ export const Mask: React.FC<MaskProps> = p => {
 
   const init = useRef(true);
 
+  const [wrapperVisible, setWrapperVisible] = useState(props.visible);
+
   useEffect(() => {
     if (init.current) return;
     if (unmountedRef.current) return;
     setActive(props.visible);
     if (props.visible) {
+      setWrapperVisible(props.visible);
       setTimeout(() => {
         props.afterShow?.();
       }, 500);
     } else {
       setTimeout(() => {
+        setWrapperVisible(props.visible);
         props.afterClose?.();
       }, 500);
     }
@@ -97,8 +101,7 @@ export const Mask: React.FC<MaskProps> = p => {
           ...props.style,
           background,
           opacity: props.visible ? 1 : 0,
-          zIndex: props.visible ? 'var(--z-index)' : '-1',
-          // display: active ? undefined : 'none',
+          display: wrapperVisible ? undefined : 'none',
         }}
         onClick={e => {
           if (e.target === e.currentTarget) {
