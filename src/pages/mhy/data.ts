@@ -88,12 +88,28 @@ export const data = [
     entry: '精精精',
   },
   {
-    avatar: 'https://xz-77.github.io/mhy/IMG_0720.JPG',
+    avatar: 'https://i0.hdslb.com/bfs/new_dyn/7da1f0eac4f6076ee00ef700da0846201373037.jpg@2072w.webp',
     name: '纳西妲',
     weapon: '魔导绪论/祭礼残章',
     skill: 'EQ',
     relic: '深林4/饰金4/饰金2+乐团2',
     entry: '精精精（1000）',
+  },
+  {
+    avatar: 'https://i0.hdslb.com/bfs/new_dyn/71ec5c631b979f4145641bb4294b790c1373037.jpg@2072w.webp',
+    name: '流浪者',
+    weapon: '流浪乐章',
+    skill: 'AE',
+    relic: '楼阁4',
+    entry: '攻风暴',
+  },
+  {
+    avatar: '',
+    name: '珐露珊',
+    weapon: '西风',
+    skill: 'QE',
+    relic: '绝缘+翠绿/宗师4',
+    entry: '充风暴',
   },
 ];
 

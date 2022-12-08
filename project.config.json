@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "dist/weapp/",
-  "projectname": "ui",
+  "projectname": "antd-mobile-taro-ui",
   "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
   "appid": "wxbd0fb2632b4f7b00",
   "setting": {
