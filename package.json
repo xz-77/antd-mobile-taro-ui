@@ -98,6 +98,8 @@
     "ahooks": "^3.6.2",
     "antd-mobile": "^5.24.0",
     "antd-mobile-taro-icons": "^0.4.0",
+    "axios": "^0.25.0",
+    "axios-adapter-miniprogram": "^0.0.2",
     "big.js": "6.2.1",
     "classnames": "^2.3.1",
     "lodash": "^4.17.21",

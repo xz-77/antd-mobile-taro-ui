@@ -5650,6 +5650,28 @@ axe-core@^4.4.2:
   resolved "https://registry.npmmirror.com/axe-core/-/axe-core-4.4.2.tgz#dcf7fb6dea866166c3eab33d68208afe4d5f670c"
   integrity sha512-LVAaGp/wkkgYJcjmHsoKx4juT1aQvJyPcW09MLCjVTh3V2cc6PnyempiLMNH5iMdfIX/zdbjUx2KDjMLCTdPeA==
 
+axios-adapter-miniprogram@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/axios-adapter-miniprogram/-/axios-adapter-miniprogram-0.0.2.tgz#d2fb7250413b22b1392692ce5de1865b6c51a69d"
+  integrity sha512-TIYl4kGsvF/rJuEbgZ5zg5X1/fkKDPom/0C6sGVnArPU8diqJVB7sPT+JIecanTBiW7ui53mGn3VBLfF23g2dg==
+  dependencies:
+    axios "^0.25.0"
+    axios-adapter-wechat "^0.1.1"
+
+axios-adapter-wechat@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/axios-adapter-wechat/-/axios-adapter-wechat-0.1.1.tgz#8bbd97ed8e7388eadd303883fa819d106338aa19"
+  integrity sha512-9ZbxynlyvY4iQG2ElqX13f4o7OtRydasXMJ0iQlS7q0iFxKuVT4FQzJf7pmOQYDapehpRMRYbqt94UI4NcjXjw==
+  dependencies:
+    axios "^0.25.0"
+
+axios@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.25.0.tgz#349cfbb31331a9b4453190791760a8d35b093e0a"
+  integrity sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==
+  dependencies:
+    follow-redirects "^1.14.7"
+
 axobject-query@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmmirror.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
@@ -10984,6 +11006,11 @@ follow-redirects@^1.0.0:
   version "1.15.1"
   resolved "https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
   integrity sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
+
+follow-redirects@^1.14.7:
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
+  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"

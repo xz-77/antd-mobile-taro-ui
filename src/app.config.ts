@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  pages: ['pages/index/index', 'pages/mhy/index'],
+  pages: ['pages/index/index', 'pages/mhy/index', 'pages/mhy-network/index'],
   subPackages: [
     {
       root: 'subpackages-common',

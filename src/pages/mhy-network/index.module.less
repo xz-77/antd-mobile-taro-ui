@@ -1,0 +1,41 @@
+.container {
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  [data-prefers-color='dark'] & {
+    background-color: unset;
+  }
+}
+
+.side {
+  flex: none;
+}
+
+.main {
+  flex: auto;
+  padding: 0 0 32px;
+  // overflow-y: scroll;
+  .h2 {
+    margin: 0;
+    padding: 12px 0;
+  }
+}
+
+.content {
+  position: relative;
+  --adm-color-background: transparent;
+  height: 100vh;
+  .bg {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.2;
+    height: 100vh;
+  }
+}

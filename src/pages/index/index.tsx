@@ -23,7 +23,7 @@ const Index = () => {
   useEffect(() => {
     if (count >= 3) {
       Taro.navigateTo({
-        url: '/pages/mhy/index',
+        url: '/pages/mhy-network/index',
       });
     }
   }, [count]);
