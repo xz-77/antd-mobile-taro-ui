@@ -1,7 +1,4 @@
 {
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "prettier.configPath": ".prettierrc.js",
   "cSpell.words": [
     "tarojs",
     "weapp",
@@ -15,5 +12,45 @@
     "stylelint",
     "miniprogram",
     "commitlint"
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "prettier.configPath": ".prettierrc.js",
+  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
+  "stylelint.validate": ["css", "less", "postcss", "sass", "scss"],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ignore]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "diffEditor.ignoreTrimWhitespace": false
 }

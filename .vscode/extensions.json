@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "formulahendry.auto-close-tag",
+    "MS-CEINTL.vscode-language-pack-zh-hans",
+    "formulahendry.code-runner",
+    "xyz.local-history",
+    "Gruntfuggly.todo-tree",
+    "ryu1kn.annotator",
+    "russell.any-rule",
+    "streetsidesoftware.code-spell-checker",
+    "clinyong.vscode-css-modules",
+    "eamodio.gitlens",
+    "xabikos.JavaScriptSnippets",
+    "yzhang.markdown-all-in-one",
+    "DavidAnson.vscode-markdownlint",
+    "PKief.material-icon-theme",
+    "equinusocio.vsc-material-theme-icons",
+    "SimonSiefke.svg-preview",
+    "wayou.vscode-todo-highlight",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

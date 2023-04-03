@@ -5,6 +5,6 @@ module.exports = {
   rules: {
     ...stylelint.rules,
     // your rules
-    'selector-type-no-unknown': null,
+    'selector-type-no-unknown': null, // 允许未知类型选择器
   },
 };
